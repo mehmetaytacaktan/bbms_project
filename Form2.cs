@@ -14,11 +14,15 @@ namespace formProject
     public partial class Form2 : Form
     {
         Form1 MainMenu;
+        DateTimePicker MainMenuDateTimePicker;
 
         public Form2(Form1 MainMenu)
         {
             InitializeComponent();
             this.MainMenu = MainMenu;
+
+            DateTimePicker2.MinDate = DateTimeLimits.Min();
+            DateTimePicker2.MaxDate = DateTimeLimits.Max();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -32,12 +36,6 @@ namespace formProject
             this.Hide();
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            MainMenu.Show();
-            //we are allready closed
-        }
-
         private void BtnPrevDay_Click(object sender, EventArgs e)
         {
             if(!(DateTimePicker2.Value.AddDays(-1) < DateTimeLimits.Min()))
@@ -48,7 +46,8 @@ namespace formProject
 
         private void BtnNextDay_Click(object sender, EventArgs e)
         {
-            if (!(DateTimePicker2.Value.AddDays(1) > DateTimeLimits.Max()))
+            //Tuşlarla bir gün eksik gidiyor.
+            if (!(DateTimePicker2.Value.AddDays(1).Date >= DateTimeLimits.Max().Date))
             {
                 DateTimePicker2.Value = DateTimePicker2.Value.AddDays(1);
             }
@@ -57,6 +56,11 @@ namespace formProject
         private void DateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void reWriteDate(DateTime dateToWrite)
+        {
+            DateTimePicker2.Value = dateToWrite;
         }
     }
 }

@@ -31,8 +31,8 @@ namespace formProject
             removedCities[1] = ("");
 
             //DateTimePicker
-            DateTimePicker.MinDate = DateTimeLimits.Min();
-            DateTimePicker.MaxDate = DateTimeLimits.Max();
+            DateTimePicker1.MinDate = DateTimeLimits.Min();
+            DateTimePicker1.MaxDate = DateTimeLimits.Max();
             //Combo Boxes (SEXob obmoc)
             ComboBoxFrom.Items.Clear();
             ComboBoxTo.Items.Clear();
@@ -58,23 +58,19 @@ namespace formProject
 
         private void BtnToday_Click(object sender, EventArgs e)
         {
-            DateTimePicker.Value = DateTime.Now;
+            DateTimePicker1.Value = DateTime.Now;
         }
 
         private void button1_Click(object sender, EventArgs e)//btnTomorrow
         {
-            DateTimePicker.Value = DateTime.Now.AddDays(1);
+            DateTimePicker1.Value = DateTime.Now.AddDays(1);
         }
 
         private void BtnBuy_Click(object sender, EventArgs e)
         {
-            Debug.Print(ComboBoxTo.SelectedValue.ToString());
-
-            if(ComboBoxTo.SelectedValue != null)
-            {
-                this.Hide();
-                BuyingScreen.Show();
-            }
+            this.Hide();
+            BuyingScreen.Show();
+            BuyingScreen.reWriteDate(DateTimePicker1.Value);
         }
 
         private void ComboBoxTo_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,6 +104,11 @@ namespace formProject
         {
             //******************TODO: Login as admin
             MessageBox.Show("Login work in progress");
+        }
+
+        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

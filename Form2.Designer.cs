@@ -45,9 +45,10 @@
             // BtnBack
             // 
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.BtnBack.Location = new System.Drawing.Point(12, 12);
+            this.BtnBack.Location = new System.Drawing.Point(16, 15);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(200, 160);
+            this.BtnBack.Size = new System.Drawing.Size(267, 197);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // BtnPrevDay
             // 
             this.BtnPrevDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnPrevDay.Location = new System.Drawing.Point(50, 38);
+            this.BtnPrevDay.Location = new System.Drawing.Point(9, 10);
+            this.BtnPrevDay.Margin = new System.Windows.Forms.Padding(4);
             this.BtnPrevDay.Name = "BtnPrevDay";
-            this.BtnPrevDay.Size = new System.Drawing.Size(45, 45);
+            this.BtnPrevDay.Size = new System.Drawing.Size(60, 55);
             this.BtnPrevDay.TabIndex = 1;
             this.BtnPrevDay.Text = "<";
             this.BtnPrevDay.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::formProject.Properties.Resources.Logo1;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(224, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(299, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(533, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(711, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -82,9 +85,10 @@
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.BtnBack);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(16, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 185);
+            this.panel1.Size = new System.Drawing.Size(1013, 228);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -93,27 +97,30 @@
             this.panel2.Controls.Add(this.DateTimePicker2);
             this.panel2.Controls.Add(this.BtnNextDay);
             this.panel2.Controls.Add(this.BtnPrevDay);
-            this.panel2.Location = new System.Drawing.Point(12, 203);
+            this.panel2.Location = new System.Drawing.Point(78, 250);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 121);
+            this.panel2.Size = new System.Drawing.Size(886, 76);
             this.panel2.TabIndex = 7;
             // 
             // DateTimePicker2
             // 
             this.DateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.DateTimePicker2.Location = new System.Drawing.Point(126, 33);
+            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.DateTimePicker2.Location = new System.Drawing.Point(106, 11);
+            this.DateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker2.Name = "DateTimePicker2";
-            this.DateTimePicker2.Size = new System.Drawing.Size(500, 53);
+            this.DateTimePicker2.Size = new System.Drawing.Size(665, 55);
             this.DateTimePicker2.TabIndex = 3;
             this.DateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
             // 
             // BtnNextDay
             // 
             this.BtnNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnNextDay.Location = new System.Drawing.Point(655, 38);
+            this.BtnNextDay.Location = new System.Drawing.Point(815, 10);
+            this.BtnNextDay.Margin = new System.Windows.Forms.Padding(4);
             this.BtnNextDay.Name = "BtnNextDay";
-            this.BtnNextDay.Size = new System.Drawing.Size(45, 45);
+            this.BtnNextDay.Size = new System.Drawing.Size(60, 55);
             this.BtnNextDay.TabIndex = 2;
             this.BtnNextDay.Text = ">";
             this.BtnNextDay.UseVisualStyleBackColor = true;
@@ -122,28 +129,30 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Location = new System.Drawing.Point(12, 330);
+            this.panel3.Location = new System.Drawing.Point(16, 334);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(757, 219);
+            this.panel3.Size = new System.Drawing.Size(1009, 342);
             this.panel3.TabIndex = 8;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1043, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 600);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(1061, 728);
+            this.MinimumSize = new System.Drawing.Size(1061, 728);
             this.Name = "Form2";
             this.Text = "Freedom Tourism";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
