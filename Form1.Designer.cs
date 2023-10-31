@@ -41,20 +41,25 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.ComboBoxFrom = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             PicBoxLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(PicBoxLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PicBoxLogo
             // 
             PicBoxLogo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("PicBoxLogo.ErrorImage")));
             PicBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("PicBoxLogo.Image")));
-            PicBoxLogo.Location = new System.Drawing.Point(12, 14);
+            PicBoxLogo.Location = new System.Drawing.Point(16, 46);
+            PicBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             PicBoxLogo.Name = "PicBoxLogo";
-            PicBoxLogo.Size = new System.Drawing.Size(760, 273);
+            PicBoxLogo.Size = new System.Drawing.Size(1013, 336);
             PicBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             PicBoxLogo.TabIndex = 0;
             PicBoxLogo.TabStop = false;
@@ -63,18 +68,20 @@
             // 
             this.DateTimePicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.DateTimePicker.Location = new System.Drawing.Point(360, 13);
+            this.DateTimePicker.Location = new System.Drawing.Point(480, 16);
+            this.DateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(381, 35);
+            this.DateTimePicker.Size = new System.Drawing.Size(507, 41);
             this.DateTimePicker.TabIndex = 1;
             // 
             // BtnToday
             // 
             this.BtnToday.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnToday.Location = new System.Drawing.Point(360, 56);
+            this.BtnToday.Location = new System.Drawing.Point(480, 69);
+            this.BtnToday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnToday.Name = "BtnToday";
-            this.BtnToday.Size = new System.Drawing.Size(178, 56);
+            this.BtnToday.Size = new System.Drawing.Size(237, 69);
             this.BtnToday.TabIndex = 2;
             this.BtnToday.Text = "Today";
             this.BtnToday.UseVisualStyleBackColor = true;
@@ -84,9 +91,10 @@
             // 
             this.BtnTomorrow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTomorrow.Location = new System.Drawing.Point(563, 56);
+            this.BtnTomorrow.Location = new System.Drawing.Point(751, 69);
+            this.BtnTomorrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnTomorrow.Name = "BtnTomorrow";
-            this.BtnTomorrow.Size = new System.Drawing.Size(178, 56);
+            this.BtnTomorrow.Size = new System.Drawing.Size(237, 69);
             this.BtnTomorrow.TabIndex = 3;
             this.BtnTomorrow.Text = "Tomorrow";
             this.BtnTomorrow.UseVisualStyleBackColor = true;
@@ -101,9 +109,10 @@
             this.panel1.Controls.Add(this.DateTimePicker);
             this.panel1.Controls.Add(this.BtnToday);
             this.panel1.Controls.Add(this.BtnTomorrow);
-            this.panel1.Location = new System.Drawing.Point(12, 302);
+            this.panel1.Location = new System.Drawing.Point(17, 389);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 246);
+            this.panel1.Size = new System.Drawing.Size(1013, 284);
             this.panel1.TabIndex = 5;
             // 
             // BtnBuy
@@ -111,11 +120,12 @@
             this.BtnBuy.BackColor = System.Drawing.SystemColors.Window;
             this.BtnBuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F);
-            this.BtnBuy.Location = new System.Drawing.Point(360, 138);
+            this.BtnBuy.Location = new System.Drawing.Point(480, 151);
+            this.BtnBuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnBuy.Name = "BtnBuy";
-            this.BtnBuy.Size = new System.Drawing.Size(381, 96);
+            this.BtnBuy.Size = new System.Drawing.Size(508, 118);
             this.BtnBuy.TabIndex = 8;
-            this.BtnBuy.Text = "Buy Ticket";
+            this.BtnBuy.Text = "Show Tours";
             this.BtnBuy.UseVisualStyleBackColor = false;
             this.BtnBuy.Click += new System.EventHandler(this.BtnBuy_Click);
             // 
@@ -124,9 +134,10 @@
             this.panel3.BackColor = System.Drawing.Color.Sienna;
             this.panel3.Controls.Add(this.ComboBoxTo);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(37, 138);
+            this.panel3.Location = new System.Drawing.Point(49, 151);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(246, 96);
+            this.panel3.Size = new System.Drawing.Size(328, 118);
             this.panel3.TabIndex = 7;
             // 
             // ComboBoxTo
@@ -134,9 +145,10 @@
             this.ComboBoxTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.ComboBoxTo.FormattingEnabled = true;
-            this.ComboBoxTo.Location = new System.Drawing.Point(3, 54);
+            this.ComboBoxTo.Location = new System.Drawing.Point(4, 66);
+            this.ComboBoxTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBoxTo.Name = "ComboBoxTo";
-            this.ComboBoxTo.Size = new System.Drawing.Size(240, 39);
+            this.ComboBoxTo.Size = new System.Drawing.Size(319, 46);
             this.ComboBoxTo.TabIndex = 9;
             this.ComboBoxTo.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTo_SelectedIndexChanged);
             // 
@@ -146,9 +158,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 6);
+            this.label2.Location = new System.Drawing.Point(104, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 46);
+            this.label2.Size = new System.Drawing.Size(95, 58);
             this.label2.TabIndex = 5;
             this.label2.Text = "TO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,9 +171,10 @@
             this.panel2.BackColor = System.Drawing.Color.Sienna;
             this.panel2.Controls.Add(this.ComboBoxFrom);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(37, 13);
+            this.panel2.Location = new System.Drawing.Point(49, 16);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 96);
+            this.panel2.Size = new System.Drawing.Size(328, 118);
             this.panel2.TabIndex = 6;
             // 
             // ComboBoxFrom
@@ -168,9 +182,10 @@
             this.ComboBoxFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBoxFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.ComboBoxFrom.FormattingEnabled = true;
-            this.ComboBoxFrom.Location = new System.Drawing.Point(3, 54);
+            this.ComboBoxFrom.Location = new System.Drawing.Point(4, 66);
+            this.ComboBoxFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBoxFrom.Name = "ComboBoxFrom";
-            this.ComboBoxFrom.Size = new System.Drawing.Size(240, 39);
+            this.ComboBoxFrom.Size = new System.Drawing.Size(319, 46);
             this.ComboBoxFrom.TabIndex = 10;
             this.ComboBoxFrom.SelectedIndexChanged += new System.EventHandler(this.ComboBoxFrom_SelectedIndexChanged);
             // 
@@ -180,26 +195,56 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 6);
+            this.label1.Location = new System.Drawing.Point(71, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 46);
+            this.label1.Size = new System.Drawing.Size(173, 58);
             this.label1.TabIndex = 5;
             this.label1.Text = "FROM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1043, 28);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loginToolStripMenuItem});
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Text = "Admin";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1043, 681);
             this.Controls.Add(this.panel1);
             this.Controls.Add(PicBoxLogo);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 600);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(1061, 728);
+            this.MinimumSize = new System.Drawing.Size(1061, 728);
             this.Name = "Form1";
             this.Text = "Freedom Tourism";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -210,7 +255,10 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,6 +275,9 @@
         private System.Windows.Forms.Button BtnBuy;
         private System.Windows.Forms.ComboBox ComboBoxTo;
         private System.Windows.Forms.ComboBox ComboBoxFrom;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
     }
 }
 

@@ -19,3 +19,14 @@ D:\Self-Made Codes\formProject\obj\Debug\formProject.csproj.GenerateResource.cac
 D:\Self-Made Codes\formProject\obj\Debug\formProject.csproj.CoreCompileInputs.cache
 D:\Self-Made Codes\formProject\obj\Debug\formProject.exe
 D:\Self-Made Codes\formProject\obj\Debug\formProject.pdb
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\bin\Debug\formProject.exe.config
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\bin\Debug\formProject.exe
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\bin\Debug\formProject.pdb
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.csproj.AssemblyReference.cache
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.Form1.resources
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.Form2.resources
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.Properties.Resources.resources
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.csproj.GenerateResource.cache
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.csproj.CoreCompileInputs.cache
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.exe
+C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.pdb

@@ -31,8 +31,8 @@ namespace formProject
             removedCities[1] = ("");
 
             //DateTimePicker
-            DateTimePicker.MinDate = DateTime.Now;
-            DateTimePicker.MaxDate = DateTime.Now.AddDays(30);
+            DateTimePicker.MinDate = DateTimeLimits.Min();
+            DateTimePicker.MaxDate = DateTimeLimits.Max();
             //Combo Boxes (SEXob obmoc)
             ComboBoxFrom.Items.Clear();
             ComboBoxTo.Items.Clear();
@@ -68,9 +68,13 @@ namespace formProject
 
         private void BtnBuy_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            BuyingScreen.Show();
-            
+            Debug.Print(ComboBoxTo.SelectedValue.ToString());
+
+            if(ComboBoxTo.SelectedValue != null)
+            {
+                this.Hide();
+                BuyingScreen.Show();
+            }
         }
 
         private void ComboBoxTo_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,6 +101,13 @@ namespace formProject
         {
             BuyingScreen.Close();
             //we are already closed
+        }
+
+        //Login
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //******************TODO: Login as admin
+            MessageBox.Show("Login work in progress");
         }
     }
 }
