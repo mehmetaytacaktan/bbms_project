@@ -46,7 +46,6 @@ namespace formProject
 
         private void BtnNextDay_Click(object sender, EventArgs e)
         {
-            //Tuşlarla bir gün eksik gidiyor.
             if (!(DateTimePicker2.Value.AddDays(1) > DateTimeLimits.Max()))
             {
                 DateTimePicker2.Value = DateTimePicker2.Value.AddDays(1);
