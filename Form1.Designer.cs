@@ -55,7 +55,7 @@
             PicBoxLogo.Location = new System.Drawing.Point(16, 13);
             PicBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             PicBoxLogo.Name = "PicBoxLogo";
-            PicBoxLogo.Size = new System.Drawing.Size(1013, 369);
+            PicBoxLogo.Size = new System.Drawing.Size(703, 258);
             PicBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             PicBoxLogo.TabIndex = 0;
             PicBoxLogo.TabStop = false;
@@ -63,22 +63,22 @@
             // DateTimePicker1
             // 
             this.DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.DateTimePicker1.Location = new System.Drawing.Point(480, 16);
+            this.DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DateTimePicker1.Location = new System.Drawing.Point(362, 19);
             this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(507, 41);
+            this.DateTimePicker1.Size = new System.Drawing.Size(328, 30);
             this.DateTimePicker1.TabIndex = 1;
             this.DateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // BtnToday
             // 
             this.BtnToday.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnToday.Location = new System.Drawing.Point(480, 69);
+            this.BtnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.BtnToday.Location = new System.Drawing.Point(362, 55);
             this.BtnToday.Margin = new System.Windows.Forms.Padding(4);
             this.BtnToday.Name = "BtnToday";
-            this.BtnToday.Size = new System.Drawing.Size(237, 69);
+            this.BtnToday.Size = new System.Drawing.Size(164, 52);
             this.BtnToday.TabIndex = 2;
             this.BtnToday.Text = "Today";
             this.BtnToday.UseVisualStyleBackColor = true;
@@ -87,11 +87,11 @@
             // BtnTomorrow
             // 
             this.BtnTomorrow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTomorrow.Location = new System.Drawing.Point(751, 69);
+            this.BtnTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.BtnTomorrow.Location = new System.Drawing.Point(534, 55);
             this.BtnTomorrow.Margin = new System.Windows.Forms.Padding(4);
             this.BtnTomorrow.Name = "BtnTomorrow";
-            this.BtnTomorrow.Size = new System.Drawing.Size(237, 69);
+            this.BtnTomorrow.Size = new System.Drawing.Size(156, 52);
             this.BtnTomorrow.TabIndex = 3;
             this.BtnTomorrow.Text = "Tomorrow";
             this.BtnTomorrow.UseVisualStyleBackColor = true;
@@ -106,21 +106,21 @@
             this.panel1.Controls.Add(this.DateTimePicker1);
             this.panel1.Controls.Add(this.BtnToday);
             this.panel1.Controls.Add(this.BtnTomorrow);
-            this.panel1.Location = new System.Drawing.Point(17, 389);
+            this.panel1.Location = new System.Drawing.Point(17, 279);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 284);
+            this.panel1.Size = new System.Drawing.Size(702, 217);
             this.panel1.TabIndex = 5;
             // 
             // BtnBuy
             // 
             this.BtnBuy.BackColor = System.Drawing.SystemColors.Window;
             this.BtnBuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F);
-            this.BtnBuy.Location = new System.Drawing.Point(480, 151);
+            this.BtnBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.BtnBuy.Location = new System.Drawing.Point(362, 115);
             this.BtnBuy.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBuy.Name = "BtnBuy";
-            this.BtnBuy.Size = new System.Drawing.Size(508, 118);
+            this.BtnBuy.Size = new System.Drawing.Size(328, 94);
             this.BtnBuy.TabIndex = 8;
             this.BtnBuy.Text = "Show Tours";
             this.BtnBuy.UseVisualStyleBackColor = false;
@@ -131,21 +131,21 @@
             this.panel3.BackColor = System.Drawing.Color.Sienna;
             this.panel3.Controls.Add(this.ComboBoxTo);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(49, 151);
+            this.panel3.Location = new System.Drawing.Point(16, 114);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(328, 118);
+            this.panel3.Size = new System.Drawing.Size(328, 95);
             this.panel3.TabIndex = 7;
             // 
             // ComboBoxTo
             // 
             this.ComboBoxTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.ComboBoxTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.ComboBoxTo.FormattingEnabled = true;
-            this.ComboBoxTo.Location = new System.Drawing.Point(4, 66);
+            this.ComboBoxTo.Location = new System.Drawing.Point(9, 50);
             this.ComboBoxTo.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxTo.Name = "ComboBoxTo";
-            this.ComboBoxTo.Size = new System.Drawing.Size(319, 46);
+            this.ComboBoxTo.Size = new System.Drawing.Size(307, 37);
             this.ComboBoxTo.TabIndex = 9;
             this.ComboBoxTo.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTo_SelectedIndexChanged);
             // 
@@ -153,12 +153,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(104, 7);
+            this.label2.Location = new System.Drawing.Point(128, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 58);
+            this.label2.Size = new System.Drawing.Size(64, 39);
             this.label2.TabIndex = 5;
             this.label2.Text = "TO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,21 +168,21 @@
             this.panel2.BackColor = System.Drawing.Color.Sienna;
             this.panel2.Controls.Add(this.ComboBoxFrom);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(49, 16);
+            this.panel2.Location = new System.Drawing.Point(16, 13);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(328, 118);
+            this.panel2.Size = new System.Drawing.Size(328, 94);
             this.panel2.TabIndex = 6;
             // 
             // ComboBoxFrom
             // 
             this.ComboBoxFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.ComboBoxFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.ComboBoxFrom.FormattingEnabled = true;
-            this.ComboBoxFrom.Location = new System.Drawing.Point(4, 66);
+            this.ComboBoxFrom.Location = new System.Drawing.Point(9, 48);
             this.ComboBoxFrom.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxFrom.Name = "ComboBoxFrom";
-            this.ComboBoxFrom.Size = new System.Drawing.Size(319, 46);
+            this.ComboBoxFrom.Size = new System.Drawing.Size(307, 37);
             this.ComboBoxFrom.TabIndex = 10;
             this.ComboBoxFrom.SelectedIndexChanged += new System.EventHandler(this.ComboBoxFrom_SelectedIndexChanged);
             // 
@@ -190,12 +190,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(71, 7);
+            this.label1.Location = new System.Drawing.Point(95, 5);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 58);
+            this.label1.Size = new System.Drawing.Size(117, 39);
             this.label1.TabIndex = 5;
             this.label1.Text = "FROM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,14 +206,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1043, 681);
+            this.ClientSize = new System.Drawing.Size(732, 503);
             this.Controls.Add(this.panel1);
             this.Controls.Add(PicBoxLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1061, 728);
+            this.MaximumSize = new System.Drawing.Size(750, 550);
+            this.MinimumSize = new System.Drawing.Size(750, 550);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Freedom Tourism";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -44,11 +44,11 @@
             // 
             // BtnBack
             // 
-            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.BtnBack.Location = new System.Drawing.Point(16, 15);
+            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.BtnBack.Location = new System.Drawing.Point(17, 22);
             this.BtnBack.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(267, 197);
+            this.BtnBack.Size = new System.Drawing.Size(239, 103);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             // BtnPrevDay
             // 
             this.BtnPrevDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnPrevDay.Location = new System.Drawing.Point(9, 10);
+            this.BtnPrevDay.Location = new System.Drawing.Point(23, 11);
             this.BtnPrevDay.Margin = new System.Windows.Forms.Padding(4);
             this.BtnPrevDay.Name = "BtnPrevDay";
             this.BtnPrevDay.Size = new System.Drawing.Size(60, 55);
@@ -72,10 +72,10 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::formProject.Properties.Resources.Logo1;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(299, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(274, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(711, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(425, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -88,7 +88,7 @@
             this.panel1.Location = new System.Drawing.Point(16, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1013, 228);
+            this.panel1.Size = new System.Drawing.Size(703, 148);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -97,27 +97,27 @@
             this.panel2.Controls.Add(this.DateTimePicker2);
             this.panel2.Controls.Add(this.BtnNextDay);
             this.panel2.Controls.Add(this.BtnPrevDay);
-            this.panel2.Location = new System.Drawing.Point(78, 250);
+            this.panel2.Location = new System.Drawing.Point(16, 172);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(886, 76);
+            this.panel2.Size = new System.Drawing.Size(699, 76);
             this.panel2.TabIndex = 7;
             // 
             // DateTimePicker2
             // 
             this.DateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.DateTimePicker2.Location = new System.Drawing.Point(106, 11);
+            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.DateTimePicker2.Location = new System.Drawing.Point(91, 15);
             this.DateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker2.Name = "DateTimePicker2";
-            this.DateTimePicker2.Size = new System.Drawing.Size(665, 55);
+            this.DateTimePicker2.Size = new System.Drawing.Size(514, 45);
             this.DateTimePicker2.TabIndex = 3;
             this.DateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
             // 
             // BtnNextDay
             // 
             this.BtnNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnNextDay.Location = new System.Drawing.Point(815, 10);
+            this.BtnNextDay.Location = new System.Drawing.Point(613, 9);
             this.BtnNextDay.Margin = new System.Windows.Forms.Padding(4);
             this.BtnNextDay.Name = "BtnNextDay";
             this.BtnNextDay.Size = new System.Drawing.Size(60, 55);
@@ -129,10 +129,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Location = new System.Drawing.Point(16, 334);
+            this.panel3.Location = new System.Drawing.Point(16, 256);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1009, 342);
+            this.panel3.Size = new System.Drawing.Size(699, 234);
             this.panel3.TabIndex = 8;
             // 
             // Form2
@@ -141,16 +141,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1043, 681);
+            this.ClientSize = new System.Drawing.Size(732, 503);
             this.ControlBox = false;
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1061, 728);
-            this.MinimumSize = new System.Drawing.Size(1061, 728);
+            this.MinimumSize = new System.Drawing.Size(750, 550);
             this.Name = "Form2";
             this.Text = "Freedom Tourism";
             this.Load += new System.EventHandler(this.Form2_Load);
