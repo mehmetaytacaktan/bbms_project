@@ -106,11 +106,11 @@
             // DateTimePicker2
             // 
             this.DateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.DateTimePicker2.Location = new System.Drawing.Point(91, 15);
+            this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.DateTimePicker2.Location = new System.Drawing.Point(91, 17);
             this.DateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker2.Name = "DateTimePicker2";
-            this.DateTimePicker2.Size = new System.Drawing.Size(514, 45);
+            this.DateTimePicker2.Size = new System.Drawing.Size(514, 41);
             this.DateTimePicker2.TabIndex = 3;
             this.DateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
             // 

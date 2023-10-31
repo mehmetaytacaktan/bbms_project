@@ -63,11 +63,11 @@
             // DateTimePicker1
             // 
             this.DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.DateTimePicker1.Location = new System.Drawing.Point(362, 19);
             this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(328, 30);
+            this.DateTimePicker1.Size = new System.Drawing.Size(328, 28);
             this.DateTimePicker1.TabIndex = 1;
             this.DateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 

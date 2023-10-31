@@ -11,11 +11,13 @@ namespace formProject
     {
         internal static DateTime Max()
         {
-            return DateTime.Now.AddMonths(1).Date;
+            DateTime temp = DateTime.Now.AddMonths(1);
+            return new DateTime(temp.Year, temp.Month, temp.Day, 23, 59, 59);
         }
         internal static DateTime Min()
         {
-            return DateTime.Now.Date;
+            DateTime temp = DateTime.Now;
+            return new DateTime(temp.Year, temp.Month, temp.Day, 0, 0, 1);
         }
     }
 }
