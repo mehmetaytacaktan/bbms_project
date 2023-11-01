@@ -37,18 +37,24 @@
             this.DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.BtnNextDay = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnBack
             // 
             this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.BtnBack.Location = new System.Drawing.Point(17, 22);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnBack.Location = new System.Drawing.Point(13, 18);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(239, 103);
+            this.BtnBack.Size = new System.Drawing.Size(179, 84);
             this.BtnBack.TabIndex = 0;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -57,10 +63,9 @@
             // BtnPrevDay
             // 
             this.BtnPrevDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnPrevDay.Location = new System.Drawing.Point(23, 11);
-            this.BtnPrevDay.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnPrevDay.Location = new System.Drawing.Point(17, 9);
             this.BtnPrevDay.Name = "BtnPrevDay";
-            this.BtnPrevDay.Size = new System.Drawing.Size(60, 55);
+            this.BtnPrevDay.Size = new System.Drawing.Size(45, 45);
             this.BtnPrevDay.TabIndex = 1;
             this.BtnPrevDay.Text = "<";
             this.BtnPrevDay.UseVisualStyleBackColor = true;
@@ -72,10 +77,9 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::formProject.Properties.Resources.Logo1;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(274, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(206, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(319, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -85,10 +89,9 @@
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.BtnBack);
-            this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(703, 148);
+            this.panel1.Size = new System.Drawing.Size(527, 120);
             this.panel1.TabIndex = 6;
             // 
             // panel2
@@ -97,30 +100,27 @@
             this.panel2.Controls.Add(this.DateTimePicker2);
             this.panel2.Controls.Add(this.BtnNextDay);
             this.panel2.Controls.Add(this.BtnPrevDay);
-            this.panel2.Location = new System.Drawing.Point(16, 172);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(12, 140);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(699, 76);
+            this.panel2.Size = new System.Drawing.Size(527, 62);
             this.panel2.TabIndex = 7;
             // 
             // DateTimePicker2
             // 
             this.DateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.DateTimePicker2.Location = new System.Drawing.Point(91, 17);
-            this.DateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
+            this.DateTimePicker2.Location = new System.Drawing.Point(68, 14);
             this.DateTimePicker2.Name = "DateTimePicker2";
-            this.DateTimePicker2.Size = new System.Drawing.Size(514, 41);
+            this.DateTimePicker2.Size = new System.Drawing.Size(386, 35);
             this.DateTimePicker2.TabIndex = 3;
             this.DateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
             // 
             // BtnNextDay
             // 
             this.BtnNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.BtnNextDay.Location = new System.Drawing.Point(613, 9);
-            this.BtnNextDay.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnNextDay.Location = new System.Drawing.Point(460, 7);
             this.BtnNextDay.Name = "BtnNextDay";
-            this.BtnNextDay.Size = new System.Drawing.Size(60, 55);
+            this.BtnNextDay.Size = new System.Drawing.Size(45, 45);
             this.BtnNextDay.TabIndex = 2;
             this.BtnNextDay.Text = ">";
             this.BtnNextDay.UseVisualStyleBackColor = true;
@@ -128,35 +128,101 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Location = new System.Drawing.Point(16, 256);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(12, 208);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(699, 234);
+            this.panel3.Size = new System.Drawing.Size(527, 218);
             this.panel3.TabIndex = 8;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label20.Location = new System.Drawing.Point(3, 46);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(165, 25);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Ankara > İstanbul";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label19.Location = new System.Drawing.Point(190, 1);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(82, 31);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "00:15";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label18.Location = new System.Drawing.Point(373, 5);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(91, 31);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "250TL";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label17.Location = new System.Drawing.Point(192, 32);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 24);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "07H00M";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label16.Location = new System.Drawing.Point(27, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 24);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "2+1";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.label19);
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Location = new System.Drawing.Point(31, 506);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(470, 71);
+            this.panel7.TabIndex = 5;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(732, 503);
+            this.ClientSize = new System.Drawing.Size(550, 438);
             this.ControlBox = false;
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1061, 728);
-            this.MinimumSize = new System.Drawing.Size(750, 550);
+            this.MaximumSize = new System.Drawing.Size(800, 599);
+            this.MinimumSize = new System.Drawing.Size(566, 454);
             this.Name = "Form2";
             this.Text = "Freedom Tourism";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -171,5 +237,11 @@
         private System.Windows.Forms.Button BtnNextDay;
         private System.Windows.Forms.DateTimePicker DateTimePicker2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel7;
     }
 }

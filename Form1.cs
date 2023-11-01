@@ -13,8 +13,8 @@ namespace formProject
 {
     public partial class Form1 : Form
     {
-        string[] removedCities = new string[2];//0 to, 1 from
-        Form2 BuyingScreen;
+        readonly string[] removedCities = new string[2];//0 to, 1 from
+        readonly Form2 BuyingScreen;
 
         public Form1()
         {
@@ -41,13 +41,14 @@ namespace formProject
 
         void AddCities()
         {
-            List<string> cities = new List<string>();
-
-            //******************TODO: get these from database
-            cities.Add("Japonya");
-            cities.Add("Fransa");
-            cities.Add("Çin");
-            cities.Add("Kazakistan");
+            List<string> cities = new List<string>
+            {
+                //******************TODO: get these from database
+                "Japonya",
+                "Fransa",
+                "Çin",
+                "Kazakistan"
+            };
 
             foreach (var city in cities)
             {
@@ -68,9 +69,17 @@ namespace formProject
 
         private void BtnBuy_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            BuyingScreen.Show();
-            BuyingScreen.reWriteDate(DateTimePicker1.Value);
+            if(removedCities[0] != "" && removedCities[1] != "")
+            {
+                this.Hide();
+                BuyingScreen.Show();
+                BuyingScreen.ReWriteDate(DateTimePicker1.Value);
+            }
+            else
+            {
+                MessageBox.Show("You need to select \"FROM\" and \"TO\" places",
+                    "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void ComboBoxTo_SelectedIndexChanged(object sender, EventArgs e)
