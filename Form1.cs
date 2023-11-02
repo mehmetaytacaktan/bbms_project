@@ -104,12 +104,6 @@ namespace formProject
             ComboBoxTo.Items.Remove(ComboBoxFrom.SelectedItem);
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            BuyingScreen.Close();
-            //we are already closed
-        }
-
         //Login
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -127,6 +121,11 @@ namespace formProject
         {
             LoginScreen.Show();
             this.Hide();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

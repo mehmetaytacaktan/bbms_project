@@ -135,7 +135,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel3.Location = new System.Drawing.Point(12, 232);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(527, 177);
+            this.panel3.Size = new System.Drawing.Size(527, 171);
             this.panel3.TabIndex = 8;
             // 
             // label20
@@ -243,10 +243,11 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 599);
+            this.MaximumSize = new System.Drawing.Size(566, 454);
             this.MinimumSize = new System.Drawing.Size(566, 454);
             this.Name = "Form2";
             this.Text = "Freedom Tourism";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -142,5 +142,10 @@ namespace formProject
             //Male is changed
             checkBoxFemale.Checked = !checkBoxMale.Checked;
         }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
