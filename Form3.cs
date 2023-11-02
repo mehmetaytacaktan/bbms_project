@@ -49,6 +49,9 @@ namespace formProject
                 else
                 {
                     CreateUser(textBox1.Text, textBox2.Text);
+
+                    MainMenu.Show();
+                    this.Hide();
                 }
             }
         }
