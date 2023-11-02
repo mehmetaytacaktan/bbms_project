@@ -15,14 +15,16 @@ namespace formProject
     {
         readonly string[] removedCities = new string[2];//0 to, 1 from
         readonly Form2 BuyingScreen;
+        readonly Form3 LoginScreen;
 
-        public Form1()
+        public Form1(Form3 LoginScreen)
         {
             InitializeComponent();
             //We send this form instance to the form2 so we can enable it from here
             BuyingScreen = new Form2(this);
             BuyingScreen.Hide();
             this.Show();//(already shown)
+            this.LoginScreen = LoginScreen;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -118,6 +120,13 @@ namespace formProject
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        //back
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            LoginScreen.Show();
+            this.Hide();
         }
     }
 }

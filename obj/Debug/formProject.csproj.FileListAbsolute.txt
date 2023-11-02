@@ -30,3 +30,4 @@ C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formPr
 C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.csproj.CoreCompileInputs.cache
 C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.exe
 C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formProject.pdb
+D:\Self-Made Codes\formProject\obj\Debug\formProject.Form3.resources

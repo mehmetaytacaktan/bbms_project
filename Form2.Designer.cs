@@ -43,6 +43,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.checkBoxFemale = new System.Windows.Forms.CheckBox();
+            this.checkBoxMale = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -131,9 +133,9 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel3.Location = new System.Drawing.Point(12, 208);
+            this.panel3.Location = new System.Drawing.Point(12, 232);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(527, 218);
+            this.panel3.Size = new System.Drawing.Size(527, 177);
             this.panel3.TabIndex = 8;
             // 
             // label20
@@ -199,14 +201,42 @@
             this.panel7.Size = new System.Drawing.Size(470, 71);
             this.panel7.TabIndex = 5;
             // 
+            // checkBoxFemale
+            // 
+            this.checkBoxFemale.AutoSize = true;
+            this.checkBoxFemale.BackColor = System.Drawing.Color.RosyBrown;
+            this.checkBoxFemale.Location = new System.Drawing.Point(39, 207);
+            this.checkBoxFemale.Name = "checkBoxFemale";
+            this.checkBoxFemale.Padding = new System.Windows.Forms.Padding(30, 3, 29, 2);
+            this.checkBoxFemale.Size = new System.Drawing.Size(74, 19);
+            this.checkBoxFemale.TabIndex = 4;
+            this.checkBoxFemale.UseVisualStyleBackColor = false;
+            this.checkBoxFemale.CheckedChanged += new System.EventHandler(this.checkBoxFemale_CheckedChanged);
+            // 
+            // checkBoxMale
+            // 
+            this.checkBoxMale.AutoSize = true;
+            this.checkBoxMale.BackColor = System.Drawing.Color.SkyBlue;
+            this.checkBoxMale.Checked = true;
+            this.checkBoxMale.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxMale.Location = new System.Drawing.Point(119, 207);
+            this.checkBoxMale.Name = "checkBoxMale";
+            this.checkBoxMale.Padding = new System.Windows.Forms.Padding(30, 3, 29, 2);
+            this.checkBoxMale.Size = new System.Drawing.Size(74, 19);
+            this.checkBoxMale.TabIndex = 9;
+            this.checkBoxMale.UseVisualStyleBackColor = false;
+            this.checkBoxMale.CheckedChanged += new System.EventHandler(this.checkBoxMale_CheckedChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(550, 438);
+            this.ClientSize = new System.Drawing.Size(550, 415);
             this.ControlBox = false;
+            this.Controls.Add(this.checkBoxMale);
+            this.Controls.Add(this.checkBoxFemale);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -224,6 +254,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -243,5 +274,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.CheckBox checkBoxFemale;
+        private System.Windows.Forms.CheckBox checkBoxMale;
     }
 }

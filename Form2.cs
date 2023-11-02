@@ -17,6 +17,8 @@ namespace formProject
 
         readonly Form1 MainMenu;
 
+        bool isFemale = false;
+
         public Form2(Form1 MainMenu)
         {
             InitializeComponent();
@@ -123,6 +125,22 @@ namespace formProject
         Font ChangeFontSize(Font font, float size)
         {
             return new Font(font.FontFamily, size, font.Style);
+        }
+
+        private void checkBoxFemale_CheckedChanged(object sender, EventArgs e)
+        {
+            isFemale = checkBoxFemale.Checked;
+
+            //Female is changed
+            checkBoxMale.Checked = !checkBoxFemale.Checked;
+        }
+
+        private void checkBoxMale_CheckedChanged(object sender, EventArgs e)
+        {
+            isFemale = !checkBoxMale.Checked;
+
+            //Male is changed
+            checkBoxFemale.Checked = !checkBoxMale.Checked;
         }
     }
 }
