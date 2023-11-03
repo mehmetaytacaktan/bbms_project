@@ -29,6 +29,8 @@ namespace formProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //I hold these so that I can delete a selected city
+            //from the other comboBox
             removedCities[0] = ("");
             removedCities[1] = ("");
 

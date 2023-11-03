@@ -16,32 +16,34 @@ namespace formProject
         List<Panel> TourList = new List<Panel>();
 
         readonly Form1 MainMenu;
+        readonly Form2 SelectMenu;
 
         bool isFemale = false;
+
+        Form4 form4 = new Form4();
 
         public Form2(Form1 MainMenu)
         {
             InitializeComponent();
+            
+            form4.Hide();
+
             this.MainMenu = MainMenu;
+            SelectMenu = this;
 
             DateTimePicker2.MinDate = DateTimeLimits.Min();
             DateTimePicker2.MaxDate = DateTimeLimits.Max();
 
             //********************************DataBase
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:10", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "01H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "550TL");
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:10", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "01H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 550);
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
@@ -76,13 +78,21 @@ namespace formProject
             DateTimePicker2.Value = dateToWrite;
         }
 
+        void switchToBuyScreen(object sender, EventArgs e, int cost)
+        {
+            form4.Show();
+        }
+
         public void CreateTourPanel(string sittingArrangement,
-            string fromTo, string departureTime, string duration, string cost)
+            string fromTo, string departureTime, string duration, int cost)
         {
             Panel panelTemp = new Panel();
             panelTemp.Size = new Size(470, 71);
             panelTemp.Location = (new Point(19 , 14 + (77 * TourList.Count)));
             panelTemp.BackColor = Color.White;
+
+            //this.Load += new System.EventHandler(this.Form2_Load);
+            panelTemp.Click += (sender, e) => switchToBuyScreen(sender, e, cost);
 
             for (int i = 0; i < 5; i++)
             {
@@ -111,7 +121,7 @@ namespace formProject
                         break;
                     case 4:
                         labelTemp.Location = (new Point(373, 20));
-                        labelTemp.Text = cost;
+                        labelTemp.Text = cost + "TL";
                         labelTemp.Font = ChangeFontSize(labelTemp.Font, 20);
                         break;
                 }

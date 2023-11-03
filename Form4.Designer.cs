@@ -65,11 +65,11 @@
             this.pb4 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb30)).BeginInit();
@@ -168,6 +168,7 @@
             this.pb33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb33.TabIndex = 34;
             this.pb33.TabStop = false;
+            this.pb33.Click += new System.EventHandler(this.pb33_Click);
             // 
             // pb30
             // 
@@ -179,6 +180,7 @@
             this.pb30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb30.TabIndex = 33;
             this.pb30.TabStop = false;
+            this.pb30.Click += new System.EventHandler(this.pb30_Click);
             // 
             // pb27
             // 
@@ -190,6 +192,7 @@
             this.pb27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb27.TabIndex = 32;
             this.pb27.TabStop = false;
+            this.pb27.Click += new System.EventHandler(this.pb27_Click);
             // 
             // pb24
             // 
@@ -201,6 +204,7 @@
             this.pb24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb24.TabIndex = 31;
             this.pb24.TabStop = false;
+            this.pb24.Click += new System.EventHandler(this.pb24_Click);
             // 
             // pb21
             // 
@@ -212,6 +216,7 @@
             this.pb21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb21.TabIndex = 30;
             this.pb21.TabStop = false;
+            this.pb21.Click += new System.EventHandler(this.pb21_Click);
             // 
             // pb18
             // 
@@ -223,6 +228,7 @@
             this.pb18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb18.TabIndex = 29;
             this.pb18.TabStop = false;
+            this.pb18.Click += new System.EventHandler(this.pb18_Click);
             // 
             // pb15
             // 
@@ -234,6 +240,7 @@
             this.pb15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb15.TabIndex = 28;
             this.pb15.TabStop = false;
+            this.pb15.Click += new System.EventHandler(this.pb15_Click);
             // 
             // pb12
             // 
@@ -245,6 +252,7 @@
             this.pb12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb12.TabIndex = 27;
             this.pb12.TabStop = false;
+            this.pb12.Click += new System.EventHandler(this.pb12_Click);
             // 
             // pb9
             // 
@@ -256,6 +264,7 @@
             this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb9.TabIndex = 26;
             this.pb9.TabStop = false;
+            this.pb9.Click += new System.EventHandler(this.pb9_Click);
             // 
             // pb6
             // 
@@ -267,6 +276,7 @@
             this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb6.TabIndex = 25;
             this.pb6.TabStop = false;
+            this.pb6.Click += new System.EventHandler(this.pb6_Click);
             // 
             // pb3
             // 
@@ -278,6 +288,7 @@
             this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb3.TabIndex = 24;
             this.pb3.TabStop = false;
+            this.pb3.Click += new System.EventHandler(this.pb3_Click);
             // 
             // pb32
             // 
@@ -288,6 +299,7 @@
             this.pb32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb32.TabIndex = 22;
             this.pb32.TabStop = false;
+            this.pb32.Click += new System.EventHandler(this.pb32_Click);
             // 
             // pb29
             // 
@@ -299,6 +311,7 @@
             this.pb29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb29.TabIndex = 21;
             this.pb29.TabStop = false;
+            this.pb29.Click += new System.EventHandler(this.pb29_Click);
             // 
             // pb26
             // 
@@ -310,6 +323,7 @@
             this.pb26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb26.TabIndex = 20;
             this.pb26.TabStop = false;
+            this.pb26.Click += new System.EventHandler(this.pb26_Click);
             // 
             // pb23
             // 
@@ -321,6 +335,7 @@
             this.pb23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb23.TabIndex = 19;
             this.pb23.TabStop = false;
+            this.pb23.Click += new System.EventHandler(this.pb23_Click);
             // 
             // pb20
             // 
@@ -332,6 +347,7 @@
             this.pb20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb20.TabIndex = 18;
             this.pb20.TabStop = false;
+            this.pb20.Click += new System.EventHandler(this.pb20_Click);
             // 
             // pb17
             // 
@@ -343,6 +359,7 @@
             this.pb17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb17.TabIndex = 17;
             this.pb17.TabStop = false;
+            this.pb17.Click += new System.EventHandler(this.pb17_Click);
             // 
             // pb14
             // 
@@ -354,6 +371,7 @@
             this.pb14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb14.TabIndex = 16;
             this.pb14.TabStop = false;
+            this.pb14.Click += new System.EventHandler(this.pb14_Click);
             // 
             // pb11
             // 
@@ -365,6 +383,7 @@
             this.pb11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb11.TabIndex = 15;
             this.pb11.TabStop = false;
+            this.pb11.Click += new System.EventHandler(this.pb11_Click);
             // 
             // pb8
             // 
@@ -376,6 +395,7 @@
             this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb8.TabIndex = 14;
             this.pb8.TabStop = false;
+            this.pb8.Click += new System.EventHandler(this.pb8_Click);
             // 
             // pb5
             // 
@@ -387,6 +407,7 @@
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb5.TabIndex = 13;
             this.pb5.TabStop = false;
+            this.pb5.Click += new System.EventHandler(this.pb5_Click);
             // 
             // pb2
             // 
@@ -398,6 +419,7 @@
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2.TabIndex = 12;
             this.pb2.TabStop = false;
+            this.pb2.Click += new System.EventHandler(this.pb2_Click);
             // 
             // pb31
             // 
@@ -409,6 +431,7 @@
             this.pb31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb31.TabIndex = 10;
             this.pb31.TabStop = false;
+            this.pb31.Click += new System.EventHandler(this.pb31_Click);
             // 
             // pb28
             // 
@@ -420,6 +443,7 @@
             this.pb28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb28.TabIndex = 9;
             this.pb28.TabStop = false;
+            this.pb28.Click += new System.EventHandler(this.pb28_Click);
             // 
             // pb25
             // 
@@ -431,6 +455,7 @@
             this.pb25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb25.TabIndex = 8;
             this.pb25.TabStop = false;
+            this.pb25.Click += new System.EventHandler(this.pb25_Click);
             // 
             // pb22
             // 
@@ -442,6 +467,7 @@
             this.pb22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb22.TabIndex = 7;
             this.pb22.TabStop = false;
+            this.pb22.Click += new System.EventHandler(this.pb22_Click);
             // 
             // pb19
             // 
@@ -453,6 +479,7 @@
             this.pb19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb19.TabIndex = 6;
             this.pb19.TabStop = false;
+            this.pb19.Click += new System.EventHandler(this.pb19_Click);
             // 
             // pb16
             // 
@@ -464,6 +491,7 @@
             this.pb16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb16.TabIndex = 5;
             this.pb16.TabStop = false;
+            this.pb16.Click += new System.EventHandler(this.pb16_Click);
             // 
             // pb13
             // 
@@ -475,6 +503,7 @@
             this.pb13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb13.TabIndex = 4;
             this.pb13.TabStop = false;
+            this.pb13.Click += new System.EventHandler(this.pb13_Click);
             // 
             // pb10
             // 
@@ -486,6 +515,7 @@
             this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb10.TabIndex = 3;
             this.pb10.TabStop = false;
+            this.pb10.Click += new System.EventHandler(this.pb10_Click);
             // 
             // pb7
             // 
@@ -497,6 +527,7 @@
             this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb7.TabIndex = 2;
             this.pb7.TabStop = false;
+            this.pb7.Click += new System.EventHandler(this.pb7_Click);
             // 
             // pb4
             // 
@@ -508,6 +539,7 @@
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4.TabIndex = 1;
             this.pb4.TabStop = false;
+            this.pb4.Click += new System.EventHandler(this.pb4_Click);
             // 
             // pb1
             // 
@@ -519,6 +551,7 @@
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
+            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // panel3
             // 
@@ -528,36 +561,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(526, 206);
             this.panel3.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox1.Location = new System.Drawing.Point(24, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 38);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(24, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "MasterCard",
-            "Visa"});
-            this.comboBox1.Location = new System.Drawing.Point(191, 65);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(101, 24);
-            this.comboBox1.TabIndex = 2;
             // 
             // panel4
             // 
@@ -581,6 +584,36 @@
             this.button1.Text = "BUY";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox1.Location = new System.Drawing.Point(24, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(268, 38);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "MasterCard",
+            "Visa"});
+            this.comboBox1.Location = new System.Drawing.Point(191, 65);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(101, 24);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox2.Location = new System.Drawing.Point(24, 66);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(161, 23);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Form4
             // 

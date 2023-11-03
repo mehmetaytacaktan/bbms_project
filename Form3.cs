@@ -31,21 +31,31 @@ namespace formProject
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //trying to login
             if(login)
             {
                 if (UserExists(textBox1.Text, textBox2.Text))
                 {
+                    //deploys main menu.
                     MainMenu.Show();
                     this.Hide();
                 }
+                else
+                {
+                    MessageBox.Show("Username or password are incorrect",
+                        "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            //trying to register
             else
             {
-                if(UserExists(textBox1.Text))
+                //tried to register but username is in use
+                if (UserExists(textBox1.Text))
                 {
                     MessageBox.Show("Username is in use please try another username",
                         "Unavaliable username", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+                //registered succesfully
                 else
                 {
                     CreateUser(textBox1.Text, textBox2.Text);
@@ -65,6 +75,7 @@ namespace formProject
         {
             login = !login;
 
+            //changes interface so that user knows that they are login'ing
             if (login)
             {
                 BtnLogin.Text = "LOGIN";
@@ -76,6 +87,7 @@ namespace formProject
                 label3.Location = new Point(74, 282);
                 label3.Text = "Create account";
             }
+            //changes interface so that user knows that they are register'ing
             else
             {
                 BtnLogin.Text = "REGISTER";
@@ -89,6 +101,7 @@ namespace formProject
             }
         }
 
+        //checks if user with that name exists
         bool UserExists(string username)//********************************DataBase
         {
             if(username == "admin" || username == "user")
@@ -97,15 +110,10 @@ namespace formProject
                 return false;
         }
 
+        //checks if user with that name and password exists
         bool UserExists(string username, string password)
         {
-            if(username == null || password == null)
-            {
-                MessageBox.Show("You need to enter a password and an username",
-                    "Not enough information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-            else if(username == "user" && password == "user")//********************************DataBase
+            if(username == "user" && password == "user")//********************************DataBase
             {
                 return true;
             }
@@ -121,6 +129,7 @@ namespace formProject
             }
         }
 
+        //creates user
         void CreateUser(string username, string password)//********************************DataBase
         {
 

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace formProject
 {
-    public enum Chairs
+    public enum Gender
     {
         Empty,
         Male,
@@ -21,22 +21,24 @@ namespace formProject
     public partial class Form4 : Form
     {
         PictureBox[] seats;
-        Chairs[] chairs = new Chairs[33];
+        Gender[] chairs = new Gender[33];
+
+        Gender UsersGender = Gender.Male;//************************************Database
 
         public Form4()
         {
             InitializeComponent();
 
             //************************************Database
-            chairs[0] = Chairs.Male;
-            chairs[4] = Chairs.Male;
-            chairs[8] = Chairs.Female;
-            chairs[10] = Chairs.Male;
-            chairs[15] = Chairs.Female;
-            chairs[30] = Chairs.Female;
-            chairs[11] = Chairs.Male;
-            chairs[12] = Chairs.Female;
-            chairs[31] = Chairs.Female;
+            chairs[0] = Gender.Male;
+            chairs[4] = Gender.Male;
+            chairs[8] = Gender.Female;
+            chairs[10] = Gender.Male;
+            chairs[15] = Gender.Female;
+            chairs[30] = Gender.Female;
+            chairs[11] = Gender.Male;
+            chairs[12] = Gender.Female;
+            chairs[31] = Gender.Female;
 
             seats = new PictureBox[]{
                 pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8, pb9, pb10,
@@ -45,23 +47,7 @@ namespace formProject
                 pb29, pb30, pb31, pb32, pb33
             };
 
-            int i = 0;
-            foreach(Chairs gender in chairs)
-            {
-                if(gender == Chairs.Male)
-                {
-                    seats[i].Image = Properties.Resources.ChairMale;
-                }
-                else if(gender == Chairs.Female)
-                {
-                    seats[i].Image = Properties.Resources.ChairFemale;
-                }
-                else
-                {
-                    seats[i].Image = Properties.Resources.Chair;
-                }
-                i++;
-            }
+            resetSeats();
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -132,6 +118,225 @@ namespace formProject
         private void button1_Click(object sender, EventArgs e)
         {
             //************************************Database
+        }
+
+        void resetSeats()
+        {
+            int i = 0;
+            foreach (Gender gender in chairs)
+            {
+                if (gender == Gender.Male)
+                {
+                    seats[i].Image = Properties.Resources.ChairMale;
+                }
+                else if (gender == Gender.Female)
+                {
+                    seats[i].Image = Properties.Resources.ChairFemale;
+                }
+                else
+                {
+                    seats[i].Image = Properties.Resources.Chair;
+                }
+                i++;
+            }
+        }
+
+        private void pb1_Click(object sender, EventArgs e)
+        {
+            chairs[0] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb4_Click(object sender, EventArgs e)
+        {
+            chairs[3] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb7_Click(object sender, EventArgs e)
+        {
+            chairs[6] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb10_Click(object sender, EventArgs e)
+        {
+            chairs[9] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb13_Click(object sender, EventArgs e)
+        {
+            chairs[12] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb16_Click(object sender, EventArgs e)
+        {
+            chairs[15] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb19_Click(object sender, EventArgs e)
+        {
+            chairs[18] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb22_Click(object sender, EventArgs e)
+        {
+            chairs[21] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb25_Click(object sender, EventArgs e)
+        {
+            chairs[24] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb28_Click(object sender, EventArgs e)
+        {
+            chairs[27] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb31_Click(object sender, EventArgs e)
+        {
+            chairs[30] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb32_Click(object sender, EventArgs e)
+        {
+            chairs[31] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb29_Click(object sender, EventArgs e)
+        {
+            chairs[28] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb26_Click(object sender, EventArgs e)
+        {
+            chairs[25] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb23_Click(object sender, EventArgs e)
+        {
+            chairs[22] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb20_Click(object sender, EventArgs e)
+        {
+            chairs[19] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb17_Click(object sender, EventArgs e)
+        {
+            chairs[16] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb14_Click(object sender, EventArgs e)
+        {
+            chairs[13] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb11_Click(object sender, EventArgs e)
+        {
+            chairs[10] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb8_Click(object sender, EventArgs e)
+        {
+            chairs[7] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb5_Click(object sender, EventArgs e)
+        {
+            chairs[4] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb2_Click(object sender, EventArgs e)
+        {
+            chairs[1] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb3_Click(object sender, EventArgs e)
+        {
+            chairs[2] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb6_Click(object sender, EventArgs e)
+        {
+            chairs[5] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb9_Click(object sender, EventArgs e)
+        {
+            chairs[8] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb12_Click(object sender, EventArgs e)
+        {
+            chairs[11] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb15_Click(object sender, EventArgs e)
+        {
+            chairs[14] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb18_Click(object sender, EventArgs e)
+        {
+            chairs[17] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb21_Click(object sender, EventArgs e)
+        {
+            chairs[20] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb24_Click(object sender, EventArgs e)
+        {
+            chairs[23] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb27_Click(object sender, EventArgs e)
+        {
+            chairs[26] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb30_Click(object sender, EventArgs e)
+        {
+            chairs[29] = UsersGender;
+            resetSeats();
+        }
+
+        private void pb33_Click(object sender, EventArgs e)
+        {
+            chairs[32] = UsersGender;
+            resetSeats();
         }
     }
 }
