@@ -35,7 +35,7 @@ namespace formProject
             //DateTimePicker
             DateTimePicker1.MinDate = DateTimeLimits.Min();
             DateTimePicker1.MaxDate = DateTimeLimits.Max();
-            //Combo Boxes (SEXob obmoc)
+            //Combo Boxes
             ComboBoxFrom.Items.Clear();
             ComboBoxTo.Items.Clear();
             AddCities();
@@ -45,7 +45,7 @@ namespace formProject
         {
             List<string> cities = new List<string>
             {
-                //******************TODO: get these from database
+                //********************************DataBase 
                 "Japonya",
                 "Fransa",
                 "Çin",

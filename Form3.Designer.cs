@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.BtnLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,19 +61,6 @@
             this.panel1.Size = new System.Drawing.Size(526, 391);
             this.panel1.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline);
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(74, 282);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Create account";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
@@ -88,6 +75,20 @@
             this.panel2.Size = new System.Drawing.Size(249, 308);
             this.panel2.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Underline);
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(74, 282);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Create account";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
@@ -100,7 +101,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBox1.Location = new System.Drawing.Point(40, 49);
+            this.textBox1.Location = new System.Drawing.Point(40, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 35);
             this.textBox1.TabIndex = 3;
@@ -121,7 +122,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(64, 17);
+            this.label1.Location = new System.Drawing.Point(64, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 29);
             this.label1.TabIndex = 1;

@@ -89,7 +89,7 @@ namespace formProject
             }
         }
 
-        bool UserExists(string username)
+        bool UserExists(string username)//********************************DataBase
         {
             if(username == "admin" || username == "user")
                 return true;
@@ -105,11 +105,11 @@ namespace formProject
                     "Not enough information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
-            else if(username == "user" && password == "user")//********************************TODO
+            else if(username == "user" && password == "user")//********************************DataBase
             {
                 return true;
             }
-            else if (username == "admin" && password == "admin")//********************************TODO
+            else if (username == "admin" && password == "admin")//********************************DataBase
             {
                 return true;
             }
@@ -121,7 +121,7 @@ namespace formProject
             }
         }
 
-        void CreateUser(string username, string password)//********************************TODO
+        void CreateUser(string username, string password)//********************************DataBase
         {
 
         }

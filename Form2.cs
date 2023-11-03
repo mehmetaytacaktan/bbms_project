@@ -27,6 +27,7 @@ namespace formProject
             DateTimePicker2.MinDate = DateTimeLimits.Min();
             DateTimePicker2.MaxDate = DateTimeLimits.Max();
 
+            //********************************DataBase
             CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");
             CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99H59M", "500TL");
             CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", "500TL");

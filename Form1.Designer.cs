@@ -207,7 +207,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(550, 415);
-            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(PicBoxLogo);
