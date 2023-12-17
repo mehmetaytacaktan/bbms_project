@@ -1,7 +1,9 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -45,14 +47,8 @@ namespace formProject
 
         void AddCities()
         {
-            List<string> cities = new List<string>
-            {
-                //********************************DataBase 
-                "Japonya",
-                "Fransa",
-                "Çin",
-                "Kazakistan"
-            };
+            List<string> cities = new List<string>();
+            cities = LoginScreen.dbManager.CloseConnection();
 
             foreach (var city in cities)
             {

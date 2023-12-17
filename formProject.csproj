@@ -51,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BusBook_DBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBMan.cs" />
     <Compile Include="DateTimeLimits.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -15,6 +15,8 @@ namespace formProject
 {
     public partial class Form3 : Form
     {
+        public DBMan dbManager = new DBMan();
+
         public enum TypeLogin
         {
             User,
