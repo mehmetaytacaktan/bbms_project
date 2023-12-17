@@ -23,7 +23,7 @@ namespace formProject
         PictureBox[] seats;
         Gender[] chairs = new Gender[33];
 
-        Gender UsersGender = Gender.Male;//************************************Database
+        public Gender UsersGender = Gender.Male;
 
         public Form4()
         {

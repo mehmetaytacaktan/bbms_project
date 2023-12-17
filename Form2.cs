@@ -81,6 +81,14 @@ namespace formProject
         void switchToBuyScreen(object sender, EventArgs e, int cost)
         {
             form4.Show();
+            if(isFemale)
+            {
+                form4.UsersGender = Gender.Female;
+            }
+            else
+            {
+                form4.UsersGender = Gender.Male;
+            }
         }
 
         public void CreateTourPanel(string sittingArrangement,
@@ -157,6 +165,11 @@ namespace formProject
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

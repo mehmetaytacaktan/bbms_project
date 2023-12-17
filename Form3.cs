@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BMSAdminPanel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,13 @@ namespace formProject
 {
     public partial class Form3 : Form
     {
+        public enum TypeLogin
+        {
+            User,
+            Admin,
+            Fail
+        }
+
         Form1 MainMenu;
         bool login = true;
 
@@ -34,10 +42,17 @@ namespace formProject
             //trying to login
             if(login)
             {
-                if (UserExists(textBox1.Text, textBox2.Text))
+                if (UserExists(textBox1.Text, textBox2.Text) == TypeLogin.User)
                 {
                     //deploys main menu.
                     MainMenu.Show();
+                    this.Hide();
+                }
+                else if (UserExists(textBox1.Text, textBox2.Text) == TypeLogin.Admin)
+                {
+                    //deploys main menu.
+                    Form7 AdminMenu = new Form7();
+                    AdminMenu.Show();
                     this.Hide();
                 }
                 else
@@ -111,21 +126,21 @@ namespace formProject
         }
 
         //checks if user with that name and password exists
-        bool UserExists(string username, string password)
+        TypeLogin UserExists(string username, string password)
         {
             if(username == "user" && password == "user")//********************************DataBase
             {
-                return true;
+                return TypeLogin.User;
             }
             else if (username == "admin" && password == "admin")//********************************DataBase
             {
-                return true;
+                return TypeLogin.Admin;
             }
             else
             {
                 MessageBox.Show("Username or password are incorrect",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+                return TypeLogin.Fail;
             }
         }
 

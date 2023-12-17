@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form12));
             this.btnGoBack = new System.Windows.Forms.Button();
             this.groupBoxTour = new System.Windows.Forms.GroupBox();
             this.btnAddTour = new System.Windows.Forms.Button();
@@ -72,16 +73,16 @@
             this.groupBoxTour.Controls.Add(this.lblFrom);
             this.groupBoxTour.Controls.Add(this.lblBusTrip);
             this.groupBoxTour.Controls.Add(this.lblBusID);
-            this.groupBoxTour.Location = new System.Drawing.Point(12, 81);
+            this.groupBoxTour.Location = new System.Drawing.Point(12, 41);
             this.groupBoxTour.Name = "groupBoxTour";
-            this.groupBoxTour.Size = new System.Drawing.Size(776, 273);
+            this.groupBoxTour.Size = new System.Drawing.Size(526, 362);
             this.groupBoxTour.TabIndex = 1;
             this.groupBoxTour.TabStop = false;
             // 
             // btnAddTour
             // 
             this.btnAddTour.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnAddTour.Location = new System.Drawing.Point(680, 226);
+            this.btnAddTour.Location = new System.Drawing.Point(130, 318);
             this.btnAddTour.Name = "btnAddTour";
             this.btnAddTour.Size = new System.Drawing.Size(75, 23);
             this.btnAddTour.TabIndex = 16;
@@ -91,14 +92,14 @@
             // 
             // dtPickerArrival
             // 
-            this.dtPickerArrival.Location = new System.Drawing.Point(555, 158);
+            this.dtPickerArrival.Location = new System.Drawing.Point(160, 276);
             this.dtPickerArrival.Name = "dtPickerArrival";
             this.dtPickerArrival.Size = new System.Drawing.Size(200, 20);
             this.dtPickerArrival.TabIndex = 15;
             // 
             // dtPickerDeparture
             // 
-            this.dtPickerDeparture.Location = new System.Drawing.Point(555, 65);
+            this.dtPickerDeparture.Location = new System.Drawing.Point(160, 183);
             this.dtPickerDeparture.Name = "dtPickerDeparture";
             this.dtPickerDeparture.Size = new System.Drawing.Size(200, 20);
             this.dtPickerDeparture.TabIndex = 14;
@@ -106,7 +107,7 @@
             // cmbboxTripID
             // 
             this.cmbboxTripID.FormattingEnabled = true;
-            this.cmbboxTripID.Location = new System.Drawing.Point(54, 164);
+            this.cmbboxTripID.Location = new System.Drawing.Point(54, 136);
             this.cmbboxTripID.Name = "cmbboxTripID";
             this.cmbboxTripID.Size = new System.Drawing.Size(121, 21);
             this.cmbboxTripID.TabIndex = 13;
@@ -114,7 +115,7 @@
             // cmbboxBusID
             // 
             this.cmbboxBusID.FormattingEnabled = true;
-            this.cmbboxBusID.Location = new System.Drawing.Point(54, 68);
+            this.cmbboxBusID.Location = new System.Drawing.Point(54, 40);
             this.cmbboxBusID.Name = "cmbboxBusID";
             this.cmbboxBusID.Size = new System.Drawing.Size(121, 21);
             this.cmbboxBusID.TabIndex = 12;
@@ -122,7 +123,7 @@
             // cmbboxTo
             // 
             this.cmbboxTo.FormattingEnabled = true;
-            this.cmbboxTo.Location = new System.Drawing.Point(250, 164);
+            this.cmbboxTo.Location = new System.Drawing.Point(250, 136);
             this.cmbboxTo.Name = "cmbboxTo";
             this.cmbboxTo.Size = new System.Drawing.Size(121, 21);
             this.cmbboxTo.TabIndex = 11;
@@ -130,7 +131,7 @@
             // cmbboxFrom
             // 
             this.cmbboxFrom.FormattingEnabled = true;
-            this.cmbboxFrom.Location = new System.Drawing.Point(250, 68);
+            this.cmbboxFrom.Location = new System.Drawing.Point(250, 40);
             this.cmbboxFrom.Name = "cmbboxFrom";
             this.cmbboxFrom.Size = new System.Drawing.Size(121, 21);
             this.cmbboxFrom.TabIndex = 10;
@@ -138,7 +139,7 @@
             // lblArrival
             // 
             this.lblArrival.AutoSize = true;
-            this.lblArrival.Location = new System.Drawing.Point(419, 164);
+            this.lblArrival.Location = new System.Drawing.Point(24, 282);
             this.lblArrival.Name = "lblArrival";
             this.lblArrival.Size = new System.Drawing.Size(112, 13);
             this.lblArrival.TabIndex = 5;
@@ -147,7 +148,7 @@
             // lblDeparture
             // 
             this.lblDeparture.AutoSize = true;
-            this.lblDeparture.Location = new System.Drawing.Point(419, 71);
+            this.lblDeparture.Location = new System.Drawing.Point(24, 189);
             this.lblDeparture.Name = "lblDeparture";
             this.lblDeparture.Size = new System.Drawing.Size(130, 13);
             this.lblDeparture.TabIndex = 4;
@@ -156,7 +157,7 @@
             // lblTo
             // 
             this.lblTo.AutoSize = true;
-            this.lblTo.Location = new System.Drawing.Point(211, 167);
+            this.lblTo.Location = new System.Drawing.Point(211, 139);
             this.lblTo.Name = "lblTo";
             this.lblTo.Size = new System.Drawing.Size(23, 13);
             this.lblTo.TabIndex = 3;
@@ -165,7 +166,7 @@
             // lblFrom
             // 
             this.lblFrom.AutoSize = true;
-            this.lblFrom.Location = new System.Drawing.Point(211, 71);
+            this.lblFrom.Location = new System.Drawing.Point(211, 43);
             this.lblFrom.Name = "lblFrom";
             this.lblFrom.Size = new System.Drawing.Size(33, 13);
             this.lblFrom.TabIndex = 2;
@@ -174,7 +175,7 @@
             // lblBusTrip
             // 
             this.lblBusTrip.AutoSize = true;
-            this.lblBusTrip.Location = new System.Drawing.Point(6, 167);
+            this.lblBusTrip.Location = new System.Drawing.Point(6, 139);
             this.lblBusTrip.Name = "lblBusTrip";
             this.lblBusTrip.Size = new System.Drawing.Size(42, 13);
             this.lblBusTrip.TabIndex = 1;
@@ -183,21 +184,24 @@
             // lblBusID
             // 
             this.lblBusID.AutoSize = true;
-            this.lblBusID.Location = new System.Drawing.Point(6, 71);
+            this.lblBusID.Location = new System.Drawing.Point(6, 43);
             this.lblBusID.Name = "lblBusID";
             this.lblBusID.Size = new System.Drawing.Size(42, 13);
             this.lblBusID.TabIndex = 0;
             this.lblBusID.Text = "Bus ID:";
             // 
-            // Form6
+            // Form12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(550, 415);
             this.Controls.Add(this.groupBoxTour);
             this.Controls.Add(this.btnGoBack);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form12";
+            this.Text = "Freedom Tourism";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form12_FormClosing);
             this.groupBoxTour.ResumeLayout(false);
             this.groupBoxTour.PerformLayout();
             this.ResumeLayout(false);

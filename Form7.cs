@@ -36,5 +36,15 @@ namespace BMSAdminPanel
         {
             Form11 form5 = new Form11(this);
         }
+
+        private void Form7_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

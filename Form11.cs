@@ -27,5 +27,10 @@ namespace BMSAdminPanel
             form1.Show();
             this.Close();
         }
+
+        private void Form11_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

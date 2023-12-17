@@ -56,19 +56,19 @@
     <Compile Include="Form10.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
+    <Compile Include="Form10.designer.cs">
       <DependentUpon>Form10.cs</DependentUpon>
     </Compile>
     <Compile Include="Form11.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
+    <Compile Include="Form11.designer.cs">
       <DependentUpon>Form11.cs</DependentUpon>
     </Compile>
     <Compile Include="Form12.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form12.Designer.cs">
+    <Compile Include="Form12.designer.cs">
       <DependentUpon>Form12.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
@@ -92,19 +92,19 @@
     <Compile Include="Form7.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
+    <Compile Include="Form7.designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
     <Compile Include="Form8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
+    <Compile Include="Form8.designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
     <Compile Include="Form9.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
+    <Compile Include="Form9.designer.cs">
       <DependentUpon>Form9.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
             this.btnGoBack = new System.Windows.Forms.Button();
             this.lblDiscount = new System.Windows.Forms.Label();
             this.btnApplyChanges = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             // lblDiscount
             // 
             this.lblDiscount.AutoSize = true;
-            this.lblDiscount.Location = new System.Drawing.Point(67, 107);
+            this.lblDiscount.Location = new System.Drawing.Point(19, 107);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(105, 13);
             this.lblDiscount.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             // btnApplyChanges
             // 
-            this.btnApplyChanges.Location = new System.Drawing.Point(597, 317);
+            this.btnApplyChanges.Location = new System.Drawing.Point(419, 360);
             this.btnApplyChanges.Name = "btnApplyChanges";
             this.btnApplyChanges.Size = new System.Drawing.Size(119, 43);
             this.btnApplyChanges.TabIndex = 3;
@@ -73,14 +74,14 @@
             // cmbboxDiscountAmount
             // 
             this.cmbboxDiscountAmount.FormattingEnabled = true;
-            this.cmbboxDiscountAmount.Location = new System.Drawing.Point(178, 104);
+            this.cmbboxDiscountAmount.Location = new System.Drawing.Point(130, 104);
             this.cmbboxDiscountAmount.Name = "cmbboxDiscountAmount";
             this.cmbboxDiscountAmount.Size = new System.Drawing.Size(121, 21);
             this.cmbboxDiscountAmount.TabIndex = 4;
             // 
             // btnDisableDiscount
             // 
-            this.btnDisableDiscount.Location = new System.Drawing.Point(194, 337);
+            this.btnDisableDiscount.Location = new System.Drawing.Point(146, 337);
             this.btnDisableDiscount.Name = "btnDisableDiscount";
             this.btnDisableDiscount.Size = new System.Drawing.Size(75, 23);
             this.btnDisableDiscount.TabIndex = 5;
@@ -90,14 +91,14 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(423, 100);
+            this.dateTimePicker1.Location = new System.Drawing.Point(289, 100);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(423, 241);
+            this.dateTimePicker2.Location = new System.Drawing.Point(289, 241);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 7;
@@ -105,7 +106,7 @@
             // lblStartDiscount
             // 
             this.lblStartDiscount.AutoSize = true;
-            this.lblStartDiscount.Location = new System.Drawing.Point(405, 74);
+            this.lblStartDiscount.Location = new System.Drawing.Point(271, 74);
             this.lblStartDiscount.Name = "lblStartDiscount";
             this.lblStartDiscount.Size = new System.Drawing.Size(243, 13);
             this.lblStartDiscount.TabIndex = 8;
@@ -114,7 +115,7 @@
             // lblEndDiscount
             // 
             this.lblEndDiscount.AutoSize = true;
-            this.lblEndDiscount.Location = new System.Drawing.Point(405, 213);
+            this.lblEndDiscount.Location = new System.Drawing.Point(271, 213);
             this.lblEndDiscount.Name = "lblEndDiscount";
             this.lblEndDiscount.Size = new System.Drawing.Size(240, 13);
             this.lblEndDiscount.TabIndex = 9;
@@ -123,17 +124,18 @@
             // lblDisableDiscount
             // 
             this.lblDisableDiscount.AutoSize = true;
-            this.lblDisableDiscount.Location = new System.Drawing.Point(67, 342);
+            this.lblDisableDiscount.Location = new System.Drawing.Point(19, 342);
             this.lblDisableDiscount.Name = "lblDisableDiscount";
             this.lblDisableDiscount.Size = new System.Drawing.Size(112, 13);
             this.lblDisableDiscount.TabIndex = 10;
             this.lblDisableDiscount.Text = "Disable The Discount:";
             // 
-            // Form4
+            // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(550, 415);
             this.Controls.Add(this.lblDisableDiscount);
             this.Controls.Add(this.lblEndDiscount);
             this.Controls.Add(this.lblStartDiscount);
@@ -144,8 +146,12 @@
             this.Controls.Add(this.btnApplyChanges);
             this.Controls.Add(this.lblDiscount);
             this.Controls.Add(this.btnGoBack);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(566, 454);
+            this.MinimumSize = new System.Drawing.Size(566, 454);
+            this.Name = "Form10";
+            this.Text = "Freedom Tourism";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form10_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

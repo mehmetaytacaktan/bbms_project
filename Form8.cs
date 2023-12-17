@@ -12,12 +12,12 @@ namespace BMSAdminPanel
 {
     public partial class Form8 : Form
     {
-        Form7 form1 = null;
-        public Form8(Form7 form1)
+        Form7 form7 = null;
+        public Form8(Form7 form7)
         {
-            this.form1 = form1;
+            this.form7 = form7;
             this.Show();
-            form1.Hide();
+            form7.Hide();
             InitializeComponent();
             BringTheTable();
         }
@@ -30,7 +30,7 @@ namespace BMSAdminPanel
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            form1.Show();
+            form7.Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -38,6 +38,14 @@ namespace BMSAdminPanel
             Form12 form6 = new Form12(this);
         }
 
-        
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form8_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
