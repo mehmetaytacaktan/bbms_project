@@ -29,126 +29,138 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form10));
-            this.btnGoBack = new System.Windows.Forms.Button();
             this.lblDiscount = new System.Windows.Forms.Label();
             this.btnApplyChanges = new System.Windows.Forms.Button();
             this.cmbboxDiscountAmount = new System.Windows.Forms.ComboBox();
             this.btnDisableDiscount = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.lblStartDiscount = new System.Windows.Forms.Label();
-            this.lblEndDiscount = new System.Windows.Forms.Label();
-            this.lblDisableDiscount = new System.Windows.Forms.Label();
+            this.btnGoBack = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btnGoBack
-            // 
-            this.btnGoBack.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnGoBack.Location = new System.Drawing.Point(12, 12);
-            this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(75, 23);
-            this.btnGoBack.TabIndex = 0;
-            this.btnGoBack.Text = "Go Back";
-            this.btnGoBack.UseVisualStyleBackColor = false;
-            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // lblDiscount
             // 
             this.lblDiscount.AutoSize = true;
-            this.lblDiscount.Location = new System.Drawing.Point(19, 107);
+            this.lblDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblDiscount.ForeColor = System.Drawing.Color.White;
+            this.lblDiscount.Location = new System.Drawing.Point(7, 96);
             this.lblDiscount.Name = "lblDiscount";
-            this.lblDiscount.Size = new System.Drawing.Size(105, 13);
+            this.lblDiscount.Size = new System.Drawing.Size(188, 25);
             this.lblDiscount.TabIndex = 1;
-            this.lblDiscount.Text = "Amount Of Discount:";
+            this.lblDiscount.Text = "Amount of Discount:";
             // 
             // btnApplyChanges
             // 
-            this.btnApplyChanges.Location = new System.Drawing.Point(419, 360);
+            this.btnApplyChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.btnApplyChanges.Location = new System.Drawing.Point(483, 282);
             this.btnApplyChanges.Name = "btnApplyChanges";
-            this.btnApplyChanges.Size = new System.Drawing.Size(119, 43);
+            this.btnApplyChanges.Size = new System.Drawing.Size(220, 51);
             this.btnApplyChanges.TabIndex = 3;
             this.btnApplyChanges.Text = "Apply Changes";
             this.btnApplyChanges.UseVisualStyleBackColor = true;
-            this.btnApplyChanges.Click += new System.EventHandler(this.btnApplyChanges_Click);
             // 
             // cmbboxDiscountAmount
             // 
+            this.cmbboxDiscountAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cmbboxDiscountAmount.FormattingEnabled = true;
-            this.cmbboxDiscountAmount.Location = new System.Drawing.Point(130, 104);
+            this.cmbboxDiscountAmount.Location = new System.Drawing.Point(205, 93);
             this.cmbboxDiscountAmount.Name = "cmbboxDiscountAmount";
-            this.cmbboxDiscountAmount.Size = new System.Drawing.Size(121, 21);
+            this.cmbboxDiscountAmount.Size = new System.Drawing.Size(121, 33);
             this.cmbboxDiscountAmount.TabIndex = 4;
             // 
             // btnDisableDiscount
             // 
-            this.btnDisableDiscount.Location = new System.Drawing.Point(146, 337);
+            this.btnDisableDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDisableDiscount.Location = new System.Drawing.Point(182, 307);
             this.btnDisableDiscount.Name = "btnDisableDiscount";
-            this.btnDisableDiscount.Size = new System.Drawing.Size(75, 23);
+            this.btnDisableDiscount.Size = new System.Drawing.Size(82, 36);
             this.btnDisableDiscount.TabIndex = 5;
             this.btnDisableDiscount.Text = "Disable";
             this.btnDisableDiscount.UseVisualStyleBackColor = true;
-            this.btnDisableDiscount.Click += new System.EventHandler(this.btnDisableDiscount_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(289, 100);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker1.Location = new System.Drawing.Point(451, 100);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(282, 26);
             this.dateTimePicker1.TabIndex = 6;
             // 
-            // dateTimePicker2
+            // btnGoBack
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(289, 241);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 7;
+            this.btnGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.btnGoBack.Location = new System.Drawing.Point(12, 12);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(96, 39);
+            this.btnGoBack.TabIndex = 11;
+            this.btnGoBack.Text = "Back";
+            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click_1);
             // 
-            // lblStartDiscount
+            // label1
             // 
-            this.lblStartDiscount.AutoSize = true;
-            this.lblStartDiscount.Location = new System.Drawing.Point(271, 74);
-            this.lblStartDiscount.Name = "lblStartDiscount";
-            this.lblStartDiscount.Size = new System.Drawing.Size(243, 13);
-            this.lblStartDiscount.TabIndex = 8;
-            this.lblStartDiscount.Text = "Please Select The Starting Time Of The Discount:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(457, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Starting Time";
             // 
-            // lblEndDiscount
+            // label2
             // 
-            this.lblEndDiscount.AutoSize = true;
-            this.lblEndDiscount.Location = new System.Drawing.Point(271, 213);
-            this.lblEndDiscount.Name = "lblEndDiscount";
-            this.lblEndDiscount.Size = new System.Drawing.Size(240, 13);
-            this.lblEndDiscount.TabIndex = 9;
-            this.lblEndDiscount.Text = "Please Select The Ending Time Of The Discount:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(457, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Ending Time";
             // 
-            // lblDisableDiscount
+            // dateTimePicker3
             // 
-            this.lblDisableDiscount.AutoSize = true;
-            this.lblDisableDiscount.Location = new System.Drawing.Point(19, 342);
-            this.lblDisableDiscount.Name = "lblDisableDiscount";
-            this.lblDisableDiscount.Size = new System.Drawing.Size(112, 13);
-            this.lblDisableDiscount.TabIndex = 10;
-            this.lblDisableDiscount.Text = "Disable The Discount:";
+            this.dateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker3.Location = new System.Drawing.Point(451, 200);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(282, 26);
+            this.dateTimePicker3.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(29, 316);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 17);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Disable The Discount:";
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(550, 415);
-            this.Controls.Add(this.lblDisableDiscount);
-            this.Controls.Add(this.lblEndDiscount);
-            this.Controls.Add(this.lblStartDiscount);
-            this.Controls.Add(this.dateTimePicker2);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnDisableDiscount);
             this.Controls.Add(this.cmbboxDiscountAmount);
             this.Controls.Add(this.btnApplyChanges);
             this.Controls.Add(this.lblDiscount);
-            this.Controls.Add(this.btnGoBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(566, 454);
-            this.MinimumSize = new System.Drawing.Size(566, 454);
+            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 400);
             this.Name = "Form10";
             this.Text = "Freedom Tourism";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form10_FormClosing);
@@ -158,16 +170,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.Button btnApplyChanges;
         private System.Windows.Forms.ComboBox cmbboxDiscountAmount;
         private System.Windows.Forms.Button btnDisableDiscount;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label lblStartDiscount;
-        private System.Windows.Forms.Label lblEndDiscount;
-        private System.Windows.Forms.Label lblDisableDiscount;
+        private System.Windows.Forms.Button btnGoBack;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -12,25 +12,23 @@ namespace BMSAdminPanel
 {
     public partial class Form11 : Form
     {
-        Form7 form1 = null;
-        public Form11(Form7 form1)
+        Form7 adminPanel = null;
+        public Form11(Form7 adminPanel)
         {
-            this.form1 = form1;
-            this.Show();
-            form1.Hide();
+            this.adminPanel = adminPanel;
             InitializeComponent();
-            
-        }
-
-        private void btnGoBack_Click(object sender, EventArgs e)
-        { 
-            form1.Show();
-            this.Close();
         }
 
         private void Form11_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnGoBack_Click_1(object sender, EventArgs e)
+        {
+
+            adminPanel.Show();
+            this.Hide();
         }
     }
 }

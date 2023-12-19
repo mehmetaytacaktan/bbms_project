@@ -64,12 +64,11 @@
             this.pb7 = new System.Windows.Forms.PictureBox();
             this.pb4 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb30)).BeginInit();
@@ -105,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -145,17 +143,17 @@
             this.panel1.Controls.Add(this.pb7);
             this.panel1.Controls.Add(this.pb4);
             this.panel1.Controls.Add(this.pb1);
-            this.panel1.Location = new System.Drawing.Point(39, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 179);
+            this.panel1.Size = new System.Drawing.Size(460, 175);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Location = new System.Drawing.Point(14, 17);
+            this.panel2.Location = new System.Drawing.Point(14, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(20, 76);
+            this.panel2.Size = new System.Drawing.Size(20, 82);
             this.panel2.TabIndex = 35;
             // 
             // pb33
@@ -293,7 +291,7 @@
             // pb32
             // 
             this.pb32.Image = ((System.Drawing.Image)(resources.GetObject("pb32.Image")));
-            this.pb32.Location = new System.Drawing.Point(408, 52);
+            this.pb32.Location = new System.Drawing.Point(408, 55);
             this.pb32.Name = "pb32";
             this.pb32.Size = new System.Drawing.Size(30, 29);
             this.pb32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -305,7 +303,7 @@
             // 
             this.pb29.Image = ((System.Drawing.Image)(resources.GetObject("pb29.Image")));
             this.pb29.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb29.InitialImage")));
-            this.pb29.Location = new System.Drawing.Point(372, 52);
+            this.pb29.Location = new System.Drawing.Point(372, 55);
             this.pb29.Name = "pb29";
             this.pb29.Size = new System.Drawing.Size(30, 29);
             this.pb29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -317,7 +315,7 @@
             // 
             this.pb26.Image = ((System.Drawing.Image)(resources.GetObject("pb26.Image")));
             this.pb26.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb26.InitialImage")));
-            this.pb26.Location = new System.Drawing.Point(336, 52);
+            this.pb26.Location = new System.Drawing.Point(336, 55);
             this.pb26.Name = "pb26";
             this.pb26.Size = new System.Drawing.Size(30, 29);
             this.pb26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,7 +327,7 @@
             // 
             this.pb23.Image = ((System.Drawing.Image)(resources.GetObject("pb23.Image")));
             this.pb23.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb23.InitialImage")));
-            this.pb23.Location = new System.Drawing.Point(300, 52);
+            this.pb23.Location = new System.Drawing.Point(300, 55);
             this.pb23.Name = "pb23";
             this.pb23.Size = new System.Drawing.Size(30, 29);
             this.pb23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -341,7 +339,7 @@
             // 
             this.pb20.Image = ((System.Drawing.Image)(resources.GetObject("pb20.Image")));
             this.pb20.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb20.InitialImage")));
-            this.pb20.Location = new System.Drawing.Point(264, 52);
+            this.pb20.Location = new System.Drawing.Point(264, 55);
             this.pb20.Name = "pb20";
             this.pb20.Size = new System.Drawing.Size(30, 29);
             this.pb20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -353,7 +351,7 @@
             // 
             this.pb17.Image = ((System.Drawing.Image)(resources.GetObject("pb17.Image")));
             this.pb17.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb17.InitialImage")));
-            this.pb17.Location = new System.Drawing.Point(228, 52);
+            this.pb17.Location = new System.Drawing.Point(228, 55);
             this.pb17.Name = "pb17";
             this.pb17.Size = new System.Drawing.Size(30, 29);
             this.pb17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,7 +363,7 @@
             // 
             this.pb14.Image = ((System.Drawing.Image)(resources.GetObject("pb14.Image")));
             this.pb14.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb14.InitialImage")));
-            this.pb14.Location = new System.Drawing.Point(192, 52);
+            this.pb14.Location = new System.Drawing.Point(192, 55);
             this.pb14.Name = "pb14";
             this.pb14.Size = new System.Drawing.Size(30, 29);
             this.pb14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -377,7 +375,7 @@
             // 
             this.pb11.Image = ((System.Drawing.Image)(resources.GetObject("pb11.Image")));
             this.pb11.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb11.InitialImage")));
-            this.pb11.Location = new System.Drawing.Point(156, 52);
+            this.pb11.Location = new System.Drawing.Point(156, 55);
             this.pb11.Name = "pb11";
             this.pb11.Size = new System.Drawing.Size(30, 29);
             this.pb11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -389,7 +387,7 @@
             // 
             this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
             this.pb8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb8.InitialImage")));
-            this.pb8.Location = new System.Drawing.Point(120, 52);
+            this.pb8.Location = new System.Drawing.Point(120, 55);
             this.pb8.Name = "pb8";
             this.pb8.Size = new System.Drawing.Size(30, 29);
             this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -401,7 +399,7 @@
             // 
             this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
             this.pb5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb5.InitialImage")));
-            this.pb5.Location = new System.Drawing.Point(84, 52);
+            this.pb5.Location = new System.Drawing.Point(84, 55);
             this.pb5.Name = "pb5";
             this.pb5.Size = new System.Drawing.Size(30, 29);
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -413,7 +411,7 @@
             // 
             this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
             this.pb2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb2.InitialImage")));
-            this.pb2.Location = new System.Drawing.Point(48, 52);
+            this.pb2.Location = new System.Drawing.Point(48, 55);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(30, 29);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -425,7 +423,7 @@
             // 
             this.pb31.Image = ((System.Drawing.Image)(resources.GetObject("pb31.Image")));
             this.pb31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb31.InitialImage")));
-            this.pb31.Location = new System.Drawing.Point(408, 17);
+            this.pb31.Location = new System.Drawing.Point(408, 20);
             this.pb31.Name = "pb31";
             this.pb31.Size = new System.Drawing.Size(30, 29);
             this.pb31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -437,7 +435,7 @@
             // 
             this.pb28.Image = ((System.Drawing.Image)(resources.GetObject("pb28.Image")));
             this.pb28.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb28.InitialImage")));
-            this.pb28.Location = new System.Drawing.Point(372, 17);
+            this.pb28.Location = new System.Drawing.Point(372, 20);
             this.pb28.Name = "pb28";
             this.pb28.Size = new System.Drawing.Size(30, 29);
             this.pb28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -449,7 +447,7 @@
             // 
             this.pb25.Image = ((System.Drawing.Image)(resources.GetObject("pb25.Image")));
             this.pb25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb25.InitialImage")));
-            this.pb25.Location = new System.Drawing.Point(336, 17);
+            this.pb25.Location = new System.Drawing.Point(336, 20);
             this.pb25.Name = "pb25";
             this.pb25.Size = new System.Drawing.Size(30, 29);
             this.pb25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -461,7 +459,7 @@
             // 
             this.pb22.Image = ((System.Drawing.Image)(resources.GetObject("pb22.Image")));
             this.pb22.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb22.InitialImage")));
-            this.pb22.Location = new System.Drawing.Point(300, 17);
+            this.pb22.Location = new System.Drawing.Point(300, 20);
             this.pb22.Name = "pb22";
             this.pb22.Size = new System.Drawing.Size(30, 29);
             this.pb22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -473,7 +471,7 @@
             // 
             this.pb19.Image = ((System.Drawing.Image)(resources.GetObject("pb19.Image")));
             this.pb19.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb19.InitialImage")));
-            this.pb19.Location = new System.Drawing.Point(264, 17);
+            this.pb19.Location = new System.Drawing.Point(264, 20);
             this.pb19.Name = "pb19";
             this.pb19.Size = new System.Drawing.Size(30, 29);
             this.pb19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -485,7 +483,7 @@
             // 
             this.pb16.Image = ((System.Drawing.Image)(resources.GetObject("pb16.Image")));
             this.pb16.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb16.InitialImage")));
-            this.pb16.Location = new System.Drawing.Point(228, 17);
+            this.pb16.Location = new System.Drawing.Point(228, 20);
             this.pb16.Name = "pb16";
             this.pb16.Size = new System.Drawing.Size(30, 29);
             this.pb16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -497,7 +495,7 @@
             // 
             this.pb13.Image = ((System.Drawing.Image)(resources.GetObject("pb13.Image")));
             this.pb13.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb13.InitialImage")));
-            this.pb13.Location = new System.Drawing.Point(192, 17);
+            this.pb13.Location = new System.Drawing.Point(192, 20);
             this.pb13.Name = "pb13";
             this.pb13.Size = new System.Drawing.Size(30, 29);
             this.pb13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -509,7 +507,7 @@
             // 
             this.pb10.Image = ((System.Drawing.Image)(resources.GetObject("pb10.Image")));
             this.pb10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb10.InitialImage")));
-            this.pb10.Location = new System.Drawing.Point(156, 17);
+            this.pb10.Location = new System.Drawing.Point(156, 20);
             this.pb10.Name = "pb10";
             this.pb10.Size = new System.Drawing.Size(30, 29);
             this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -521,7 +519,7 @@
             // 
             this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
             this.pb7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb7.InitialImage")));
-            this.pb7.Location = new System.Drawing.Point(120, 17);
+            this.pb7.Location = new System.Drawing.Point(120, 20);
             this.pb7.Name = "pb7";
             this.pb7.Size = new System.Drawing.Size(30, 29);
             this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -533,7 +531,7 @@
             // 
             this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
             this.pb4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb4.InitialImage")));
-            this.pb4.Location = new System.Drawing.Point(84, 17);
+            this.pb4.Location = new System.Drawing.Point(84, 20);
             this.pb4.Name = "pb4";
             this.pb4.Size = new System.Drawing.Size(30, 29);
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -545,7 +543,7 @@
             // 
             this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
             this.pb1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb1.InitialImage")));
-            this.pb1.Location = new System.Drawing.Point(48, 17);
+            this.pb1.Location = new System.Drawing.Point(48, 20);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(30, 29);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -553,46 +551,14 @@
             this.pb1.TabStop = false;
             this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
-            // panel3
+            // textBox2
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(12, 197);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(526, 206);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(111, 17);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(318, 148);
-            this.panel4.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button1.Location = new System.Drawing.Point(121, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 38);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "BUY";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox1.Location = new System.Drawing.Point(24, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 38);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox2.Location = new System.Drawing.Point(14, 64);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(161, 23);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox1
             // 
@@ -601,33 +567,56 @@
             this.comboBox1.Items.AddRange(new object[] {
             "MasterCard",
             "Visa"});
-            this.comboBox1.Location = new System.Drawing.Point(191, 65);
+            this.comboBox1.Location = new System.Drawing.Point(181, 63);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(101, 24);
             this.comboBox1.TabIndex = 2;
             // 
-            // textBox2
+            // textBox1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(24, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox1.Location = new System.Drawing.Point(14, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(268, 38);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button1.Location = new System.Drawing.Point(97, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 38);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "BUY";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(75)))));
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Location = new System.Drawing.Point(96, 203);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(291, 146);
+            this.panel3.TabIndex = 4;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(550, 415);
-            this.Controls.Add(this.panel3);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(566, 454);
-            this.MinimumSize = new System.Drawing.Size(566, 454);
+            this.MaximumSize = new System.Drawing.Size(500, 400);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "Form4";
             this.Text = "Freedom Tourism";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -666,8 +655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -709,11 +697,10 @@
         private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

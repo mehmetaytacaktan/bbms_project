@@ -1,7 +1,9 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -45,14 +47,11 @@ namespace formProject
 
         void AddCities()
         {
-            List<string> cities = new List<string>
-            {
-                //********************************DataBase 
-                "Japonya",
-                "Fransa",
-                "Çin",
-                "Kazakistan"
-            };
+            List<string> cities = new List<string>();
+            cities.Add("Akkeçili");
+            cities.Add("Manhattan");
+            cities.Add("İzmir");
+            cities.Add("Lodz");
 
             foreach (var city in cities)
             {
@@ -128,6 +127,16 @@ namespace formProject
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
