@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -101,12 +102,6 @@
     <Compile Include="Form7.designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form8.designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form9.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
@@ -181,13 +173,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Untitled.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chair.png" />
@@ -197,12 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ChairMale.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ChairOther.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Chair1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

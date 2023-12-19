@@ -49,7 +49,6 @@ C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.For
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form11.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form12.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form7.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form8.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form9.resources
 C:\Users\Emre\Desktop\Bus Booking Management System - Project(New)\bbms_project\bin\Debug\formProject.exe.config
 C:\Users\Emre\Desktop\Bus Booking Management System - Project(New)\bbms_project\bin\Debug\formProject.exe

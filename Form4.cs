@@ -24,6 +24,7 @@ namespace formProject
         Gender[] chairs = new Gender[33];
 
         public Gender UsersGender = Gender.Male;
+        List<int> TakenSeats = new List<int>();
 
         public Form4()
         {
@@ -39,6 +40,16 @@ namespace formProject
             chairs[11] = Gender.Male;
             chairs[12] = Gender.Female;
             chairs[31] = Gender.Female;
+
+            int i = 0;
+            foreach (Gender gender in chairs)
+            {
+                if(gender != Gender.Empty)
+                {
+                    TakenSeats.Add(i);
+                }
+                i++;
+            }
 
             seats = new PictureBox[]{
                 pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8, pb9, pb10,
@@ -120,6 +131,11 @@ namespace formProject
             //************************************Database
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            this.Hide();
+        }
+
         void resetSeats()
         {
             int i = 0;
@@ -141,202 +157,57 @@ namespace formProject
             }
         }
 
-        private void pb1_Click(object sender, EventArgs e)
+        void ChangeGivenSeat(int index)
         {
-            chairs[0] = UsersGender;
-            resetSeats();
+            bool SeatIsTaken = false;
+            foreach (int takenSeat in TakenSeats)
+            {
+                if(takenSeat == index)
+                {
+                    SeatIsTaken = true;
+                    break;
+                }
+            }
+
+            if(!SeatIsTaken)
+            {
+                chairs[index] = UsersGender;
+                resetSeats();
+            }
         }
 
-        private void pb4_Click(object sender, EventArgs e)
-        {
-            chairs[3] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb7_Click(object sender, EventArgs e)
-        {
-            chairs[6] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb10_Click(object sender, EventArgs e)
-        {
-            chairs[9] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb13_Click(object sender, EventArgs e)
-        {
-            chairs[12] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb16_Click(object sender, EventArgs e)
-        {
-            chairs[15] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb19_Click(object sender, EventArgs e)
-        {
-            chairs[18] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb22_Click(object sender, EventArgs e)
-        {
-            chairs[21] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb25_Click(object sender, EventArgs e)
-        {
-            chairs[24] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb28_Click(object sender, EventArgs e)
-        {
-            chairs[27] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb31_Click(object sender, EventArgs e)
-        {
-            chairs[30] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb32_Click(object sender, EventArgs e)
-        {
-            chairs[31] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb29_Click(object sender, EventArgs e)
-        {
-            chairs[28] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb26_Click(object sender, EventArgs e)
-        {
-            chairs[25] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb23_Click(object sender, EventArgs e)
-        {
-            chairs[22] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb20_Click(object sender, EventArgs e)
-        {
-            chairs[19] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb17_Click(object sender, EventArgs e)
-        {
-            chairs[16] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb14_Click(object sender, EventArgs e)
-        {
-            chairs[13] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb11_Click(object sender, EventArgs e)
-        {
-            chairs[10] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb8_Click(object sender, EventArgs e)
-        {
-            chairs[7] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb5_Click(object sender, EventArgs e)
-        {
-            chairs[4] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb2_Click(object sender, EventArgs e)
-        {
-            chairs[1] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb3_Click(object sender, EventArgs e)
-        {
-            chairs[2] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb6_Click(object sender, EventArgs e)
-        {
-            chairs[5] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb9_Click(object sender, EventArgs e)
-        {
-            chairs[8] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb12_Click(object sender, EventArgs e)
-        {
-            chairs[11] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb15_Click(object sender, EventArgs e)
-        {
-            chairs[14] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb18_Click(object sender, EventArgs e)
-        {
-            chairs[17] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb21_Click(object sender, EventArgs e)
-        {
-            chairs[20] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb24_Click(object sender, EventArgs e)
-        {
-            chairs[23] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb27_Click(object sender, EventArgs e)
-        {
-            chairs[26] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb30_Click(object sender, EventArgs e)
-        {
-            chairs[29] = UsersGender;
-            resetSeats();
-        }
-
-        private void pb33_Click(object sender, EventArgs e)
-        {
-            chairs[32] = UsersGender;
-            resetSeats();
-        }
+        private void pb1_Click(object sender, EventArgs e) {ChangeGivenSeat(0);}
+        private void pb4_Click(object sender, EventArgs e) {ChangeGivenSeat(3);}
+        private void pb7_Click(object sender, EventArgs e) {ChangeGivenSeat(6);}
+        private void pb10_Click(object sender, EventArgs e) {ChangeGivenSeat(9);}
+        private void pb13_Click(object sender, EventArgs e) {ChangeGivenSeat(12);}
+        private void pb16_Click(object sender, EventArgs e) {ChangeGivenSeat(15);}
+        private void pb19_Click(object sender, EventArgs e) {ChangeGivenSeat(18);}
+        private void pb22_Click(object sender, EventArgs e) {ChangeGivenSeat(21);}
+        private void pb25_Click(object sender, EventArgs e) {ChangeGivenSeat(24);}
+        private void pb28_Click(object sender, EventArgs e) {ChangeGivenSeat(27);}
+        private void pb31_Click(object sender, EventArgs e) {ChangeGivenSeat(30);}
+        private void pb32_Click(object sender, EventArgs e) {ChangeGivenSeat(31);}
+        private void pb29_Click(object sender, EventArgs e) {ChangeGivenSeat(28);}
+        private void pb26_Click(object sender, EventArgs e) {ChangeGivenSeat(25);}
+        private void pb23_Click(object sender, EventArgs e) {ChangeGivenSeat(22);}
+        private void pb20_Click(object sender, EventArgs e) {ChangeGivenSeat(19);}
+        private void pb17_Click(object sender, EventArgs e) {ChangeGivenSeat(16);}
+        private void pb14_Click(object sender, EventArgs e) {ChangeGivenSeat(13);}
+        private void pb11_Click(object sender, EventArgs e) {ChangeGivenSeat(10);}
+        private void pb8_Click(object sender, EventArgs e) {ChangeGivenSeat(7);}
+        private void pb5_Click(object sender, EventArgs e) {ChangeGivenSeat(4);}
+        private void pb2_Click(object sender, EventArgs e) {ChangeGivenSeat(1);}
+        private void pb3_Click(object sender, EventArgs e) {ChangeGivenSeat(2);}
+        private void pb6_Click(object sender, EventArgs e) {ChangeGivenSeat(5);}
+        private void pb9_Click(object sender, EventArgs e) {ChangeGivenSeat(8);}
+        private void pb12_Click(object sender, EventArgs e) {ChangeGivenSeat(11);}
+        private void pb15_Click(object sender, EventArgs e) {ChangeGivenSeat(14);}
+        private void pb18_Click(object sender, EventArgs e) {ChangeGivenSeat(17);}
+        private void pb21_Click(object sender, EventArgs e) {ChangeGivenSeat(20);}
+        private void pb24_Click(object sender, EventArgs e) {ChangeGivenSeat(23);}
+        private void pb27_Click(object sender, EventArgs e) {ChangeGivenSeat(26);}
+        private void pb30_Click(object sender, EventArgs e) {ChangeGivenSeat(29);}
+        private void pb33_Click(object sender, EventArgs e) {ChangeGivenSeat(32);}
     }
 }

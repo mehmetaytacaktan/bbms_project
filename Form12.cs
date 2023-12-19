@@ -12,31 +12,22 @@ namespace BMSAdminPanel
 {
     public partial class Form12 : Form
     {
-        Form8 form8 = null;
-        public Form12(Form8 form8)
+        Form7 adminPanel = null;
+        public Form12(Form7 adminPanel)
         {
-            this.form8 = form8;
-            this.Show();
-            form8.Hide();
+            this.adminPanel = adminPanel;
             InitializeComponent();
-        }
-
-        
-
-        private void btnAddTour_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnGoBack_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-            form8.Show();
         }
 
         private void Form12_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            adminPanel.Show();
         }
     }
 }

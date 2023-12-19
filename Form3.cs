@@ -15,8 +15,6 @@ namespace formProject
 {
     public partial class Form3 : Form
     {
-        public DBMan dbManager = new DBMan();
-
         public enum TypeLogin
         {
             User,
@@ -148,6 +146,16 @@ namespace formProject
 
         //creates user
         void CreateUser(string username, string password)//********************************DataBase
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

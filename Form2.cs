@@ -35,15 +35,15 @@ namespace formProject
             DateTimePicker2.MaxDate = DateTimeLimits.Max();
 
             //********************************DataBase
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:10", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "01H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99H59M", 550);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:10", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "01h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
+            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 550);
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
@@ -81,23 +81,15 @@ namespace formProject
         void switchToBuyScreen(object sender, EventArgs e, int cost)
         {
             form4.Show();
-            if(isFemale)
-            {
-                form4.UsersGender = Gender.Female;
-            }
-            else
-            {
-                form4.UsersGender = Gender.Male;
-            }
         }
 
         public void CreateTourPanel(string sittingArrangement,
             string fromTo, string departureTime, string duration, int cost)
         {
             Panel panelTemp = new Panel();
-            panelTemp.Size = new Size(470, 71);
+            panelTemp.Size = new Size(700, 71);
             panelTemp.Location = (new Point(19 , 14 + (77 * TourList.Count)));
-            panelTemp.BackColor = Color.White;
+            panelTemp.BackColor = Color.LightBlue;
 
             //this.Load += new System.EventHandler(this.Form2_Load);
             panelTemp.Click += (sender, e) => switchToBuyScreen(sender, e, cost);
@@ -118,17 +110,17 @@ namespace formProject
                         labelTemp.Font = ChangeFontSize(labelTemp.Font, 15);
                         break;
                     case 2:
-                        labelTemp.Location = (new Point(189, 1));
+                        labelTemp.Location = (new Point(320, 1));
                         labelTemp.Text = departureTime;
                         labelTemp.Font = ChangeFontSize(labelTemp.Font, 20);
                         break;
                     case 3:
-                        labelTemp.Location = (new Point(192, 32));
+                        labelTemp.Location = (new Point(323, 36));
                         labelTemp.Text = duration;
                         labelTemp.Font = ChangeFontSize(labelTemp.Font, 14);
                         break;
                     case 4:
-                        labelTemp.Location = (new Point(373, 20));
+                        labelTemp.Location = (new Point(603, 20));
                         labelTemp.Text = cost + "TL";
                         labelTemp.Font = ChangeFontSize(labelTemp.Font, 20);
                         break;
@@ -149,17 +141,27 @@ namespace formProject
         private void checkBoxFemale_CheckedChanged(object sender, EventArgs e)
         {
             isFemale = checkBoxFemale.Checked;
-
             //Female is changed
             checkBoxMale.Checked = !checkBoxFemale.Checked;
+
+            SetGenderOnForm4();
         }
 
         private void checkBoxMale_CheckedChanged(object sender, EventArgs e)
         {
             isFemale = !checkBoxMale.Checked;
-
             //Male is changed
             checkBoxFemale.Checked = !checkBoxMale.Checked;
+
+            SetGenderOnForm4();
+        }
+
+        private void SetGenderOnForm4()
+        {
+            if (isFemale)
+                form4.UsersGender = Gender.Female;
+            else
+                form4.UsersGender = Gender.Male;
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
