@@ -48,6 +48,13 @@ namespace formProject
         void AddCities()
         {
             List<string> cities = new List<string>();
+
+            // DB'DEN ÇEKİLECEK
+            DBMan.ReadCities();
+
+            //SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Cities]");
+            
+
             cities.Add("Akkeçili");
             cities.Add("Manhattan");
             cities.Add("İzmir");
