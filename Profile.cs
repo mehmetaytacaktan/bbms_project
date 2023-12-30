@@ -20,8 +20,8 @@ namespace formProject
             this.form1 = form1;
 
             //******************Database
-            addTicketToListView("1A8P5E", "Bandırma", "Lodz", "8:00", "8200");
-            addTicketToListView("37AXM6", "'Merica", "GERMAN REICH", "4:00", "7");
+            addTicketToListView("1A8P5E", "Bandırma", "Lodz", "8:00", "8200", listview);
+            addTicketToListView("37AXM6", "'Merica", "GERMAN REICH", "4:00", "7", listview);
         }
 
         private void btnGoBack_Click(object sender, EventArgs e)
@@ -35,8 +35,8 @@ namespace formProject
             Application.Exit();
         }
 
-        private void addTicketToListView(string PNR, string from, string to, string departure,
-            string cost)
+        public static void addTicketToListView(string PNR, string from, string to, string departure,
+                                               string cost, ListView listview)
         {
             listview.Items.Add("PNR: " + PNR + " From: " + from + " To: " + to +
                 " Departure time: " + departure + " cost:" + cost + "TL");

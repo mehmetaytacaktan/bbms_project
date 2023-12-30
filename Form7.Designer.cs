@@ -98,7 +98,7 @@
             this.btnCampaign.Name = "btnCampaign";
             this.btnCampaign.Size = new System.Drawing.Size(330, 111);
             this.btnCampaign.TabIndex = 4;
-            this.btnCampaign.Text = "Tickets";
+            this.btnCampaign.Text = "Tickets and Earning";
             this.btnCampaign.UseVisualStyleBackColor = false;
             this.btnCampaign.Click += new System.EventHandler(this.btnCampaign_Click);
             // 
