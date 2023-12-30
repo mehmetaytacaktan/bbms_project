@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listview = new System.Windows.Forms.ListView();
             this.lblClientID = new System.Windows.Forms.Label();
             this.cmbboxClientIDs = new System.Windows.Forms.ComboBox();
             this.btnGoBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // listview
             // 
-            this.listView1.BackColor = System.Drawing.Color.Silver;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 57);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(760, 292);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listview.BackColor = System.Drawing.Color.Silver;
+            this.listview.HideSelection = false;
+            this.listview.Location = new System.Drawing.Point(12, 57);
+            this.listview.Name = "listview";
+            this.listview.Size = new System.Drawing.Size(760, 292);
+            this.listview.TabIndex = 1;
+            this.listview.UseCompatibleStateImageBehavior = false;
             // 
             // lblClientID
             // 
@@ -68,24 +68,29 @@
             // 
             // btnGoBack
             // 
+            this.btnGoBack.BackColor = System.Drawing.SystemColors.Control;
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.btnGoBack.Location = new System.Drawing.Point(12, 12);
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.Size = new System.Drawing.Size(96, 39);
             this.btnGoBack.TabIndex = 5;
             this.btnGoBack.Text = "Back";
-            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.UseVisualStyleBackColor = false;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click_1);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.button1.Location = new System.Drawing.Point(643, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 33);
             this.button1.TabIndex = 6;
             this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form9
             // 
@@ -98,7 +103,7 @@
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.cmbboxClientIDs);
             this.Controls.Add(this.lblClientID);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listview);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 400);
@@ -112,7 +117,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listview;
         private System.Windows.Forms.Label lblClientID;
         private System.Windows.Forms.ComboBox cmbboxClientIDs;
         private System.Windows.Forms.Button btnGoBack;

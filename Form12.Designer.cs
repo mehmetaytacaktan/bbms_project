@@ -34,11 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dtPickerArrival = new System.Windows.Forms.DateTimePicker();
-            this.dtPickerDeparture = new System.Windows.Forms.DateTimePicker();
-            this.cmbboxTripID = new System.Windows.Forms.ComboBox();
+            this.dtArrival = new System.Windows.Forms.DateTimePicker();
+            this.dtDeparture = new System.Windows.Forms.DateTimePicker();
             this.cmbboxBusID = new System.Windows.Forms.ComboBox();
             this.cmbboxFrom = new System.Windows.Forms.ComboBox();
+            this.cmbboxTo = new System.Windows.Forms.ComboBox();
             this.lblArrival = new System.Windows.Forms.Label();
             this.lblDeparture = new System.Windows.Forms.Label();
             this.btnGoBack = new System.Windows.Forms.Button();
@@ -51,11 +51,11 @@
             this.groupBoxTour.Controls.Add(this.label2);
             this.groupBoxTour.Controls.Add(this.label1);
             this.groupBoxTour.Controls.Add(this.button1);
-            this.groupBoxTour.Controls.Add(this.dtPickerArrival);
-            this.groupBoxTour.Controls.Add(this.dtPickerDeparture);
-            this.groupBoxTour.Controls.Add(this.cmbboxTripID);
+            this.groupBoxTour.Controls.Add(this.dtArrival);
+            this.groupBoxTour.Controls.Add(this.dtDeparture);
             this.groupBoxTour.Controls.Add(this.cmbboxBusID);
             this.groupBoxTour.Controls.Add(this.cmbboxFrom);
+            this.groupBoxTour.Controls.Add(this.cmbboxTo);
             this.groupBoxTour.Controls.Add(this.lblArrival);
             this.groupBoxTour.Controls.Add(this.lblDeparture);
             this.groupBoxTour.Location = new System.Drawing.Point(12, 115);
@@ -99,56 +99,59 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.button1.Location = new System.Drawing.Point(594, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 39);
             this.button1.TabIndex = 18;
             this.button1.Text = "Add Tour";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dtPickerArrival
+            // dtArrival
             // 
-            this.dtPickerArrival.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtPickerArrival.Location = new System.Drawing.Point(267, 195);
-            this.dtPickerArrival.Name = "dtPickerArrival";
-            this.dtPickerArrival.Size = new System.Drawing.Size(276, 26);
-            this.dtPickerArrival.TabIndex = 15;
+            this.dtArrival.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtArrival.Location = new System.Drawing.Point(267, 195);
+            this.dtArrival.Name = "dtArrival";
+            this.dtArrival.Size = new System.Drawing.Size(276, 26);
+            this.dtArrival.TabIndex = 15;
             // 
-            // dtPickerDeparture
+            // dtDeparture
             // 
-            this.dtPickerDeparture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtPickerDeparture.Location = new System.Drawing.Point(267, 149);
-            this.dtPickerDeparture.Name = "dtPickerDeparture";
-            this.dtPickerDeparture.Size = new System.Drawing.Size(276, 26);
-            this.dtPickerDeparture.TabIndex = 14;
-            // 
-            // cmbboxTripID
-            // 
-            this.cmbboxTripID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cmbboxTripID.FormattingEnabled = true;
-            this.cmbboxTripID.Location = new System.Drawing.Point(594, 52);
-            this.cmbboxTripID.Name = "cmbboxTripID";
-            this.cmbboxTripID.Size = new System.Drawing.Size(153, 28);
-            this.cmbboxTripID.TabIndex = 13;
+            this.dtDeparture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dtDeparture.Location = new System.Drawing.Point(267, 149);
+            this.dtDeparture.Name = "dtDeparture";
+            this.dtDeparture.Size = new System.Drawing.Size(276, 26);
+            this.dtDeparture.TabIndex = 14;
             // 
             // cmbboxBusID
             // 
             this.cmbboxBusID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbboxBusID.FormattingEnabled = true;
-            this.cmbboxBusID.Location = new System.Drawing.Point(89, 52);
+            this.cmbboxBusID.Location = new System.Drawing.Point(594, 52);
             this.cmbboxBusID.Name = "cmbboxBusID";
             this.cmbboxBusID.Size = new System.Drawing.Size(153, 28);
-            this.cmbboxBusID.TabIndex = 12;
+            this.cmbboxBusID.TabIndex = 13;
             // 
             // cmbboxFrom
             // 
             this.cmbboxFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbboxFrom.FormattingEnabled = true;
-            this.cmbboxFrom.Location = new System.Drawing.Point(326, 52);
+            this.cmbboxFrom.Location = new System.Drawing.Point(89, 52);
             this.cmbboxFrom.Name = "cmbboxFrom";
             this.cmbboxFrom.Size = new System.Drawing.Size(153, 28);
-            this.cmbboxFrom.TabIndex = 10;
+            this.cmbboxFrom.TabIndex = 12;
+            // 
+            // cmbboxTo
+            // 
+            this.cmbboxTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmbboxTo.FormattingEnabled = true;
+            this.cmbboxTo.Location = new System.Drawing.Point(326, 52);
+            this.cmbboxTo.Name = "cmbboxTo";
+            this.cmbboxTo.Size = new System.Drawing.Size(153, 28);
+            this.cmbboxTo.TabIndex = 10;
             // 
             // lblArrival
             // 
@@ -174,13 +177,15 @@
             // 
             // btnGoBack
             // 
+            this.btnGoBack.BackColor = System.Drawing.SystemColors.Control;
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.btnGoBack.Location = new System.Drawing.Point(12, 12);
             this.btnGoBack.Name = "btnGoBack";
             this.btnGoBack.Size = new System.Drawing.Size(96, 39);
             this.btnGoBack.TabIndex = 17;
             this.btnGoBack.Text = "Back";
-            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.UseVisualStyleBackColor = false;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // Form12
@@ -206,13 +211,13 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBoxTour;
-        private System.Windows.Forms.ComboBox cmbboxTripID;
         private System.Windows.Forms.ComboBox cmbboxBusID;
         private System.Windows.Forms.ComboBox cmbboxFrom;
+        private System.Windows.Forms.ComboBox cmbboxTo;
         private System.Windows.Forms.Label lblArrival;
         private System.Windows.Forms.Label lblDeparture;
-        private System.Windows.Forms.DateTimePicker dtPickerArrival;
-        private System.Windows.Forms.DateTimePicker dtPickerDeparture;
+        private System.Windows.Forms.DateTimePicker dtArrival;
+        private System.Windows.Forms.DateTimePicker dtDeparture;
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;

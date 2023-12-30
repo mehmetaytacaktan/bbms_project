@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace formProject
 {
@@ -24,7 +18,7 @@ namespace formProject
                 // Open the connection
                 conn.Open();
                 // Create a command object using the connection and the query
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Cities]", conn))
+                using (SqlCommand cmd = new SqlCommand("Select * FROM Cities", conn))
                 {
                     // Execute the reader using the command object
                     using (SqlDataReader dr = cmd.ExecuteReader())
@@ -42,27 +36,5 @@ namespace formProject
 
             return list;
         }
-        /*  public static List<string> UserPnlli()
-        {
-            List <string> list = new List<string>();
-            using (SqlConnection conn = new SqlConnection(str))
-            {
-                conn.Open();
-
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Users]", conn))
-                {
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        
-                    }
-                }
-            }
-
-            return list;
-        } */
-        
-
-        
     }
 }

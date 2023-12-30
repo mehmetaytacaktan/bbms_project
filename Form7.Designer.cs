@@ -48,8 +48,9 @@
             // 
             // btnARM
             // 
-            this.btnARM.BackColor = System.Drawing.Color.White;
-            this.btnARM.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btnARM.BackColor = System.Drawing.SystemColors.Control;
+            this.btnARM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnARM.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.btnARM.ForeColor = System.Drawing.Color.Black;
             this.btnARM.Location = new System.Drawing.Point(15, 52);
             this.btnARM.Name = "btnARM";
@@ -61,8 +62,9 @@
             // 
             // btnIquiry
             // 
-            this.btnIquiry.BackColor = System.Drawing.Color.White;
-            this.btnIquiry.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btnIquiry.BackColor = System.Drawing.SystemColors.Control;
+            this.btnIquiry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIquiry.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.btnIquiry.ForeColor = System.Drawing.Color.Black;
             this.btnIquiry.Location = new System.Drawing.Point(353, 54);
             this.btnIquiry.Name = "btnIquiry";
@@ -74,8 +76,9 @@
             // 
             // btnDiscount
             // 
-            this.btnDiscount.BackColor = System.Drawing.Color.White;
-            this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btnDiscount.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.btnDiscount.ForeColor = System.Drawing.Color.Black;
             this.btnDiscount.Location = new System.Drawing.Point(15, 169);
             this.btnDiscount.Name = "btnDiscount";
@@ -87,14 +90,15 @@
             // 
             // btnCampaign
             // 
-            this.btnCampaign.BackColor = System.Drawing.Color.White;
-            this.btnCampaign.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btnCampaign.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCampaign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCampaign.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.btnCampaign.ForeColor = System.Drawing.Color.Black;
             this.btnCampaign.Location = new System.Drawing.Point(351, 171);
             this.btnCampaign.Name = "btnCampaign";
             this.btnCampaign.Size = new System.Drawing.Size(330, 111);
             this.btnCampaign.TabIndex = 4;
-            this.btnCampaign.Text = "Campaign";
+            this.btnCampaign.Text = "Tickets";
             this.btnCampaign.UseVisualStyleBackColor = false;
             this.btnCampaign.Click += new System.EventHandler(this.btnCampaign_Click);
             // 
@@ -130,7 +134,6 @@
             this.Name = "Form7";
             this.Text = "Freedom Tourism";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form7_FormClosing);
-            this.Load += new System.EventHandler(this.Form7_Load);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

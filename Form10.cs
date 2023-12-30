@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BMSAdminPanel
@@ -28,6 +21,35 @@ namespace BMSAdminPanel
         {
             this.Hide();
             adminPanel.Show();
+        }
+
+        private void btnApplyChanges_Click(object sender, EventArgs e)
+        {
+            //******************************************Database
+            DateTime tmp1 = dateTimePicker3.Value;
+            DateTime tmp2 = dateTimePicker1.Value;
+        }
+
+        private void btnDisableDiscount_Click(object sender, EventArgs e)
+        {
+            //******************************************Database
+            DateTime tmp1 = dateTimePicker3.Value;
+            DateTime tmp2 = dateTimePicker1.Value;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string output = "";
+
+            foreach (char ch in textBox1.Text)
+            {
+                if (char.IsNumber(ch))
+                {
+                    output += ch;
+                }
+            }
+
+            textBox1.Text = output;
         }
     }
 }

@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace formProject
@@ -61,11 +54,6 @@ namespace formProject
             resetSeats();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //name
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -103,37 +91,48 @@ namespace formProject
 
                 textBox1.Text = output;
             }
+        }
 
-            //string input = textBox1.Text;
-            //string inputWoSpace = "";
-            //string seperator = " ";
-            //
-            //foreach (char _char in input)
-            //{
-            //    if(_char != seperator[0])
-            //    {
-            //        inputWoSpace += _char;
-            //    }
-            //}
-            //
-            //inputWoSpace.Replace(seperator, "");
-            //
-            //if (inputWoSpace.Length % 4 == 0 && !textBox1.Text.EndsWith(seperator))
-            //{
-            //    textBox1.Text = textBox1.Text + seperator;
-            //    Debug.Print(textBox1.Text);
-            //}
+        bool ManuallyChanged = true;
+        private void checkBoxMale_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ManuallyChanged)
+            {
+                ManuallyChanged = false;
+                checkBoxFemale.Checked = !checkBoxFemale.Checked;
+                SetUsersGender();
+            }
+            else
+            {
+                ManuallyChanged = true;
+            }
+        }
+        private void checkBoxFemale_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ManuallyChanged)
+            {
+                ManuallyChanged = false;
+                checkBoxMale.Checked = !checkBoxMale.Checked;
+                SetUsersGender();
+            }
+            else
+            {
+                ManuallyChanged = true;
+            }
+        }
+
+        private void SetUsersGender()
+        {
+            if (checkBoxMale.Checked)
+                UsersGender = Gender.Male;
+            else
+                UsersGender = Gender.Female;
         }
 
         //buy
         private void button1_Click(object sender, EventArgs e)
         {
             //************************************Database
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            this.Hide();
         }
 
         void resetSeats()
@@ -171,7 +170,14 @@ namespace formProject
 
             if(!SeatIsTaken)
             {
-                chairs[index] = UsersGender;
+                if(chairs[index] == UsersGender)
+                {
+                    chairs[index] = Gender.Empty;
+                }
+                else
+                {
+                    chairs[index] = UsersGender;
+                }
                 resetSeats();
             }
         }

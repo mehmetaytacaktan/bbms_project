@@ -1,14 +1,6 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace formProject
@@ -18,15 +10,22 @@ namespace formProject
         readonly string[] removedCities = new string[2];//0 to, 1 from
         readonly Form2 BuyingScreen;
         readonly Form3 LoginScreen;
+        Profile profile;
 
         public Form1(Form3 LoginScreen)
         {
             InitializeComponent();
             //We send this form instance to the form2 so we can enable it from here
             BuyingScreen = new Form2(this);
+            profile = new Profile(this);
             BuyingScreen.Hide();
             this.Show();//(already shown)
             this.LoginScreen = LoginScreen;
+
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+            label2.Parent = pictureBox1;
+            label2.BackColor = Color.Transparent;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,19 +41,12 @@ namespace formProject
             //Combo Boxes
             ComboBoxFrom.Items.Clear();
             ComboBoxTo.Items.Clear();
-            AddCities();
+            AddCities(ComboBoxFrom, ComboBoxTo);
         }
 
-        void AddCities()
+        static public void AddCities(ComboBox ComboBoxFrom, ComboBox ComboBoxTo)
         {
             List<string> cities = new List<string>();
-
-            // DB'DEN ÇEKİLECEK
-            DBMan.ReadCities();
-
-            //SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Cities]");
-            
-
             cities.Add("Akkeçili");
             cities.Add("Manhattan");
             cities.Add("İzmir");
@@ -119,11 +111,6 @@ namespace formProject
             MessageBox.Show("Login work in progress");
         }
 
-        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //back
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -136,14 +123,30 @@ namespace formProject
             Application.Exit();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void BtnToday_Click_1(object sender, EventArgs e)
         {
-
+            BtnToday_Click(sender, e);
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void BtnTomorrow_Click(object sender, EventArgs e)
         {
+            button1_Click(sender, e);
+        }
 
+        private void BtnBuy_Click_1(object sender, EventArgs e)
+        {
+            BtnBuy_Click(sender, e);
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            button1_Click_1(sender, e);
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            profile.Show();
+            this.Hide();
         }
     }
 }

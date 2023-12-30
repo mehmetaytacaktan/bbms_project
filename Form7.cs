@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BMSAdminPanel
@@ -28,24 +19,28 @@ namespace BMSAdminPanel
             tourMenu = new Form12(this);
         }
 
+        //1
         private void btnARM_Click(object sender, EventArgs e)//add tour
         {
             tourMenu.Show();
             this.Hide();
         }
 
+        //2
         private void btnIquiry_Click(object sender, EventArgs e)
         {
             client.Show();
             this.Hide();
         }
 
+        //3
         private void btnDiscount_Click(object sender, EventArgs e)
         {
             discount.Show();
             this.Hide();
         }
 
+        //4
         private void btnCampaign_Click(object sender, EventArgs e)
         {
             campaign.Show();
@@ -55,11 +50,6 @@ namespace BMSAdminPanel
         private void Form7_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,14 +1,6 @@
 ﻿using BMSAdminPanel;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace formProject
@@ -19,25 +11,31 @@ namespace formProject
         {
             User,
             Admin,
+            Driver,
             Fail
         }
 
         Form1 MainMenu;
+        Form5 RegisterMenu;
         bool login = true;
 
         public Form3()
         {
             InitializeComponent();
             MainMenu = new Form1(this);
+            RegisterMenu = new Form5(this);
             MainMenu.Hide();
+            RegisterMenu.Hide();
+
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+            label2.Parent = pictureBox1;
+            label2.BackColor = Color.Transparent;
+            label3.Parent = pictureBox1;
+            label3.BackColor = Color.Transparent;
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void rjButton1_Click(object sender, EventArgs e)
         {
             //trying to login
             if(login)
@@ -50,7 +48,14 @@ namespace formProject
                 }
                 else if (UserExists(textBox1.Text, textBox2.Text) == TypeLogin.Admin)
                 {
-                    //deploys main menu.
+                    //deploys admin menu.
+                    Form7 AdminMenu = new Form7();
+                    AdminMenu.Show();
+                    this.Hide();
+                }
+                else if (UserExists(textBox1.Text, textBox2.Text) == TypeLogin.Driver)
+                {
+                    //deploys driver menu.
                     Form7 AdminMenu = new Form7();
                     AdminMenu.Show();
                     this.Hide();
@@ -73,10 +78,7 @@ namespace formProject
                 //registered succesfully
                 else
                 {
-                    CreateUser(textBox1.Text, textBox2.Text);
-
-                    MainMenu.Show();
-                    this.Hide();
+                    OpenRegisterForm(textBox1.Text, textBox2.Text);
                 }
             }
         }
@@ -88,30 +90,35 @@ namespace formProject
 
         private void label3_Click(object sender, EventArgs e)
         {
+            ChangeLoginOrRegister();
+        }
+
+        public void ChangeLoginOrRegister()
+        {
             login = !login;
 
             //changes interface so that user knows that they are login'ing
             if (login)
             {
                 BtnLogin.Text = "LOGIN";
-                BtnLogin.Location = new Point(40, 216);
+                BtnLogin.Location = new Point(311, 338);
                 BtnLogin.Size = new Size(169, 55);
 
                 textBox2.PasswordChar = '*';
 
-                label3.Location = new Point(74, 282);
+                label3.Location = new Point(335, 404);
                 label3.Text = "Create account";
             }
             //changes interface so that user knows that they are register'ing
             else
             {
                 BtnLogin.Text = "REGISTER";
-                BtnLogin.Location = new Point(10, 216);
-                BtnLogin.Size = new Size(227, 55);
+                BtnLogin.Location = new Point(289, 338);
+                BtnLogin.Size = new Size(216, 55);
 
                 textBox2.PasswordChar = textBox1.PasswordChar;
 
-                label3.Location = new Point(80, 282);
+                label3.Location = new Point(350, 405);
                 label3.Text = "Click to login";
             }
         }
@@ -136,6 +143,10 @@ namespace formProject
             {
                 return TypeLogin.Admin;
             }
+            else if (username == "driver" && password == "driver")//********************************DataBase
+            {
+                return TypeLogin.Driver;
+            }
             else
             {
                 MessageBox.Show("Username or password are incorrect",
@@ -145,17 +156,24 @@ namespace formProject
         }
 
         //creates user
-        void CreateUser(string username, string password)//********************************DataBase
+        void OpenRegisterForm(string username, string password)//********************************DataBase
         {
+            if(username == string.Empty || password == string.Empty)
+            {
+                MessageBox.Show("Username or password are empty",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                RegisterMenu.username = username;
+                RegisterMenu.password = password;
 
+                RegisterMenu.Show();
+                this.Hide();
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Logout_Click(object sender, EventArgs e)
         {
 
         }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,48 +12,75 @@ namespace formProject
 {
     public partial class Form5 : Form
     {
-        public Form5()
+        Form3 LoginScreen;
+        public string username;
+        public string password;
+
+        public Form5(Form3 loginScreen)
         {
             InitializeComponent();
+            this.LoginScreen = loginScreen;
 
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+            label2.Parent = pictureBox1;
+            label2.BackColor = Color.Transparent;
+            label3.Parent = pictureBox1;
+            label3.BackColor = Color.Transparent;
         }
 
-        public void listVuser_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //DB pull
-
-            const string str = "Server=EVA01\\SQLEXPRESS;Database=asd;Trusted_Connection=True;";
-
-            List<string> list = new List<string>();
-                using (SqlConnection conn = new SqlConnection(str))
-                {
-                    conn.Open();
-
-                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.[Users]", conn))
-                    {
-                        SqlDataReader dr = cmd.ExecuteReader();
-                        while (dr.Read())
-                        {
-                            ListViewItem li = new ListViewItem(dr["Pass_Id"].ToString());
-                            li.SubItems.Add(dr["First_Name"].ToString());
-                            li.SubItems.Add(dr["Last_Name"].ToString());
-                            li.SubItems.Add(dr["Us_Name"].ToString());
-                            li.SubItems.Add(dr["Phone_Num"].ToString());
-                            li.SubItems.Add(dr["E_mail"].ToString());
-
-                        }
-                    }
-                }
-        }
-
-        private void addBtn_Click(object sender, EventArgs e)
+        private void Form5_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void UpdateBtn_Click(object sender, EventArgs e)
+        private void Form5_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            bool hasEmpty = false;
+            if (textBox3.Text == string.Empty)
+            {
+                hasEmpty = true;
+                MessageBox.Show("Legal name is empty",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (textBox2.Text == string.Empty)
+            {
+                hasEmpty = true;
+                MessageBox.Show("Phone number is empty",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (textBox1.Text == string.Empty)
+            {
+                hasEmpty = true;
+                MessageBox.Show("TC no is empty",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            if (!hasEmpty)
+            {
+                //register **************************************Database
+                username = "";
+                password = "";
+                textBox3.Text = "";//legal name
+                textBox2.Text = "";//phone
+                textBox1.Text = "";//tc
+
+                this.LoginScreen.ChangeLoginOrRegister();
+                this.LoginScreen.Show();
+                this.Hide();
+            }
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            this.LoginScreen.ChangeLoginOrRegister();
+            this.LoginScreen.Show();
+            this.Hide();
         }
     }
 }

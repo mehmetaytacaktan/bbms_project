@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace formProject
@@ -20,13 +15,9 @@ namespace formProject
 
         bool isFemale = false;
 
-        Form4 form4 = new Form4();
-
         public Form2(Form1 MainMenu)
         {
             InitializeComponent();
-            
-            form4.Hide();
 
             this.MainMenu = MainMenu;
             SelectMenu = this;
@@ -80,7 +71,8 @@ namespace formProject
 
         void switchToBuyScreen(object sender, EventArgs e, int cost)
         {
-            form4.Show();
+            Form4 temp = new Form4();
+            temp.Show();
         }
 
         public void CreateTourPanel(string sittingArrangement,
@@ -138,25 +130,7 @@ namespace formProject
             return new Font(font.FontFamily, size, font.Style);
         }
 
-        private void checkBoxFemale_CheckedChanged(object sender, EventArgs e)
-        {
-            isFemale = checkBoxFemale.Checked;
-            //Female is changed
-            checkBoxMale.Checked = !checkBoxFemale.Checked;
-
-            SetGenderOnForm4();
-        }
-
-        private void checkBoxMale_CheckedChanged(object sender, EventArgs e)
-        {
-            isFemale = !checkBoxMale.Checked;
-            //Male is changed
-            checkBoxFemale.Checked = !checkBoxMale.Checked;
-
-            SetGenderOnForm4();
-        }
-
-        private void SetGenderOnForm4()
+        private void SetGenderOnForm(Form4 form4)
         {
             if (isFemale)
                 form4.UsersGender = Gender.Female;
@@ -172,6 +146,21 @@ namespace formProject
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            BtnBack_Click(sender, e);
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            BtnPrevDay_Click(sender, e);
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            BtnNextDay_Click(sender, e);
         }
     }
 }

@@ -29,95 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.BtnBack = new System.Windows.Forms.Button();
-            this.BtnPrevDay = new System.Windows.Forms.Button();
             this.DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.BtnNextDay = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBoxFemale = new System.Windows.Forms.CheckBox();
-            this.checkBoxMale = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Logout = new CustomControls.RJControls.RJButton();
+            this.btn1 = new CustomControls.RJControls.RJButton();
+            this.btn2 = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.BtnBack.Location = new System.Drawing.Point(12, 12);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(120, 56);
-            this.BtnBack.TabIndex = 0;
-            this.BtnBack.Text = "Back";
-            this.BtnBack.UseVisualStyleBackColor = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
-            // 
-            // BtnPrevDay
-            // 
-            this.BtnPrevDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
-            this.BtnPrevDay.Location = new System.Drawing.Point(13, 287);
-            this.BtnPrevDay.Name = "BtnPrevDay";
-            this.BtnPrevDay.Size = new System.Drawing.Size(60, 60);
-            this.BtnPrevDay.TabIndex = 1;
-            this.BtnPrevDay.Text = "<";
-            this.BtnPrevDay.UseVisualStyleBackColor = true;
-            this.BtnPrevDay.Click += new System.EventHandler(this.BtnPrevDay_Click);
             // 
             // DateTimePicker2
             // 
             this.DateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
-            this.DateTimePicker2.Location = new System.Drawing.Point(99, 287);
+            this.DateTimePicker2.Location = new System.Drawing.Point(99, 309);
             this.DateTimePicker2.Name = "DateTimePicker2";
             this.DateTimePicker2.Size = new System.Drawing.Size(584, 48);
             this.DateTimePicker2.TabIndex = 3;
             this.DateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
             // 
-            // BtnNextDay
-            // 
-            this.BtnNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
-            this.BtnNextDay.Location = new System.Drawing.Point(713, 287);
-            this.BtnNextDay.Name = "BtnNextDay";
-            this.BtnNextDay.Size = new System.Drawing.Size(60, 60);
-            this.BtnNextDay.TabIndex = 2;
-            this.BtnNextDay.Text = ">";
-            this.BtnNextDay.UseVisualStyleBackColor = true;
-            this.BtnNextDay.Click += new System.EventHandler(this.BtnNextDay_Click);
-            // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.AutoScroll = true;
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.panel3.Location = new System.Drawing.Point(12, 378);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(760, 171);
             this.panel3.TabIndex = 8;
-            // 
-            // checkBoxFemale
-            // 
-            this.checkBoxFemale.AutoSize = true;
-            this.checkBoxFemale.BackColor = System.Drawing.Color.RosyBrown;
-            this.checkBoxFemale.Location = new System.Drawing.Point(114, 342);
-            this.checkBoxFemale.Name = "checkBoxFemale";
-            this.checkBoxFemale.Padding = new System.Windows.Forms.Padding(30, 8, 30, 8);
-            this.checkBoxFemale.Size = new System.Drawing.Size(75, 30);
-            this.checkBoxFemale.TabIndex = 4;
-            this.checkBoxFemale.UseVisualStyleBackColor = false;
-            this.checkBoxFemale.CheckedChanged += new System.EventHandler(this.checkBoxFemale_CheckedChanged);
-            // 
-            // checkBoxMale
-            // 
-            this.checkBoxMale.AutoSize = true;
-            this.checkBoxMale.BackColor = System.Drawing.Color.SkyBlue;
-            this.checkBoxMale.Checked = true;
-            this.checkBoxMale.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxMale.Location = new System.Drawing.Point(195, 342);
-            this.checkBoxMale.Name = "checkBoxMale";
-            this.checkBoxMale.Padding = new System.Windows.Forms.Padding(30, 8, 30, 8);
-            this.checkBoxMale.Size = new System.Drawing.Size(75, 30);
-            this.checkBoxMale.TabIndex = 9;
-            this.checkBoxMale.UseVisualStyleBackColor = false;
-            this.checkBoxMale.CheckedChanged += new System.EventHandler(this.checkBoxMale_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -128,6 +67,66 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // Logout
+            // 
+            this.Logout.BackColor = System.Drawing.Color.Orange;
+            this.Logout.BackgroundColor = System.Drawing.Color.Orange;
+            this.Logout.BorderColor = System.Drawing.Color.Black;
+            this.Logout.BorderRadius = 20;
+            this.Logout.BorderSize = 0;
+            this.Logout.FlatAppearance.BorderSize = 0;
+            this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout.ForeColor = System.Drawing.Color.Black;
+            this.Logout.Location = new System.Drawing.Point(12, 12);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(92, 50);
+            this.Logout.TabIndex = 16;
+            this.Logout.Text = "Back";
+            this.Logout.TextColor = System.Drawing.Color.Black;
+            this.Logout.UseVisualStyleBackColor = false;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.SystemColors.Window;
+            this.btn1.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.btn1.BorderColor = System.Drawing.Color.Black;
+            this.btn1.BorderRadius = 32;
+            this.btn1.BorderSize = 0;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.btn1.ForeColor = System.Drawing.Color.Black;
+            this.btn1.Location = new System.Drawing.Point(12, 301);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(60, 60);
+            this.btn1.TabIndex = 17;
+            this.btn1.Text = "<";
+            this.btn1.TextColor = System.Drawing.Color.Black;
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.SystemColors.Window;
+            this.btn2.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.btn2.BorderColor = System.Drawing.Color.Black;
+            this.btn2.BorderRadius = 32;
+            this.btn2.BorderSize = 0;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.btn2.ForeColor = System.Drawing.Color.Black;
+            this.btn2.Location = new System.Drawing.Point(712, 301);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(60, 60);
+            this.btn2.TabIndex = 18;
+            this.btn2.Text = ">";
+            this.btn2.TextColor = System.Drawing.Color.Black;
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,12 +134,10 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.Logout);
             this.Controls.Add(this.DateTimePicker2);
-            this.Controls.Add(this.BtnBack);
-            this.Controls.Add(this.BtnNextDay);
-            this.Controls.Add(this.checkBoxMale);
-            this.Controls.Add(this.BtnPrevDay);
-            this.Controls.Add(this.checkBoxFemale);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -153,19 +150,15 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnBack;
-        private System.Windows.Forms.Button BtnPrevDay;
-        private System.Windows.Forms.Button BtnNextDay;
         private System.Windows.Forms.DateTimePicker DateTimePicker2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBoxFemale;
-        private System.Windows.Forms.CheckBox checkBoxMale;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private CustomControls.RJControls.RJButton Logout;
+        private CustomControls.RJControls.RJButton btn1;
+        private CustomControls.RJControls.RJButton btn2;
     }
 }

@@ -69,6 +69,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBoxMale = new System.Windows.Forms.CheckBox();
+            this.checkBoxFemale = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb30)).BeginInit();
@@ -583,34 +585,64 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.button1.Location = new System.Drawing.Point(97, 102);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 38);
             this.button1.TabIndex = 3;
             this.button1.Text = "BUY";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(75)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Location = new System.Drawing.Point(96, 203);
+            this.panel3.Location = new System.Drawing.Point(56, 203);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(291, 146);
             this.panel3.TabIndex = 4;
+            // 
+            // checkBoxMale
+            // 
+            this.checkBoxMale.AutoSize = true;
+            this.checkBoxMale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.checkBoxMale.Checked = true;
+            this.checkBoxMale.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxMale.Location = new System.Drawing.Point(375, 231);
+            this.checkBoxMale.Name = "checkBoxMale";
+            this.checkBoxMale.Padding = new System.Windows.Forms.Padding(30, 12, 30, 12);
+            this.checkBoxMale.Size = new System.Drawing.Size(75, 38);
+            this.checkBoxMale.TabIndex = 10;
+            this.checkBoxMale.UseVisualStyleBackColor = false;
+            this.checkBoxMale.CheckedChanged += new System.EventHandler(this.checkBoxMale_CheckedChanged);
+            // 
+            // checkBoxFemale
+            // 
+            this.checkBoxFemale.AutoSize = true;
+            this.checkBoxFemale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(160)))));
+            this.checkBoxFemale.Location = new System.Drawing.Point(375, 285);
+            this.checkBoxFemale.Name = "checkBoxFemale";
+            this.checkBoxFemale.Padding = new System.Windows.Forms.Padding(30, 12, 30, 12);
+            this.checkBoxFemale.Size = new System.Drawing.Size(75, 38);
+            this.checkBoxFemale.TabIndex = 11;
+            this.checkBoxFemale.UseVisualStyleBackColor = false;
+            this.checkBoxFemale.CheckedChanged += new System.EventHandler(this.checkBoxFemale_CheckedChanged);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(50)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.checkBoxFemale);
+            this.Controls.Add(this.checkBoxMale);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -619,7 +651,6 @@
             this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "Form4";
             this.Text = "Freedom Tourism";
-            this.Load += new System.EventHandler(this.Form4_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb30)).EndInit();
@@ -657,6 +688,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -702,5 +734,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.CheckBox checkBoxMale;
+        private System.Windows.Forms.CheckBox checkBoxFemale;
     }
 }
