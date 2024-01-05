@@ -12,12 +12,17 @@ namespace formProject
 {
     public partial class Profile : Form
     {
-        Form1 form1;
+        SelectTourDate form1;
 
-        public Profile(Form1 form1)
+        public Profile(SelectTourDate form1)
         {
             InitializeComponent();
             this.form1 = form1;
+
+
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+            listview.Parent = pictureBox1;
 
             //******************Database
             addTicketToListView("1A8P5E", "Bandırma", "Lodz", "8:00", "8200", listview);
