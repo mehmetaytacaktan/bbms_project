@@ -10,5 +10,13 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-R4I1EGE\SQLEXPRESS;Initial Catalog=BusBook_DB;Integrated Security=True;Pooling=False</Value>
     </Setting>
+    <Setting Name="busticketdbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-5QOGEHT\SQLEXPRESS;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-5QOGEHT\SQLEXPRESS;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
