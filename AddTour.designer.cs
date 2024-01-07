@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTour));
             this.groupBoxTour = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.lblArrival = new System.Windows.Forms.Label();
             this.lblDeparture = new System.Windows.Forms.Label();
             this.btnGoBack = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBoxTour.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,19 @@
             this.groupBoxTour.Size = new System.Drawing.Size(760, 234);
             this.groupBoxTour.TabIndex = 1;
             this.groupBoxTour.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button2.Location = new System.Drawing.Point(549, 136);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(198, 39);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Remove Tour";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -189,18 +202,6 @@
             this.btnGoBack.Text = "Back";
             this.btnGoBack.UseVisualStyleBackColor = false;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button2.Location = new System.Drawing.Point(549, 136);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 39);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Remove Tour";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // AddTour
             // 

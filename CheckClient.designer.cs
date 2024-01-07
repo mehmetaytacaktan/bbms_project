@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckClient));
-            this.listview = new System.Windows.Forms.ListView();
+            this.listview1 = new System.Windows.Forms.ListView();
             this.lblClientID = new System.Windows.Forms.Label();
             this.cmbboxClientIDs = new System.Windows.Forms.ComboBox();
             this.btnGoBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listview
+            // listview1
             // 
-            this.listview.BackColor = System.Drawing.Color.Silver;
-            this.listview.HideSelection = false;
-            this.listview.Location = new System.Drawing.Point(12, 57);
-            this.listview.Name = "listview";
-            this.listview.Size = new System.Drawing.Size(760, 292);
-            this.listview.TabIndex = 1;
-            this.listview.UseCompatibleStateImageBehavior = false;
+            this.listview1.BackColor = System.Drawing.Color.Silver;
+            this.listview1.HideSelection = false;
+            this.listview1.Location = new System.Drawing.Point(12, 57);
+            this.listview1.Name = "listview1";
+            this.listview1.Size = new System.Drawing.Size(760, 292);
+            this.listview1.TabIndex = 1;
+            this.listview1.UseCompatibleStateImageBehavior = false;
             // 
             // lblClientID
             // 
@@ -92,7 +92,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form9
+            // CheckClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,12 +103,12 @@
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.cmbboxClientIDs);
             this.Controls.Add(this.lblClientID);
-            this.Controls.Add(this.listview);
+            this.Controls.Add(this.listview1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 400);
             this.MinimumSize = new System.Drawing.Size(800, 400);
-            this.Name = "Form9";
+            this.Name = "CheckClient";
             this.Text = "Freedom Tourism";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form9_FormClosing);
             this.ResumeLayout(false);
@@ -117,7 +117,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListView listview;
+        private System.Windows.Forms.ListView listview1;
         private System.Windows.Forms.Label lblClientID;
         private System.Windows.Forms.ComboBox cmbboxClientIDs;
         private System.Windows.Forms.Button btnGoBack;
