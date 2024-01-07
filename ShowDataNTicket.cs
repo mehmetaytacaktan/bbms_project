@@ -20,13 +20,13 @@ namespace BMSAdminPanel
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.CustomFormat = "yyyy-MM-dd hh:mm";
 
-            String[] tickets = { "Ticket_Id", "User_FId", "Bus_FId", "Trip_FId", "Dep_Loc", "Arr_Loc", "Departure_Time_Date", "Arrival_Time_Date", "Price", "Is_Discount", "Price_Disc" };
+            String[] tickets = { "ticket_id", "user_fid", "trip_fid", "bus_fid", "departure_location", "arrival_location", "departure_time_date", "arrival_time_date", "price", "is_discounted", "discounted_price" };
             foreach (String ticketsItem in tickets)
             {
                 listviewTickets.Columns.Add(ticketsItem);
             }
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn = new SqlConnection(connectionString);
 
             cnn.Open();
@@ -34,23 +34,23 @@ namespace BMSAdminPanel
             SqlDataReader dataReader;
             String sql;
 
-            sql = "SELECT * FROM Tickets ORDER BY Ticket_Id DESC";
+            sql = "SELECT * FROM Ticket ORDER BY ticket_id DESC";
             command = new SqlCommand(sql, cnn);
             dataReader = command.ExecuteReader();
 
             while (dataReader.Read())
             {
-                ListViewItem li = new ListViewItem(dataReader["Ticket_Id"].ToString());
-                li.SubItems.Add(dataReader["User_FId"].ToString());
-                li.SubItems.Add(dataReader["Bus_FId"].ToString());
-                li.SubItems.Add(dataReader["Trip_FId"].ToString());
-                li.SubItems.Add(dataReader["Dep_Loc"].ToString());
-                li.SubItems.Add(dataReader["Arr_Loc"].ToString());
-                li.SubItems.Add(dataReader["Departure_Time_Date"].ToString());
-                li.SubItems.Add(dataReader["Arrival_Time_Date"].ToString());
-                li.SubItems.Add(dataReader["Price"].ToString());
-                li.SubItems.Add(dataReader["Is_Discount"].ToString());
-                li.SubItems.Add(dataReader["Price_Disc"].ToString());
+                ListViewItem li = new ListViewItem(dataReader["ticket_id"].ToString());
+                li.SubItems.Add(dataReader["user_fid"].ToString());
+                li.SubItems.Add(dataReader["trip_fid"].ToString());
+                li.SubItems.Add(dataReader["bus_fid"].ToString());
+                li.SubItems.Add(dataReader["departure_location"].ToString());
+                li.SubItems.Add(dataReader["arrival_location"].ToString());
+                li.SubItems.Add(dataReader["departure_time_date"].ToString());
+                li.SubItems.Add(dataReader["arrival_time_date"].ToString());
+                li.SubItems.Add(dataReader["price"].ToString());
+                li.SubItems.Add(dataReader["is_discounted"].ToString());
+                li.SubItems.Add(dataReader["discounted_price"].ToString());
 
                 listviewTickets.Items.Add(li);
             }
@@ -89,7 +89,7 @@ namespace BMSAdminPanel
             string pnr = textBox1.Text.ToString();
             listviewTickets.Items.Clear();
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn = new SqlConnection(connectionString);
 
             cnn.Open();
@@ -97,23 +97,23 @@ namespace BMSAdminPanel
             SqlDataReader dataReader;
             String sql;
 
-            sql = "SELECT * FROM Tickets WHERE Ticket_Id = '" + pnr + "'";
+            sql = "SELECT * FROM Ticket WHERE ticket_id = '" + pnr + "'";
             command = new SqlCommand(sql, cnn);
             dataReader = command.ExecuteReader();
 
             if (dataReader.Read())
             {
-                ListViewItem li = new ListViewItem(dataReader["Ticket_Id"].ToString());
-                li.SubItems.Add(dataReader["User_FId"].ToString());
-                li.SubItems.Add(dataReader["Bus_FId"].ToString());
-                li.SubItems.Add(dataReader["Trip_FId"].ToString());
-                li.SubItems.Add(dataReader["Dep_Loc"].ToString());
-                li.SubItems.Add(dataReader["Arr_Loc"].ToString());
-                li.SubItems.Add(dataReader["Departure_Time_Date"].ToString());
-                li.SubItems.Add(dataReader["Arrival_Time_Date"].ToString());
-                li.SubItems.Add(dataReader["Price"].ToString());
-                li.SubItems.Add(dataReader["Is_Discount"].ToString());
-                li.SubItems.Add(dataReader["Price_Disc"].ToString());
+                ListViewItem li = new ListViewItem(dataReader["ticket_id"].ToString());
+                li.SubItems.Add(dataReader["user_fid"].ToString());
+                li.SubItems.Add(dataReader["trip_fid"].ToString());
+                li.SubItems.Add(dataReader["bus_fid"].ToString());
+                li.SubItems.Add(dataReader["departure_location"].ToString());
+                li.SubItems.Add(dataReader["arrival_location"].ToString());
+                li.SubItems.Add(dataReader["departure_time_date"].ToString());
+                li.SubItems.Add(dataReader["arrival_time_date"].ToString());
+                li.SubItems.Add(dataReader["price"].ToString());
+                li.SubItems.Add(dataReader["is_discounted"].ToString());
+                li.SubItems.Add(dataReader["discounted_price"].ToString());
 
                 listviewTickets.Items.Add(li);
             }
@@ -126,23 +126,23 @@ namespace BMSAdminPanel
             SqlDataReader dataReader1;
             String sql1;
 
-            sql1 = "SELECT * FROM Tickets WHERE Ticket_Id != '" + pnr + "' ORDER BY Ticket_Id DESC";
+            sql1 = "SELECT * FROM Ticket WHERE ticket_id != '" + pnr + "' ORDER BY ticket_id DESC";
             command1 = new SqlCommand(sql1, cnn);
             dataReader1 = command1.ExecuteReader();
 
             while (dataReader1.Read())
             {
-                ListViewItem li = new ListViewItem(dataReader1["Ticket_Id"].ToString());
-                li.SubItems.Add(dataReader1["User_FId"].ToString());
-                li.SubItems.Add(dataReader1["Bus_FId"].ToString());
-                li.SubItems.Add(dataReader1["Trip_FId"].ToString());
-                li.SubItems.Add(dataReader1["Dep_Loc"].ToString());
-                li.SubItems.Add(dataReader1["Arr_Loc"].ToString());
-                li.SubItems.Add(dataReader1["Departure_Time_Date"].ToString());
-                li.SubItems.Add(dataReader1["Arrival_Time_Date"].ToString());
-                li.SubItems.Add(dataReader1["Price"].ToString());
-                li.SubItems.Add(dataReader1["Is_Discount"].ToString());
-                li.SubItems.Add(dataReader1["Price_Disc"].ToString());
+                ListViewItem li = new ListViewItem(dataReader1["ticket_id"].ToString());
+                li.SubItems.Add(dataReader1["user_fid"].ToString());
+                li.SubItems.Add(dataReader1["trip_fid"].ToString());
+                li.SubItems.Add(dataReader1["bus_fid"].ToString());
+                li.SubItems.Add(dataReader1["departure_location"].ToString());
+                li.SubItems.Add(dataReader1["arrival_location"].ToString());
+                li.SubItems.Add(dataReader1["departure_time_date"].ToString());
+                li.SubItems.Add(dataReader1["arrival_time_date"].ToString());
+                li.SubItems.Add(dataReader1["price"].ToString());
+                li.SubItems.Add(dataReader1["is_discounted"].ToString());
+                li.SubItems.Add(dataReader1["discounted_price"].ToString());
 
                 listviewTickets.Items.Add(li);
             }
@@ -170,14 +170,14 @@ namespace BMSAdminPanel
             int sum = 0;
 
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
-            String query = "SELECT Price FROM dbo.Tickets WHERE (Departure_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date) " +
-                "AND (Arrival_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date)";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String query = "SELECT price FROM dbo.Ticket WHERE (departure_time_date BETWEEN @departure_time_date AND @arrival_time_date) " +
+                "AND (arrival_time_date BETWEEN @departure_time_date AND @arrival_time_date)";
             using (SqlConnection con = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
-                cmd.Parameters.Add("@Departure_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp1;
-                cmd.Parameters.Add("@Arrival_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp2;
+                cmd.Parameters.Add("@departure_time_date", System.Data.SqlDbType.DateTime).Value = tmp1;
+                cmd.Parameters.Add("@arrival_time_date", System.Data.SqlDbType.DateTime).Value = tmp2;
 
                 con.Open();
                 SqlDataReader dataReader;

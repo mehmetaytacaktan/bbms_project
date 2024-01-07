@@ -15,8 +15,7 @@ namespace BMSAdminPanel
             InitializeComponent();
             UploadBoxes(cmbboxFrom);
             UploadBoxes(cmbboxTo);
-            UploadBoxes(cmbboxBusID);
-
+            UploadBusIDs(cmbboxBusID);
 
             dtDeparture.Format = DateTimePickerFormat.Custom;
             dtDeparture.CustomFormat = "yyyy-MM-dd hh:mm";
@@ -81,23 +80,23 @@ namespace BMSAdminPanel
             ComboBox tmp3 = cmbboxBusID;
             DateTime tmp4 = dtDeparture.Value;
             DateTime tmp5 = dtArrival.Value;
+            Int32.TryParse(tmp3.SelectedItem.ToString(), out int p_bus_fid);
 
 
-
-            String tripId = generateTripId();// int döndürecek
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
-            String query = "INSERT INTO dbo.Trips(Trip_Id, Dep_Loc, Arr_Loc, Bus_FId, Departure_Time_Date, Arrival_Time_Date)" +
-                "VALUES(@Trip_Id, @Dep_Loc, @Arr_Loc, @Bus_FId, @Departure_Time_Date, @Arrival_Time_Date)";
+            int tripId = generateTripId();
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String query = "INSERT INTO dbo.Trips(trip_id, bus_fid, departure_location, arrival_location, departure_time_date, arrival_time_date)" +
+                "VALUES(@trip_id, @bus_fid, @departure_location, @arrival_location, @departure_time_date, @arrival_time_date)";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, con))
-            {
-                cmd.Parameters.Add("@Trip_Id", System.Data.SqlDbType.VarChar).Value = tripId; // INT yapılacak
-                cmd.Parameters.Add("@Dep_Loc", System.Data.SqlDbType.VarChar).Value = tmp1.SelectedItem.ToString();
-                cmd.Parameters.Add("@Arr_Loc", System.Data.SqlDbType.VarChar).Value = tmp2.SelectedItem.ToString();
-                cmd.Parameters.Add("@Bus_FId", System.Data.SqlDbType.VarChar).Value = tmp3.SelectedItem.ToString();
-                cmd.Parameters.Add("@Departure_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp4;
-                cmd.Parameters.Add("@Arrival_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp5;
+            { 
+                cmd.Parameters.Add("@trip_id", System.Data.SqlDbType.Int).Value = tripId;
+                cmd.Parameters.Add("@bus_fid", System.Data.SqlDbType.Int).Value = p_bus_fid;
+                cmd.Parameters.Add("@departure_location", System.Data.SqlDbType.VarChar).Value = tmp1.SelectedItem.ToString();
+                cmd.Parameters.Add("@arrival_location", System.Data.SqlDbType.VarChar).Value = tmp2.SelectedItem.ToString();
+                cmd.Parameters.Add("@departure_time_date", System.Data.SqlDbType.DateTime).Value = tmp4;
+                cmd.Parameters.Add("@arrival_time_date", System.Data.SqlDbType.DateTime).Value = tmp5;
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -113,7 +112,7 @@ namespace BMSAdminPanel
 
         public void UploadBoxes(ComboBox cmbb)
         {
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn = new SqlConnection(connectionString);
             cnn.Open();
             SqlCommand command;
@@ -122,15 +121,11 @@ namespace BMSAdminPanel
 
             if (cmbb.Name == "cmbboxFrom")
             {
-                sql = "SELECT DISTINCT(Dep_Loc) FROM Trips";
-            }
-            else if (cmbb.Name == "cmbboxTo")
-            {
-                sql = "SELECT DISTINCT(Arr_Loc) FROM Trips";
+                sql = "SELECT DISTINCT(departure_location) FROM Trips";
             }
             else
             {
-                sql = "SELECT DISTINCT(Bus_FId) FROM Trips";
+                sql = "SELECT DISTINCT(arrival_location) FROM Trips";
             }
 
             command = new SqlCommand(sql, cnn);
@@ -147,26 +142,52 @@ namespace BMSAdminPanel
 
         }
 
-        public void deleteRecord()//ilgili delete butonuna koyulacak fonksiyon
+        public void UploadBusIDs(ComboBox cmbb)
+        {
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            SqlConnection cnn = new SqlConnection(connectionString);
+            cnn.Open();
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql;
+
+            sql = "SELECT DISTINCT(bus_fid) FROM Trips";
+
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+
+                cmbb.Items.Add(dataReader["bus_fid"].ToString());//Düzelt
+            }
+
+            dataReader.Close();
+            command.Dispose();
+            cnn.Close();
+        }
+
+        public void deleteRecord()
         {
             ComboBox tmp1 = cmbboxFrom;
             ComboBox tmp2 = cmbboxTo;
             ComboBox tmp3 = cmbboxBusID;
             DateTime tmp5 = dtDeparture.Value;
             DateTime tmp4 = dtArrival.Value;
+            Int32.TryParse(tmp3.SelectedItem.ToString(), out int p_bus_fid);
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
-            String query = "DELETE From dbo.Trips WHERE Dep_Loc = @Dep_Loc AND Arr_Loc = @Arr_Loc AND Bus_FId = @Bus_FId AND " +
-                "Departure_Time_Date = @Departure_Time_Date AND Arrival_Time_Date = @Arrival_Time_Date";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String query = "DELETE From dbo.Trips WHERE departure_location = @departure_location AND arrival_location = @arrival_location AND bus_fid = @bus_fid AND " +
+                "departure_time_date = @departure_time_date AND arrival_time_date = @arrival_time_date";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
-                cmd.Parameters.Add("@Dep_Loc", System.Data.SqlDbType.VarChar).Value = tmp1.SelectedItem.ToString();
-                cmd.Parameters.Add("@Arr_Loc", System.Data.SqlDbType.VarChar).Value = tmp2.SelectedItem.ToString();
-                cmd.Parameters.Add("@Bus_FId", System.Data.SqlDbType.VarChar).Value = tmp3.SelectedItem.ToString();
-                cmd.Parameters.Add("@Departure_Time_Date", System.Data.SqlDbType.VarChar).Value = tmp5;
-                cmd.Parameters.Add("@Arrival_Time_Date", System.Data.SqlDbType.VarChar).Value = tmp4;
+                cmd.Parameters.Add("@departure_location", System.Data.SqlDbType.VarChar).Value = tmp1.SelectedItem.ToString();
+                cmd.Parameters.Add("@arrival_location", System.Data.SqlDbType.VarChar).Value = tmp2.SelectedItem.ToString();
+                cmd.Parameters.Add("@bus_fid", System.Data.SqlDbType.Int).Value = p_bus_fid;
+                cmd.Parameters.Add("@departure_time_date", System.Data.SqlDbType.DateTime).Value = tmp5;
+                cmd.Parameters.Add("@arrival_time_date", System.Data.SqlDbType.DateTime).Value = tmp4;
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -174,11 +195,11 @@ namespace BMSAdminPanel
                 MessageBox.Show("Succesfully Deleted!");
             }
         }
-        public string generateTripId() //int yapılacak
+        public int generateTripId()
         {
             int maxTripId = 0;
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn = new SqlConnection(connectionString);
             cnn.Open();
 
@@ -186,17 +207,16 @@ namespace BMSAdminPanel
             SqlDataReader dataReader;
             String sql;
 
-            sql = "SELECT MAX(Trip_Id) FROM Trips GROUP BY Trip_Id";
+            sql = "SELECT MAX(trip_id) FROM Trips";
             command = new SqlCommand(sql, cnn);
             dataReader = command.ExecuteReader();
-            if (dataReader.Read())
+            if (dataReader != null && dataReader.Read())
             {
                 Int32.TryParse(dataReader.GetValue(0).ToString(), out maxTripId);
                 maxTripId++;
+                
             }
-
-            //return maxTripId.ToString(); //string i int yapınca düzelicek!
-            return 41.ToString();
+            return maxTripId;
         }
     }
 }

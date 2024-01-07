@@ -40,16 +40,16 @@ namespace BMSAdminPanel
             Int32.TryParse(textBox1.Text, out int discount);
             if (discount >= 0 && discount <= 100)
             {
-                String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
-                String query = "UPDATE dbo.Tickets SET Price_Disc = (Price)*(100 - @discount)/100, Is_Discount = 1 WHERE (" +
-                    "Departure_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date) AND (" +
-                    "Arrival_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date)";
+                String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+                String query = "UPDATE dbo.Ticket SET discounted_price = (Price)*(100 - @discount)/100, is_discounted = 1 WHERE (" +
+                    "departure_time_date BETWEEN @departure_time_date AND @arrival_time_date) AND (" +
+                    "arrival_time_date BETWEEN @departure_time_date AND @arrival_time_date)";
                 using (SqlConnection con = new SqlConnection(connectionString1))
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     cmd.Parameters.Add("@discount", System.Data.SqlDbType.Int).Value = discount;
-                    cmd.Parameters.Add("@Departure_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp1;
-                    cmd.Parameters.Add("@Arrival_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp2;
+                    cmd.Parameters.Add("@departure_time_date", System.Data.SqlDbType.DateTime).Value = tmp1;
+                    cmd.Parameters.Add("@arrival_time_date", System.Data.SqlDbType.DateTime).Value = tmp2;
 
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -70,15 +70,15 @@ namespace BMSAdminPanel
             DateTime tmp1 = dateTimePicker1.Value;
             DateTime tmp2 = dateTimePicker3.Value;
 
-            String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
-            String query = "UPDATE dbo.Tickets SET Is_Discount = 0 WHERE (" +
-                "Departure_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date) AND (" +
-                "Arrival_Time_Date BETWEEN @Departure_Time_Date AND @Arrival_Time_Date)";
+            String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String query = "UPDATE dbo.Ticket SET is_discounted = 0 WHERE (" +
+                "departure_time_date BETWEEN @departure_time_date AND @arrival_time_date) AND (" +
+                "arrival_time_date BETWEEN @departure_time_date AND @arrival_time_date)";
             using (SqlConnection con = new SqlConnection(connectionString1))
             using (SqlCommand cmd = new SqlCommand(query, con))
             {
-                cmd.Parameters.Add("@Departure_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp1;
-                cmd.Parameters.Add("@Arrival_Time_Date", System.Data.SqlDbType.DateTime).Value = tmp2;
+                cmd.Parameters.Add("@departure_time_date", System.Data.SqlDbType.DateTime).Value = tmp1;
+                cmd.Parameters.Add("@arrival_time_date", System.Data.SqlDbType.DateTime).Value = tmp2;
 
                 con.Open();
                 cmd.ExecuteNonQuery();

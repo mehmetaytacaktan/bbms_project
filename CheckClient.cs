@@ -13,13 +13,13 @@ namespace BMSAdminPanel
         {
             this.adminPanel = adminPanel;
             InitializeComponent();
-            String[] userColumns = { "User ID", "First Name", "Last Name", "User Name", "Password", "E-Mail", "Phone Number" };
+            String[] userColumns = { "user_id", "first_name", "last_name", "username", "password", "email", "phone_number" };
             foreach (String column in userColumns)
             {
                 listview1.Columns.Add(column);
             }
 
-            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn = new SqlConnection(connectionString);
 
             cnn.Open();
@@ -27,21 +27,21 @@ namespace BMSAdminPanel
             SqlDataReader dataReader;
             String sql;
 
-            sql = "SELECT * FROM Users";
+            sql = "SELECT * FROM [User]";
             command = new SqlCommand(sql, cnn);
             dataReader = command.ExecuteReader();
 
             while (dataReader.Read())
             {
-                cmbboxClientIDs.Items.Add(dataReader["Pass_Id"]);
+                cmbboxClientIDs.Items.Add(dataReader["user_id"]);
 
-                ListViewItem li = new ListViewItem(dataReader["Pass_Id"].ToString());
-                li.SubItems.Add(dataReader["First_Name"].ToString());
-                li.SubItems.Add(dataReader["Last_Name"].ToString());
-                li.SubItems.Add(dataReader["Us_Name"].ToString());
-                li.SubItems.Add(dataReader["Pass_Word"].ToString());
-                li.SubItems.Add(dataReader["E_mail"].ToString());
-                li.SubItems.Add(dataReader["Phone_Num"].ToString());
+                ListViewItem li = new ListViewItem(dataReader["user_id"].ToString());
+                li.SubItems.Add(dataReader["first_name"].ToString());
+                li.SubItems.Add(dataReader["last_name"].ToString());
+                li.SubItems.Add(dataReader["username"].ToString());
+                li.SubItems.Add(dataReader["password"].ToString());
+                li.SubItems.Add(dataReader["email"].ToString());
+                li.SubItems.Add(dataReader["phone_number"].ToString());
 
                 listview1.Items.Add(li);
             }
@@ -67,7 +67,7 @@ namespace BMSAdminPanel
             listview1.Items.Clear();
             String SelectedUserID = cmbboxClientIDs.SelectedItem.ToString();
 
-            String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString1 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn1 = new SqlConnection(connectionString1);
 
             cnn1.Open();
@@ -76,19 +76,19 @@ namespace BMSAdminPanel
             String sql1;
 
 
-            sql1 = "SELECT * FROM Users WHERE Pass_Id = '" + SelectedUserID + "'";
+            sql1 = "SELECT * FROM [User] WHERE user_id = '" + SelectedUserID + "'";
             command1 = new SqlCommand(sql1, cnn1);
             dataReader1 = command1.ExecuteReader();
 
             while (dataReader1.Read())
             {
-                ListViewItem li = new ListViewItem(dataReader1["Pass_Id"].ToString());
-                li.SubItems.Add(dataReader1["First_Name"].ToString());
-                li.SubItems.Add(dataReader1["Last_Name"].ToString());
-                li.SubItems.Add(dataReader1["Us_Name"].ToString());
-                li.SubItems.Add(dataReader1["Pass_Word"].ToString());
-                li.SubItems.Add(dataReader1["E_mail"].ToString());
-                li.SubItems.Add(dataReader1["Phone_Num"].ToString());
+                ListViewItem li = new ListViewItem(dataReader1["user_id"].ToString());
+                li.SubItems.Add(dataReader1["first_name"].ToString());
+                li.SubItems.Add(dataReader1["last_name"].ToString());
+                li.SubItems.Add(dataReader1["username"].ToString());
+                li.SubItems.Add(dataReader1["password"].ToString());
+                li.SubItems.Add(dataReader1["email"].ToString());
+                li.SubItems.Add(dataReader1["phone_number"].ToString());
 
                 listview1.Items.Add(li);
             }
@@ -96,7 +96,7 @@ namespace BMSAdminPanel
             command1.Dispose();
             cnn1.Close();
 
-            String connectionString2 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=BUS_BOOK_MAN_SYS_;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            String connectionString2 = "Data Source=LAPTOP-PBSAV96D\\DEMODB;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
             SqlConnection cnn2 = new SqlConnection(connectionString2);
 
             cnn2.Open();
@@ -104,18 +104,18 @@ namespace BMSAdminPanel
             SqlDataReader dataReader2;
             String sql2;
 
-            sql2 = "SELECT * FROM Users WHERE Pass_Id <> '" + SelectedUserID + "'";
+            sql2 = "SELECT * FROM [User] WHERE user_id <> '" + SelectedUserID + "'";
             command2 = new SqlCommand(sql2, cnn2);
             dataReader2 = command2.ExecuteReader();
             while (dataReader2.Read())
             {
-                ListViewItem li = new ListViewItem(dataReader2["Pass_Id"].ToString());
-                li.SubItems.Add(dataReader2["First_Name"].ToString());
-                li.SubItems.Add(dataReader2["Last_Name"].ToString());
-                li.SubItems.Add(dataReader2["Us_Name"].ToString());
-                li.SubItems.Add(dataReader2["Pass_Word"].ToString());
-                li.SubItems.Add(dataReader2["E_mail"].ToString());
-                li.SubItems.Add(dataReader2["Phone_Num"].ToString());
+                ListViewItem li = new ListViewItem(dataReader2["user_id"].ToString());
+                li.SubItems.Add(dataReader2["first_name"].ToString());
+                li.SubItems.Add(dataReader2["last_name"].ToString());
+                li.SubItems.Add(dataReader2["username"].ToString());
+                li.SubItems.Add(dataReader2["password"].ToString());
+                li.SubItems.Add(dataReader2["email"].ToString());
+                li.SubItems.Add(dataReader2["phone_number"].ToString());
 
                 listview1.Items.Add(li);
             }
