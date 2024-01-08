@@ -15,6 +15,8 @@ namespace formProject
             Fail
         }
 
+        public Profiles profiles = new Profiles();
+
         SelectTourDate MainMenu;
         Register2 RegisterMenu;
         bool login = true;
@@ -126,28 +128,27 @@ namespace formProject
         //checks if user with that name exists
         bool UserExists(string username)//********************************DataBase
         {
-            if(username == "admin" || username == "user")
-                return true;
-            else
-                return false;
+            foreach (var profile in profiles.s)
+            {
+                if (profile.username == username)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         //checks if user with that name and password exists
         TypeLogin UserExists(string username, string password)
         {
-            if(username == "user" && password == "user")//********************************DataBase
+            foreach (var profile in profiles.s)
             {
-                return TypeLogin.User;
+                if (profile.username == username && profile.password == password)
+                {
+                    return (TypeLogin)(profile.type);
+                }
             }
-            else if (username == "admin" && password == "admin")//********************************DataBase
-            {
-                return TypeLogin.Admin;
-            }
-            else if (username == "driver" && password == "driver")//********************************DataBase
-            {
-                return TypeLogin.Driver;
-            }
-            else
+            //else
             {
                 MessageBox.Show("Username or password are incorrect",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -161,6 +162,11 @@ namespace formProject
             if(username == string.Empty || password == string.Empty)
             {
                 MessageBox.Show("Username or password are empty",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (password.Length < 8)
+            {
+                MessageBox.Show("Password has to be at least 8 character long",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else

@@ -60,6 +60,7 @@
     <Compile Include="Driver.Designer.cs">
       <DependentUpon>Driver.cs</DependentUpon>
     </Compile>
+    <Compile Include="Profiles.cs" />
     <Compile Include="SelectTourDate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,11 +122,11 @@
       <DependentUpon>CheckClient.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Profile.cs">
+    <Compile Include="ProfileMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile.Designer.cs">
-      <DependentUpon>Profile.cs</DependentUpon>
+    <Compile Include="ProfileMenu.Designer.cs">
+      <DependentUpon>ProfileMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -165,8 +166,8 @@
     <EmbeddedResource Include="CheckClient.resx">
       <DependentUpon>CheckClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profile.resx">
-      <DependentUpon>Profile.cs</DependentUpon>
+    <EmbeddedResource Include="ProfileMenu.resx">
+      <DependentUpon>ProfileMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

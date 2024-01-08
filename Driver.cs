@@ -27,10 +27,9 @@ namespace formProject
             };
 
             //*****************************add from database
-            comboBox2.Items.Add("Moscow");
-            comboBox2.Items.Add("France");
-            comboBox2.Items.Add("Chile");
-            comboBox2.Items.Add("Turkey");
+            comboBox2.Items.Add("Bandırma");
+            comboBox2.Items.Add("İstanbul");
+            comboBox2.Items.Add("Akkeçili");
         }
 
         private void Driver_FormClosing(object sender, FormClosingEventArgs e)
@@ -41,14 +40,16 @@ namespace formProject
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             //******************Read from database
-            ToFemale(pb1);
-            ToFemale(pb3);
-            ToFemale(pb28);
-            ToFemale(pb11);
-            ToMale(pb17);
-            ToMale(pb21);
-            ToMale(pb2);
-            ToMale(pb33);
+
+            Random rnd = new Random();
+            foreach (var chair in chairs)
+            {
+                int x = rnd.Next(1, 6);
+                if (x == 1)
+                    ToFemale(chair);
+                if (x == 2)
+                    ToMale(chair);
+            }
         }
 
         void ToFemale(PictureBox subject)

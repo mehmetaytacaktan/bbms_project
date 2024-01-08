@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -14,17 +12,8 @@ namespace formProject
         Female
     }
 
-   
-  
-   /// CONNECTION STRING |
-   /// </summary>        V
     public partial class BuyScreen : Form
     {
-        
-       
-        static string connectionString = "Data Source=DESKTOP-5QOGEHT\\SQLEXPRESS;Initial Catalog=busticketdb; Trusted_Connection=true ";
-        SqlConnection connection = new SqlConnection(connectionString);
-
         PictureBox[] seats;
         Gender[] chairs = new Gender[33];
 
@@ -38,7 +27,7 @@ namespace formProject
             int MaxYear = DateTime.Now.AddYears(30).Year;
             int month = DateTime.Now.Month;
             int year = DateTime.Now.Year;
-            comboBoxExpiry.Items.Clear();
+            Date.Items.Clear();
 
             while(year < MaxYear + 1)
             {
@@ -47,7 +36,7 @@ namespace formProject
                 if(month < 10)
                     strMonth = "0" + strMonth;
 
-                comboBoxExpiry.Items.Add(strMonth + "/" + strYear[2] + strYear[3]);
+                Date.Items.Add(strMonth + "/" + strYear[2] + strYear[3]);
                 month++;
 
                 if (month > 12)
@@ -93,7 +82,7 @@ namespace formProject
         {
             string output = "";
 
-            foreach (char ch in textBoxCardName.Text)
+            foreach (char ch in TName.Text)
             {
                 if (char.IsLetter(ch) && !char.IsNumber(ch))
                 {
@@ -101,21 +90,21 @@ namespace formProject
                 }
             }
 
-            textBoxCardName.Text = output;
+            TName.Text = output;
         }
 
         //card number
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxCardNumber.Text.Length > 16)
+            if (TNumber.Text.Length > 16)
             {
-                textBoxCardNumber.Text = textBoxCardNumber.Text.Substring(0, 16);
+                TNumber.Text = TNumber.Text.Substring(0, 16);
             }
             else
             {
                 string output = "";
 
-                foreach (char ch in textBoxCardNumber.Text)
+                foreach (char ch in TNumber.Text)
                 {
                     if (char.IsNumber(ch))
                     {
@@ -123,7 +112,7 @@ namespace formProject
                     }
                 }
 
-                textBoxCardNumber.Text = output;
+                TNumber.Text = output;
             }
         }
 
@@ -163,62 +152,19 @@ namespace formProject
                 UsersGender = Gender.Female;
         }
 
-
         //buy
-        //****************************************Database
         private void button1_Click(object sender, EventArgs e)
         {
-            {
-                try
-                {
-                   
-                    connection.Open();
-
-
-                    string GenerateRandomId()
-                    {
-                        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                        Random random = new Random();
-                        return new string(Enumerable.Repeat(chars, 8)
-                          .Select(s => s[random.Next(s.Length)]).ToArray());
-                    }
-
-                    string paymentId = GenerateRandomId();
-                    string selectedExpiryDate = comboBoxExpiry.SelectedItem?.ToString();
-
-                    
-                    string query = "INSERT INTO Payment (payment_id, cardnumber, expirydate, cardname, cardtype, amount, paymentdate) VALUES (@payment_id, @cardnumber, @expirydate, @cardname, @cardtype, @amount, @paymentdate)";
-                    SqlCommand command = new SqlCommand(query, connection);
-
-                    // Parametreleri buraya ekledim
-                    command.Parameters.AddWithValue("@payment_id", paymentId);
-                    command.Parameters.AddWithValue("@cardnumber", textBoxCardNumber.Text);
-                    command.Parameters.AddWithValue("@expirydate", selectedExpiryDate);
-                    command.Parameters.AddWithValue("@cardname", textBoxCardName.Text);
-                    command.Parameters.AddWithValue("@cardtype", comboBoxCardType.SelectedItem?.ToString());
-                    command.Parameters.AddWithValue("@amount", 500);
-                    command.Parameters.AddWithValue("@paymentdate", DateTime.Now);
-                   
-                   command.ExecuteNonQuery();                 
-                   
-                    
-                    MessageBox.Show("Ödeme başarıyla gerçekleştirildi. Ödeme ID: " + paymentId);
-
-                   
-                    resetSeats();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Ödeme işlemi sırasında bir hata oluştu: " + ex.Message + "\n\nHata Detayı:\n" + ex.StackTrace + "\n\nInner Exception:\n" + ex.InnerException?.Message);
-                }
-
-                finally
-                {
-                    // Veritabanı bağlantısını kapatın
-                    connection.Close();
-                }
-            }
-
+            //************************************Database
+            if(Type.SelectedText == string.Empty)
+                MessageBox.Show("Please select a type",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (Date.SelectedText == string.Empty)
+                MessageBox.Show("Please select a date",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (TNumber.Text.Length == 16)
+                MessageBox.Show("Please enter a valid card number",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         void resetSeats()

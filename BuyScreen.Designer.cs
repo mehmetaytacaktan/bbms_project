@@ -64,15 +64,15 @@
             this.pb7 = new System.Windows.Forms.PictureBox();
             this.pb4 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
-            this.textBoxCardName = new System.Windows.Forms.TextBox();
-            this.comboBoxCardType = new System.Windows.Forms.ComboBox();
-            this.textBoxCardNumber = new System.Windows.Forms.TextBox();
+            this.TName = new System.Windows.Forms.TextBox();
+            this.Type = new System.Windows.Forms.ComboBox();
+            this.TNumber = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBoxMale = new System.Windows.Forms.CheckBox();
             this.checkBoxFemale = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxExpiry = new System.Windows.Forms.ComboBox();
+            this.Date = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -150,29 +150,26 @@
             this.panel1.Controls.Add(this.pb7);
             this.panel1.Controls.Add(this.pb4);
             this.panel1.Controls.Add(this.pb1);
-            this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(613, 215);
+            this.panel1.Size = new System.Drawing.Size(460, 175);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Location = new System.Drawing.Point(19, 25);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(14, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(27, 101);
+            this.panel2.Size = new System.Drawing.Size(20, 82);
             this.panel2.TabIndex = 35;
             // 
             // pb33
             // 
             this.pb33.Image = ((System.Drawing.Image)(resources.GetObject("pb33.Image")));
             this.pb33.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb33.InitialImage")));
-            this.pb33.Location = new System.Drawing.Point(544, 161);
-            this.pb33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb33.Location = new System.Drawing.Point(408, 131);
             this.pb33.Name = "pb33";
-            this.pb33.Size = new System.Drawing.Size(40, 36);
+            this.pb33.Size = new System.Drawing.Size(30, 29);
             this.pb33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb33.TabIndex = 34;
             this.pb33.TabStop = false;
@@ -182,10 +179,9 @@
             // 
             this.pb30.Image = ((System.Drawing.Image)(resources.GetObject("pb30.Image")));
             this.pb30.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb30.InitialImage")));
-            this.pb30.Location = new System.Drawing.Point(496, 161);
-            this.pb30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb30.Location = new System.Drawing.Point(372, 131);
             this.pb30.Name = "pb30";
-            this.pb30.Size = new System.Drawing.Size(40, 36);
+            this.pb30.Size = new System.Drawing.Size(30, 29);
             this.pb30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb30.TabIndex = 33;
             this.pb30.TabStop = false;
@@ -195,10 +191,9 @@
             // 
             this.pb27.Image = ((System.Drawing.Image)(resources.GetObject("pb27.Image")));
             this.pb27.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb27.InitialImage")));
-            this.pb27.Location = new System.Drawing.Point(448, 161);
-            this.pb27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb27.Location = new System.Drawing.Point(336, 131);
             this.pb27.Name = "pb27";
-            this.pb27.Size = new System.Drawing.Size(40, 36);
+            this.pb27.Size = new System.Drawing.Size(30, 29);
             this.pb27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb27.TabIndex = 32;
             this.pb27.TabStop = false;
@@ -208,10 +203,9 @@
             // 
             this.pb24.Image = ((System.Drawing.Image)(resources.GetObject("pb24.Image")));
             this.pb24.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb24.InitialImage")));
-            this.pb24.Location = new System.Drawing.Point(400, 161);
-            this.pb24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb24.Location = new System.Drawing.Point(300, 131);
             this.pb24.Name = "pb24";
-            this.pb24.Size = new System.Drawing.Size(40, 36);
+            this.pb24.Size = new System.Drawing.Size(30, 29);
             this.pb24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb24.TabIndex = 31;
             this.pb24.TabStop = false;
@@ -221,10 +215,9 @@
             // 
             this.pb21.Image = ((System.Drawing.Image)(resources.GetObject("pb21.Image")));
             this.pb21.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb21.InitialImage")));
-            this.pb21.Location = new System.Drawing.Point(352, 161);
-            this.pb21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb21.Location = new System.Drawing.Point(264, 131);
             this.pb21.Name = "pb21";
-            this.pb21.Size = new System.Drawing.Size(40, 36);
+            this.pb21.Size = new System.Drawing.Size(30, 29);
             this.pb21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb21.TabIndex = 30;
             this.pb21.TabStop = false;
@@ -234,10 +227,9 @@
             // 
             this.pb18.Image = ((System.Drawing.Image)(resources.GetObject("pb18.Image")));
             this.pb18.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb18.InitialImage")));
-            this.pb18.Location = new System.Drawing.Point(304, 161);
-            this.pb18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb18.Location = new System.Drawing.Point(228, 131);
             this.pb18.Name = "pb18";
-            this.pb18.Size = new System.Drawing.Size(40, 36);
+            this.pb18.Size = new System.Drawing.Size(30, 29);
             this.pb18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb18.TabIndex = 29;
             this.pb18.TabStop = false;
@@ -247,10 +239,9 @@
             // 
             this.pb15.Image = ((System.Drawing.Image)(resources.GetObject("pb15.Image")));
             this.pb15.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb15.InitialImage")));
-            this.pb15.Location = new System.Drawing.Point(256, 161);
-            this.pb15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb15.Location = new System.Drawing.Point(192, 131);
             this.pb15.Name = "pb15";
-            this.pb15.Size = new System.Drawing.Size(40, 36);
+            this.pb15.Size = new System.Drawing.Size(30, 29);
             this.pb15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb15.TabIndex = 28;
             this.pb15.TabStop = false;
@@ -260,10 +251,9 @@
             // 
             this.pb12.Image = ((System.Drawing.Image)(resources.GetObject("pb12.Image")));
             this.pb12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb12.InitialImage")));
-            this.pb12.Location = new System.Drawing.Point(208, 161);
-            this.pb12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb12.Location = new System.Drawing.Point(156, 131);
             this.pb12.Name = "pb12";
-            this.pb12.Size = new System.Drawing.Size(40, 36);
+            this.pb12.Size = new System.Drawing.Size(30, 29);
             this.pb12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb12.TabIndex = 27;
             this.pb12.TabStop = false;
@@ -273,10 +263,9 @@
             // 
             this.pb9.Image = ((System.Drawing.Image)(resources.GetObject("pb9.Image")));
             this.pb9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb9.InitialImage")));
-            this.pb9.Location = new System.Drawing.Point(160, 161);
-            this.pb9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb9.Location = new System.Drawing.Point(120, 131);
             this.pb9.Name = "pb9";
-            this.pb9.Size = new System.Drawing.Size(40, 36);
+            this.pb9.Size = new System.Drawing.Size(30, 29);
             this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb9.TabIndex = 26;
             this.pb9.TabStop = false;
@@ -286,10 +275,9 @@
             // 
             this.pb6.Image = ((System.Drawing.Image)(resources.GetObject("pb6.Image")));
             this.pb6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb6.InitialImage")));
-            this.pb6.Location = new System.Drawing.Point(112, 161);
-            this.pb6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb6.Location = new System.Drawing.Point(84, 131);
             this.pb6.Name = "pb6";
-            this.pb6.Size = new System.Drawing.Size(40, 36);
+            this.pb6.Size = new System.Drawing.Size(30, 29);
             this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb6.TabIndex = 25;
             this.pb6.TabStop = false;
@@ -299,10 +287,9 @@
             // 
             this.pb3.Image = ((System.Drawing.Image)(resources.GetObject("pb3.Image")));
             this.pb3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb3.InitialImage")));
-            this.pb3.Location = new System.Drawing.Point(64, 161);
-            this.pb3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb3.Location = new System.Drawing.Point(48, 131);
             this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(40, 36);
+            this.pb3.Size = new System.Drawing.Size(30, 29);
             this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb3.TabIndex = 24;
             this.pb3.TabStop = false;
@@ -311,10 +298,9 @@
             // pb32
             // 
             this.pb32.Image = ((System.Drawing.Image)(resources.GetObject("pb32.Image")));
-            this.pb32.Location = new System.Drawing.Point(544, 68);
-            this.pb32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb32.Location = new System.Drawing.Point(408, 55);
             this.pb32.Name = "pb32";
-            this.pb32.Size = new System.Drawing.Size(40, 36);
+            this.pb32.Size = new System.Drawing.Size(30, 29);
             this.pb32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb32.TabIndex = 22;
             this.pb32.TabStop = false;
@@ -324,10 +310,9 @@
             // 
             this.pb29.Image = ((System.Drawing.Image)(resources.GetObject("pb29.Image")));
             this.pb29.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb29.InitialImage")));
-            this.pb29.Location = new System.Drawing.Point(496, 68);
-            this.pb29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb29.Location = new System.Drawing.Point(372, 55);
             this.pb29.Name = "pb29";
-            this.pb29.Size = new System.Drawing.Size(40, 36);
+            this.pb29.Size = new System.Drawing.Size(30, 29);
             this.pb29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb29.TabIndex = 21;
             this.pb29.TabStop = false;
@@ -337,10 +322,9 @@
             // 
             this.pb26.Image = ((System.Drawing.Image)(resources.GetObject("pb26.Image")));
             this.pb26.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb26.InitialImage")));
-            this.pb26.Location = new System.Drawing.Point(448, 68);
-            this.pb26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb26.Location = new System.Drawing.Point(336, 55);
             this.pb26.Name = "pb26";
-            this.pb26.Size = new System.Drawing.Size(40, 36);
+            this.pb26.Size = new System.Drawing.Size(30, 29);
             this.pb26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb26.TabIndex = 20;
             this.pb26.TabStop = false;
@@ -350,10 +334,9 @@
             // 
             this.pb23.Image = ((System.Drawing.Image)(resources.GetObject("pb23.Image")));
             this.pb23.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb23.InitialImage")));
-            this.pb23.Location = new System.Drawing.Point(400, 68);
-            this.pb23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb23.Location = new System.Drawing.Point(300, 55);
             this.pb23.Name = "pb23";
-            this.pb23.Size = new System.Drawing.Size(40, 36);
+            this.pb23.Size = new System.Drawing.Size(30, 29);
             this.pb23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb23.TabIndex = 19;
             this.pb23.TabStop = false;
@@ -363,10 +346,9 @@
             // 
             this.pb20.Image = ((System.Drawing.Image)(resources.GetObject("pb20.Image")));
             this.pb20.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb20.InitialImage")));
-            this.pb20.Location = new System.Drawing.Point(352, 68);
-            this.pb20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb20.Location = new System.Drawing.Point(264, 55);
             this.pb20.Name = "pb20";
-            this.pb20.Size = new System.Drawing.Size(40, 36);
+            this.pb20.Size = new System.Drawing.Size(30, 29);
             this.pb20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb20.TabIndex = 18;
             this.pb20.TabStop = false;
@@ -376,10 +358,9 @@
             // 
             this.pb17.Image = ((System.Drawing.Image)(resources.GetObject("pb17.Image")));
             this.pb17.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb17.InitialImage")));
-            this.pb17.Location = new System.Drawing.Point(304, 68);
-            this.pb17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb17.Location = new System.Drawing.Point(228, 55);
             this.pb17.Name = "pb17";
-            this.pb17.Size = new System.Drawing.Size(40, 36);
+            this.pb17.Size = new System.Drawing.Size(30, 29);
             this.pb17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb17.TabIndex = 17;
             this.pb17.TabStop = false;
@@ -389,10 +370,9 @@
             // 
             this.pb14.Image = ((System.Drawing.Image)(resources.GetObject("pb14.Image")));
             this.pb14.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb14.InitialImage")));
-            this.pb14.Location = new System.Drawing.Point(256, 68);
-            this.pb14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb14.Location = new System.Drawing.Point(192, 55);
             this.pb14.Name = "pb14";
-            this.pb14.Size = new System.Drawing.Size(40, 36);
+            this.pb14.Size = new System.Drawing.Size(30, 29);
             this.pb14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb14.TabIndex = 16;
             this.pb14.TabStop = false;
@@ -402,10 +382,9 @@
             // 
             this.pb11.Image = ((System.Drawing.Image)(resources.GetObject("pb11.Image")));
             this.pb11.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb11.InitialImage")));
-            this.pb11.Location = new System.Drawing.Point(208, 68);
-            this.pb11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb11.Location = new System.Drawing.Point(156, 55);
             this.pb11.Name = "pb11";
-            this.pb11.Size = new System.Drawing.Size(40, 36);
+            this.pb11.Size = new System.Drawing.Size(30, 29);
             this.pb11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb11.TabIndex = 15;
             this.pb11.TabStop = false;
@@ -415,10 +394,9 @@
             // 
             this.pb8.Image = ((System.Drawing.Image)(resources.GetObject("pb8.Image")));
             this.pb8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb8.InitialImage")));
-            this.pb8.Location = new System.Drawing.Point(160, 68);
-            this.pb8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb8.Location = new System.Drawing.Point(120, 55);
             this.pb8.Name = "pb8";
-            this.pb8.Size = new System.Drawing.Size(40, 36);
+            this.pb8.Size = new System.Drawing.Size(30, 29);
             this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb8.TabIndex = 14;
             this.pb8.TabStop = false;
@@ -428,10 +406,9 @@
             // 
             this.pb5.Image = ((System.Drawing.Image)(resources.GetObject("pb5.Image")));
             this.pb5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb5.InitialImage")));
-            this.pb5.Location = new System.Drawing.Point(112, 68);
-            this.pb5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb5.Location = new System.Drawing.Point(84, 55);
             this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(40, 36);
+            this.pb5.Size = new System.Drawing.Size(30, 29);
             this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb5.TabIndex = 13;
             this.pb5.TabStop = false;
@@ -441,10 +418,9 @@
             // 
             this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
             this.pb2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb2.InitialImage")));
-            this.pb2.Location = new System.Drawing.Point(64, 68);
-            this.pb2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb2.Location = new System.Drawing.Point(48, 55);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(40, 36);
+            this.pb2.Size = new System.Drawing.Size(30, 29);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2.TabIndex = 12;
             this.pb2.TabStop = false;
@@ -454,10 +430,9 @@
             // 
             this.pb31.Image = ((System.Drawing.Image)(resources.GetObject("pb31.Image")));
             this.pb31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb31.InitialImage")));
-            this.pb31.Location = new System.Drawing.Point(544, 25);
-            this.pb31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb31.Location = new System.Drawing.Point(408, 20);
             this.pb31.Name = "pb31";
-            this.pb31.Size = new System.Drawing.Size(40, 36);
+            this.pb31.Size = new System.Drawing.Size(30, 29);
             this.pb31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb31.TabIndex = 10;
             this.pb31.TabStop = false;
@@ -467,10 +442,9 @@
             // 
             this.pb28.Image = ((System.Drawing.Image)(resources.GetObject("pb28.Image")));
             this.pb28.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb28.InitialImage")));
-            this.pb28.Location = new System.Drawing.Point(496, 25);
-            this.pb28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb28.Location = new System.Drawing.Point(372, 20);
             this.pb28.Name = "pb28";
-            this.pb28.Size = new System.Drawing.Size(40, 36);
+            this.pb28.Size = new System.Drawing.Size(30, 29);
             this.pb28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb28.TabIndex = 9;
             this.pb28.TabStop = false;
@@ -480,10 +454,9 @@
             // 
             this.pb25.Image = ((System.Drawing.Image)(resources.GetObject("pb25.Image")));
             this.pb25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb25.InitialImage")));
-            this.pb25.Location = new System.Drawing.Point(448, 25);
-            this.pb25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb25.Location = new System.Drawing.Point(336, 20);
             this.pb25.Name = "pb25";
-            this.pb25.Size = new System.Drawing.Size(40, 36);
+            this.pb25.Size = new System.Drawing.Size(30, 29);
             this.pb25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb25.TabIndex = 8;
             this.pb25.TabStop = false;
@@ -493,10 +466,9 @@
             // 
             this.pb22.Image = ((System.Drawing.Image)(resources.GetObject("pb22.Image")));
             this.pb22.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb22.InitialImage")));
-            this.pb22.Location = new System.Drawing.Point(400, 25);
-            this.pb22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb22.Location = new System.Drawing.Point(300, 20);
             this.pb22.Name = "pb22";
-            this.pb22.Size = new System.Drawing.Size(40, 36);
+            this.pb22.Size = new System.Drawing.Size(30, 29);
             this.pb22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb22.TabIndex = 7;
             this.pb22.TabStop = false;
@@ -506,10 +478,9 @@
             // 
             this.pb19.Image = ((System.Drawing.Image)(resources.GetObject("pb19.Image")));
             this.pb19.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb19.InitialImage")));
-            this.pb19.Location = new System.Drawing.Point(352, 25);
-            this.pb19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb19.Location = new System.Drawing.Point(264, 20);
             this.pb19.Name = "pb19";
-            this.pb19.Size = new System.Drawing.Size(40, 36);
+            this.pb19.Size = new System.Drawing.Size(30, 29);
             this.pb19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb19.TabIndex = 6;
             this.pb19.TabStop = false;
@@ -519,10 +490,9 @@
             // 
             this.pb16.Image = ((System.Drawing.Image)(resources.GetObject("pb16.Image")));
             this.pb16.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb16.InitialImage")));
-            this.pb16.Location = new System.Drawing.Point(304, 25);
-            this.pb16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb16.Location = new System.Drawing.Point(228, 20);
             this.pb16.Name = "pb16";
-            this.pb16.Size = new System.Drawing.Size(40, 36);
+            this.pb16.Size = new System.Drawing.Size(30, 29);
             this.pb16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb16.TabIndex = 5;
             this.pb16.TabStop = false;
@@ -532,10 +502,9 @@
             // 
             this.pb13.Image = ((System.Drawing.Image)(resources.GetObject("pb13.Image")));
             this.pb13.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb13.InitialImage")));
-            this.pb13.Location = new System.Drawing.Point(256, 25);
-            this.pb13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb13.Location = new System.Drawing.Point(192, 20);
             this.pb13.Name = "pb13";
-            this.pb13.Size = new System.Drawing.Size(40, 36);
+            this.pb13.Size = new System.Drawing.Size(30, 29);
             this.pb13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb13.TabIndex = 4;
             this.pb13.TabStop = false;
@@ -545,10 +514,9 @@
             // 
             this.pb10.Image = ((System.Drawing.Image)(resources.GetObject("pb10.Image")));
             this.pb10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb10.InitialImage")));
-            this.pb10.Location = new System.Drawing.Point(208, 25);
-            this.pb10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb10.Location = new System.Drawing.Point(156, 20);
             this.pb10.Name = "pb10";
-            this.pb10.Size = new System.Drawing.Size(40, 36);
+            this.pb10.Size = new System.Drawing.Size(30, 29);
             this.pb10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb10.TabIndex = 3;
             this.pb10.TabStop = false;
@@ -558,10 +526,9 @@
             // 
             this.pb7.Image = ((System.Drawing.Image)(resources.GetObject("pb7.Image")));
             this.pb7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb7.InitialImage")));
-            this.pb7.Location = new System.Drawing.Point(160, 25);
-            this.pb7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb7.Location = new System.Drawing.Point(120, 20);
             this.pb7.Name = "pb7";
-            this.pb7.Size = new System.Drawing.Size(40, 36);
+            this.pb7.Size = new System.Drawing.Size(30, 29);
             this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb7.TabIndex = 2;
             this.pb7.TabStop = false;
@@ -571,10 +538,9 @@
             // 
             this.pb4.Image = ((System.Drawing.Image)(resources.GetObject("pb4.Image")));
             this.pb4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb4.InitialImage")));
-            this.pb4.Location = new System.Drawing.Point(112, 25);
-            this.pb4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb4.Location = new System.Drawing.Point(84, 20);
             this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(40, 36);
+            this.pb4.Size = new System.Drawing.Size(30, 29);
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4.TabIndex = 1;
             this.pb4.TabStop = false;
@@ -584,57 +550,54 @@
             // 
             this.pb1.Image = ((System.Drawing.Image)(resources.GetObject("pb1.Image")));
             this.pb1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb1.InitialImage")));
-            this.pb1.Location = new System.Drawing.Point(64, 25);
-            this.pb1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb1.Location = new System.Drawing.Point(48, 20);
             this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(40, 36);
+            this.pb1.Size = new System.Drawing.Size(30, 29);
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
             this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
-            // textBoxCardName
+            // Name
             // 
-            this.textBoxCardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBoxCardName.Location = new System.Drawing.Point(48, 194);
-            this.textBoxCardName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxCardName.Name = "textBoxCardName";
-            this.textBoxCardName.Size = new System.Drawing.Size(327, 36);
-            this.textBoxCardName.TabIndex = 1;
-            this.textBoxCardName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.TName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.TName.Location = new System.Drawing.Point(36, 158);
+            this.TName.MaxLength = 100;
+            this.TName.Name = "Name";
+            this.TName.Size = new System.Drawing.Size(246, 30);
+            this.TName.TabIndex = 1;
+            this.TName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // comboBoxCardType
+            // Type
             // 
-            this.comboBoxCardType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBoxCardType.FormattingEnabled = true;
-            this.comboBoxCardType.Items.AddRange(new object[] {
+            this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Type.FormattingEnabled = true;
+            this.Type.Items.AddRange(new object[] {
             "MasterCard",
             "Visa"});
-            this.comboBoxCardType.Location = new System.Drawing.Point(384, 191);
-            this.comboBoxCardType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBoxCardType.Name = "comboBoxCardType";
-            this.comboBoxCardType.Size = new System.Drawing.Size(199, 37);
-            this.comboBoxCardType.TabIndex = 2;
+            this.Type.Location = new System.Drawing.Point(288, 155);
+            this.Type.Name = "Type";
+            this.Type.Size = new System.Drawing.Size(150, 33);
+            this.Type.TabIndex = 2;
             // 
-            // textBoxCardNumber
+            // TNumber
             // 
-            this.textBoxCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBoxCardNumber.Location = new System.Drawing.Point(48, 107);
-            this.textBoxCardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxCardNumber.Name = "textBoxCardNumber";
-            this.textBoxCardNumber.Size = new System.Drawing.Size(535, 45);
-            this.textBoxCardNumber.TabIndex = 0;
-            this.textBoxCardNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.TNumber.Location = new System.Drawing.Point(36, 87);
+            this.TNumber.MaxLength = 16;
+            this.TNumber.Name = "TNumber";
+            this.TNumber.Size = new System.Drawing.Size(402, 38);
+            this.TNumber.TabIndex = 0;
+            this.TNumber.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button1.Location = new System.Drawing.Point(129, 258);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(97, 210);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 47);
+            this.button1.Size = new System.Drawing.Size(78, 38);
             this.button1.TabIndex = 3;
             this.button1.Text = "BUY";
             this.button1.UseVisualStyleBackColor = false;
@@ -646,11 +609,10 @@
             this.checkBoxMale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
             this.checkBoxMale.Checked = true;
             this.checkBoxMale.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxMale.Location = new System.Drawing.Point(677, 39);
-            this.checkBoxMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMale.Location = new System.Drawing.Point(508, 32);
             this.checkBoxMale.Name = "checkBoxMale";
-            this.checkBoxMale.Padding = new System.Windows.Forms.Padding(80, 30, 80, 30);
-            this.checkBoxMale.Size = new System.Drawing.Size(178, 77);
+            this.checkBoxMale.Padding = new System.Windows.Forms.Padding(60, 24, 60, 24);
+            this.checkBoxMale.Size = new System.Drawing.Size(135, 62);
             this.checkBoxMale.TabIndex = 10;
             this.checkBoxMale.UseVisualStyleBackColor = false;
             this.checkBoxMale.CheckedChanged += new System.EventHandler(this.checkBoxMale_CheckedChanged);
@@ -659,11 +621,10 @@
             // 
             this.checkBoxFemale.AutoSize = true;
             this.checkBoxFemale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(160)))));
-            this.checkBoxFemale.Location = new System.Drawing.Point(677, 135);
-            this.checkBoxFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxFemale.Location = new System.Drawing.Point(508, 110);
             this.checkBoxFemale.Name = "checkBoxFemale";
-            this.checkBoxFemale.Padding = new System.Windows.Forms.Padding(80, 30, 80, 30);
-            this.checkBoxFemale.Size = new System.Drawing.Size(178, 77);
+            this.checkBoxFemale.Padding = new System.Windows.Forms.Padding(60, 24, 60, 24);
+            this.checkBoxFemale.Size = new System.Drawing.Size(135, 62);
             this.checkBoxFemale.TabIndex = 11;
             this.checkBoxFemale.UseVisualStyleBackColor = false;
             this.checkBoxFemale.CheckedChanged += new System.EventHandler(this.checkBoxFemale_CheckedChanged);
@@ -671,20 +632,18 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBoxExpiry);
+            this.groupBox1.Controls.Add(this.Date);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBoxCardNumber);
-            this.groupBox1.Controls.Add(this.textBoxCardName);
-            this.groupBox1.Controls.Add(this.comboBoxCardType);
+            this.groupBox1.Controls.Add(this.TNumber);
+            this.groupBox1.Controls.Add(this.TName);
+            this.groupBox1.Controls.Add(this.Type);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(16, 267);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 217);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(613, 335);
+            this.groupBox1.Size = new System.Drawing.Size(460, 272);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Credit Card Information";
@@ -694,34 +653,31 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(395, 240);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(296, 195);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 25);
+            this.label4.Size = new System.Drawing.Size(118, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Expiration Date";
             // 
-            // comboBoxExpiry
+            // Date
             // 
-            this.comboBoxExpiry.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBoxExpiry.FormattingEnabled = true;
-            this.comboBoxExpiry.Items.AddRange(new object[] {
+            this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Date.FormattingEnabled = true;
+            this.Date.Items.AddRange(new object[] {
             "MasterCard",
             "Visa"});
-            this.comboBoxExpiry.Location = new System.Drawing.Point(384, 265);
-            this.comboBoxExpiry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBoxExpiry.Name = "comboBoxExpiry";
-            this.comboBoxExpiry.Size = new System.Drawing.Size(199, 37);
-            this.comboBoxExpiry.TabIndex = 7;
+            this.Date.Location = new System.Drawing.Point(288, 215);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(150, 33);
+            this.Date.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(395, 166);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(296, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Card Type";
             // 
@@ -729,10 +685,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(59, 166);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(44, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 25);
+            this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Name on The Card";
             // 
@@ -740,29 +695,27 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(59, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(44, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Card Number";
             // 
             // BuyScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(909, 619);
+            this.ClientSize = new System.Drawing.Size(684, 511);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.checkBoxFemale);
             this.Controls.Add(this.checkBoxMale);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(927, 666);
-            this.MinimumSize = new System.Drawing.Size(927, 666);
+            this.MaximumSize = new System.Drawing.Size(700, 550);
+            this.MinimumSize = new System.Drawing.Size(700, 550);
             this.Name = "BuyScreen";
             this.Text = "Freedom Tourism";
             this.panel1.ResumeLayout(false);
@@ -843,9 +796,9 @@
         private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.PictureBox pb1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBoxCardName;
-        private System.Windows.Forms.ComboBox comboBoxCardType;
-        private System.Windows.Forms.TextBox textBoxCardNumber;
+        private System.Windows.Forms.TextBox TName;
+        private System.Windows.Forms.ComboBox Type;
+        private System.Windows.Forms.TextBox TNumber;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBoxMale;
         private System.Windows.Forms.CheckBox checkBoxFemale;
@@ -854,6 +807,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxExpiry;
+        private System.Windows.Forms.ComboBox Date;
     }
 }

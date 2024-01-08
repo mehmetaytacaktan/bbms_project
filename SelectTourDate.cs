@@ -10,14 +10,14 @@ namespace formProject
         readonly string[] removedCities = new string[2];//0 to, 1 from
         readonly SelectTour BuyingScreen;
         readonly RegisterNLogin LoginScreen;
-        Profile profile;
+        ProfileMenu profile;
 
         public SelectTourDate(RegisterNLogin LoginScreen)
         {
             InitializeComponent();
             //We send this form instance to the form2 so we can enable it from here
             BuyingScreen = new SelectTour(this);
-            profile = new Profile(this);
+            profile = new ProfileMenu(this);
             BuyingScreen.Hide();
             this.Show();//(already shown)
             this.LoginScreen = LoginScreen;
@@ -48,9 +48,8 @@ namespace formProject
         {
             List<string> cities = new List<string>();
             cities.Add("Akkeçili");
-            cities.Add("Manhattan");
-            cities.Add("İzmir");
-            cities.Add("Lodz");
+            cities.Add("Bandırma");
+            cities.Add("İstanbul");
 
             foreach (var city in cities)
             {

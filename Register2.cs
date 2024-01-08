@@ -41,29 +41,65 @@ namespace formProject
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            
             bool hasEmpty = false;
+
             if (textBox3.Text == string.Empty)
             {
                 hasEmpty = true;
                 MessageBox.Show("Legal name is empty",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if(!textBox3.Text.Contains(' '))
+            {
+                hasEmpty = true;
+                MessageBox.Show("Please seperate your surname using space",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             if (textBox2.Text == string.Empty)
             {
                 hasEmpty = true;
                 MessageBox.Show("Phone number is empty",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (!IsDigitsOnly(textBox2.Text))
+            {
+                hasEmpty = true;
+                MessageBox.Show("Phone numbers should only have numbers from 0 to 9",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (textBox2.Text.Length != 11)
+            {
+                hasEmpty = true;
+                MessageBox.Show("Please enter a phone number",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
             if (textBox1.Text == string.Empty)
             {
                 hasEmpty = true;
                 MessageBox.Show("TC no is empty",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (!IsDigitsOnly(textBox1.Text))
+            {
+                hasEmpty = true;
+                MessageBox.Show("TC should only have numbers from 0 to 9",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (textBox1.Text.Length != 11)
+            {
+                hasEmpty = true;
+                MessageBox.Show("Please enter a valid TC",
+                    "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             if (!hasEmpty)
             {
                 //register **************************************Database
+                LoginScreen.profiles.s.Add(new Profile(username, password));
+
                 username = "";
                 password = "";
                 textBox3.Text = "";//legal name
@@ -81,6 +117,17 @@ namespace formProject
             this.LoginScreen.ChangeLoginOrRegister();
             this.LoginScreen.Show();
             this.Hide();
+        }
+
+        private bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
+
+            return true;
         }
     }
 }

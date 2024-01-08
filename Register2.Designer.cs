@@ -75,6 +75,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox1.Location = new System.Drawing.Point(317, 331);
+            this.textBox1.MaxLength = 11;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 35);
             this.textBox1.TabIndex = 10;
@@ -95,6 +96,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox2.Location = new System.Drawing.Point(317, 255);
+            this.textBox2.MaxLength = 11;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(169, 35);
             this.textBox2.TabIndex = 12;
@@ -115,6 +117,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox3.Location = new System.Drawing.Point(317, 178);
+            this.textBox3.MaxLength = 100;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(169, 35);
             this.textBox3.TabIndex = 14;
@@ -151,7 +154,7 @@
             this.Logout.UseVisualStyleBackColor = false;
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
-            // Form5
+            // Register2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +172,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "Form5";
+            this.Name = "Register2";
             this.Text = "Form5";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);

@@ -26,15 +26,10 @@ namespace formProject
             DateTimePicker2.MaxDate = DateTimeLimits.Max();
 
             //********************************DataBase
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "hkjh > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:10", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "01h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 500);
-            CreateTourPanel("2+1", "Mars > Jupiter", "12:00", "99h59m", 550);
+            CreateTourPanel("2+1", "Manisa > İstanbul", "12:00", "08h30m", 600);
+            CreateTourPanel("2+1", "İstanbul > Bandırma", "06:00", "03h30m", 400);
+            CreateTourPanel("2+1", "İstanbul > Manisa", "21:00", "08h30m", 600);
+            CreateTourPanel("2+1", "Bandırma > İstanbul", "10:00", "03h30m", 350);
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
