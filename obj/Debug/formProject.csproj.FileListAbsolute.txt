@@ -33,10 +33,6 @@ C:\Users\semih\OneDrive\Belgeler\Visual Studio 2022\formProject\obj\Debug\formPr
 D:\Self-Made Codes\formProject\obj\Debug\formProject.Form3.resources
 D:\Self-Made Codes\formProject\obj\Debug\formProject.Form4.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.csproj.AssemblyReference.cache
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Form1.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Form2.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Form3.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Form4.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.csproj.GenerateResource.cache
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.exe
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.pdb
@@ -45,11 +41,6 @@ C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\bin\Debug\formProject.exe
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\bin\Debug\formProject.pdb
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Properties.Resources.resources
 C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.csproj.CoreCompileInputs.cache
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form10.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form11.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form12.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form7.resources
-C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.Form9.resources
 C:\Users\Emre\Desktop\Bus Booking Management System - Project(New)\bbms_project\bin\Debug\formProject.exe.config
 C:\Users\Emre\Desktop\Bus Booking Management System - Project(New)\bbms_project\bin\Debug\formProject.exe
 C:\Users\Emre\Desktop\Bus Booking Management System - Project(New)\bbms_project\bin\Debug\formProject.pdb
@@ -129,3 +120,15 @@ C:\Shared\bbms\obj\Debug\formProject.csproj.GenerateResource.cache
 C:\Shared\bbms\obj\Debug\formProject.csproj.CoreCompileInputs.cache
 C:\Shared\bbms\obj\Debug\formProject.exe
 C:\Shared\bbms\obj\Debug\formProject.pdb
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Driver.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.SelectTourDate.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.ApplyDiscount.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.ShowDataNTicket.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.AddTour.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.SelectTour.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.RegisterNLogin.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.BuyScreen.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.Register2.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.AdminPanel.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\BMSAdminPanel.CheckClient.resources
+C:\Users\semih\OneDrive\Belgeler\GitHub\bbms_project\obj\Debug\formProject.ProfileMenu.resources

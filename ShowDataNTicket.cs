@@ -44,7 +44,7 @@ namespace BMSAdminPanel
             string pnr = textBox1.Text;
             if(pnr.Length != 6)
             {
-                MessageBox.Show("PNR's are 6 character long.",
+                MessageBox.Show("PNR has to be 6 character long.",
                     "Invalid information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             //*************************************Database

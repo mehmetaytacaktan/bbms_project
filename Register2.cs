@@ -66,20 +66,20 @@ namespace formProject
             else if (!IsDigitsOnly(textBox2.Text))
             {
                 hasEmpty = true;
-                MessageBox.Show("Phone numbers should only have numbers from 0 to 9",
+                MessageBox.Show("Phone number should only have numbers from 0 to 9",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (textBox2.Text.Length != 11)
             {
                 hasEmpty = true;
-                MessageBox.Show("Please enter a phone number",
+                MessageBox.Show("Please enter a valid phone number, ex; 05554443322",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             if (textBox1.Text == string.Empty)
             {
                 hasEmpty = true;
-                MessageBox.Show("TC no is empty",
+                MessageBox.Show("TC number is empty",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (!IsDigitsOnly(textBox1.Text))

@@ -47,15 +47,18 @@ namespace formProject
             }
 
             //************************************Database
-            chairs[0] = Gender.Male;
-            chairs[4] = Gender.Male;
-            chairs[8] = Gender.Female;
-            chairs[10] = Gender.Male;
-            chairs[15] = Gender.Female;
-            chairs[30] = Gender.Female;
-            chairs[11] = Gender.Male;
-            chairs[12] = Gender.Female;
-            chairs[31] = Gender.Female;
+            int j = 0;
+            Random rnd = new Random();
+            foreach (var chair in chairs)
+            {
+                int x = rnd.Next(1, 6);
+                if (x == 1)
+                    chairs[j] = Gender.Female;
+                if (x == 2)
+                    chairs[j] = Gender.Male;
+                j++;
+            }
+
 
             int i = 0;
             foreach (Gender gender in chairs)
@@ -163,7 +166,7 @@ namespace formProject
                 MessageBox.Show("Please select a date",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (TNumber.Text.Length == 16)
-                MessageBox.Show("Please enter a valid card number",
+                MessageBox.Show("Please enter a valid card number, ex: 1111222233334444",
                     "False information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
