@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BMSAdminPanel
 {
@@ -11,30 +13,42 @@ namespace BMSAdminPanel
         {
             this.adminPanel = adminPanel;
             InitializeComponent();
-
-            List<string> ClientIDs = new List<string>();
-            //0000000, 0000001, 0000002, 0000003
-            //*************************************************DataBase
-            for (int i = 1; i <= 1297; i++)
+            String[] userColumns = { "user_id", "first_name", "last_name", "username", "password", "email", "phone_number" };
+            foreach (String column in userColumns)
             {
-                string CurrentID = "";
-                int digits = (int)Math.Log10(i) + 1; // get the number of digits in i
-                CurrentID = ""; // reset the CurrentID
-                for (int j = 0; j < 7 - digits; j++)
-                {
-                    CurrentID += "0"; // add zeros to the CurrentID
-                }
-
-                CurrentID += i;
-                ClientIDs.Add(CurrentID);
-            }
-            foreach (var ClientID in ClientIDs)
-            {
-                cmbboxClientIDs.Items.Add(ClientID);
+                listview.Columns.Add(column);
             }
 
-            //*************************************************Database
-            //Add name, surname etc as string to listView1
+            String connectionString = "Data Source=DESKTOP-5QOGEHT\\SQLEXPRESS;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            SqlConnection cnn = new SqlConnection(connectionString);
+
+            cnn.Open();
+            SqlCommand command;
+            SqlDataReader dataReader;
+            String sql;
+
+            sql = "SELECT * FROM [User]";
+            command = new SqlCommand(sql, cnn);
+            dataReader = command.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                cmbboxClientIDs.Items.Add(dataReader["user_id"]);
+
+                ListViewItem li = new ListViewItem(dataReader["user_id"].ToString());
+                li.SubItems.Add(dataReader["first_name"].ToString());
+                li.SubItems.Add(dataReader["last_name"].ToString());
+                li.SubItems.Add(dataReader["username"].ToString());
+                li.SubItems.Add(dataReader["password"].ToString());
+                li.SubItems.Add(dataReader["email"].ToString());
+                li.SubItems.Add(dataReader["phone_number"].ToString());
+
+                listview.Items.Add(li);
+            }
+
+            dataReader.Close();
+            command.Dispose();
+            cnn.Close();
         }
 
         private void Form9_FormClosing(object sender, FormClosingEventArgs e)
@@ -50,9 +64,65 @@ namespace BMSAdminPanel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string SelectedUserID = cmbboxClientIDs.SelectedText;
-            //write the user with the selected ID on top.
-            //*************************************************Database
+            listview.Items.Clear();
+            String SelectedUserID = cmbboxClientIDs.SelectedItem.ToString();
+
+            String connectionString1 = "Data Source=DESKTOP-5QOGEHT\\SQLEXPRESS;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            SqlConnection cnn1 = new SqlConnection(connectionString1);
+
+            cnn1.Open();
+            SqlCommand command1;
+            SqlDataReader dataReader1;
+            String sql1;
+
+
+            sql1 = "SELECT * FROM [User] WHERE user_id = '" + SelectedUserID + "'";
+            command1 = new SqlCommand(sql1, cnn1);
+            dataReader1 = command1.ExecuteReader();
+
+            while (dataReader1.Read())
+            {
+                ListViewItem li = new ListViewItem(dataReader1["user_id"].ToString());
+                li.SubItems.Add(dataReader1["first_name"].ToString());
+                li.SubItems.Add(dataReader1["last_name"].ToString());
+                li.SubItems.Add(dataReader1["username"].ToString());
+                li.SubItems.Add(dataReader1["password"].ToString());
+                li.SubItems.Add(dataReader1["email"].ToString());
+                li.SubItems.Add(dataReader1["phone_number"].ToString());
+
+                listview.Items.Add(li);
+            }
+            dataReader1.Close();
+            command1.Dispose();
+            cnn1.Close();
+
+            String connectionString2 = "Data Source=DESKTOP-5QOGEHT\\SQLEXPRESS;Initial Catalog=busticketdb;Integrated Security=True;Pooling=False;Encrypt=True;TrustServerCertificate=True";
+            SqlConnection cnn2 = new SqlConnection(connectionString2);
+
+            cnn2.Open();
+            SqlCommand command2;
+            SqlDataReader dataReader2;
+            String sql2;
+
+            sql2 = "SELECT * FROM [User] WHERE user_id <> '" + SelectedUserID + "'";
+            command2 = new SqlCommand(sql2, cnn2);
+            dataReader2 = command2.ExecuteReader();
+            while (dataReader2.Read())
+            {
+                ListViewItem li = new ListViewItem(dataReader2["user_id"].ToString());
+                li.SubItems.Add(dataReader2["first_name"].ToString());
+                li.SubItems.Add(dataReader2["last_name"].ToString());
+                li.SubItems.Add(dataReader2["username"].ToString());
+                li.SubItems.Add(dataReader2["password"].ToString());
+                li.SubItems.Add(dataReader2["email"].ToString());
+                li.SubItems.Add(dataReader2["phone_number"].ToString());
+
+                listview.Items.Add(li);
+            }
+
+            dataReader2.Close();
+            command2.Dispose();
+            cnn2.Close();
         }
     }
 }
